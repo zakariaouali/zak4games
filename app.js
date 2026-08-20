@@ -29,7 +29,7 @@ const pageSize = 30;
 const GAME_PRICE = 25;
 const PAID_FOR_FREE_GAME = 5;
 
-const whatsappNumber = "212605689697";
+const whatsappNumber = "212605689787";
 
 const CART_KEY = "zack4games_cart";
 

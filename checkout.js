@@ -6,7 +6,7 @@ const CART_KEY =
   "zack4games_cart";
 
 const whatsappNumber =
-  "212605689697";
+  "212605689787";
 
 const GAME_PRICE =
   25;
