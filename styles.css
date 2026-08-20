@@ -2690,4 +2690,1245 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
     text-align: left;
   }
 
+}/* =========================================================
+   ZACK4GAMES — PRICING
+========================================================= */
+
+.shop-card-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+
+.shop-card-price strong {
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+
+.shop-card-price span {
+  font-size: 10px;
+  line-height: 1;
+  color: rgba(255,255,255,0.4);
+}
+
+
+/* =========================================================
+   STORE OFFER BANNER
+========================================================= */
+
+.offer-banner {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  margin: 28px 0 34px;
+
+  padding: 22px 25px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  border:
+    1px solid rgba(124,58,237,0.28);
+
+  background:
+    radial-gradient(
+      circle at 0% 50%,
+      rgba(124,58,237,0.14),
+      transparent 40%
+    ),
+    rgba(255,255,255,0.025);
+
+  box-shadow:
+    0 15px 45px rgba(0,0,0,0.15);
+}
+
+
+.offer-banner::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  right: -120px;
+  top: -120px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(124,58,237,0.12);
+
+  filter: blur(20px);
+
+  pointer-events: none;
+}
+
+
+.offer-icon {
+  flex: 0 0 58px;
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background:
+    rgba(124,58,237,0.13);
+
+  border:
+    1px solid rgba(124,58,237,0.25);
+
+  font-size: 28px;
+}
+
+
+.offer-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+.offer-top {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 6px;
+}
+
+
+.offer-badge {
+  display: inline-flex;
+
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(124,58,237,0.12);
+
+  border:
+    1px solid rgba(124,58,237,0.25);
+
+  color:
+    #a78bfa;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+
+.offer-price {
+  font-size: 11px;
+
+  font-weight: 700;
+
+  color:
+    rgba(255,255,255,0.45);
+}
+
+
+.offer-content h2 {
+  margin: 0 0 5px;
+
+  font-size: 20px;
+
+  line-height: 1.25;
+}
+
+
+.offer-content h2 strong {
+  color:
+    #a78bfa;
+}
+
+
+.offer-content p {
+  margin: 0;
+
+  max-width: 600px;
+
+  color:
+    rgba(255,255,255,0.5);
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+.offer-example {
+  position: relative;
+  z-index: 1;
+
+  flex: 0 0 auto;
+
+  min-width: 145px;
+
+  padding: 14px 16px;
+
+  text-align: center;
+
+  border-radius: 14px;
+
+  background:
+    rgba(255,255,255,0.035);
+
+  border:
+    1px solid rgba(255,255,255,0.07);
+}
+
+
+.offer-example span {
+  display: block;
+
+  font-size: 11px;
+
+  color:
+    rgba(255,255,255,0.45);
+}
+
+
+.offer-example strong {
+  display: block;
+
+  margin: 3px 0;
+
+  color:
+    #a78bfa;
+
+  font-size: 18px;
+}
+
+
+.offer-example small {
+  display: block;
+
+  font-size: 9px;
+
+  color:
+    rgba(255,255,255,0.35);
+}
+
+
+/* =========================================================
+   CHECKOUT OFFER
+========================================================= */
+
+.checkout-offer-message {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-top: 10px;
+
+  padding: 11px 13px;
+
+  border-radius: 12px;
+
+  background:
+    rgba(124,58,237,0.08);
+
+  border:
+    1px solid rgba(124,58,237,0.18);
+
+  color:
+    rgba(255,255,255,0.55);
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+
+.checkout-offer-message strong {
+  color:
+    #a78bfa;
+}
+
+
+.checkout-offer-icon {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex: 0 0 27px;
+
+  width: 27px;
+  height: 27px;
+
+  border-radius: 8px;
+
+  background:
+    rgba(124,58,237,0.15);
+
+  font-size: 14px;
+}
+
+
+.checkout-offer-message.has-offer {
+
+  background:
+    rgba(34,197,94,0.07);
+
+  border-color:
+    rgba(34,197,94,0.18);
+}
+
+
+.checkout-offer-message.has-offer strong {
+
+  color:
+    #4ade80;
+}
+
+
+/* =========================================================
+   CHECKOUT ITEM PRICE
+========================================================= */
+
+.checkout-item-price {
+
+  display: inline-flex;
+
+  margin-top: 10px;
+
+  padding: 5px 9px;
+
+  border-radius: 8px;
+
+  background:
+    rgba(255,255,255,0.04);
+
+  color:
+    rgba(255,255,255,0.65);
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   MODAL OFFER
+========================================================= */
+
+.modal-offer {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  margin-top: 14px;
+
+  padding: 11px 13px;
+
+  border-radius: 11px;
+
+  background:
+    rgba(124,58,237,0.08);
+
+  border:
+    1px solid rgba(124,58,237,0.18);
+
+  color:
+    rgba(255,255,255,0.55);
+
+  font-size: 12px;
+
+  text-align: center;
+}
+
+
+.modal-offer strong {
+  color:
+    #a78bfa;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .offer-banner {
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    padding: 17px;
+
+    margin:
+      20px 0 25px;
+
+    border-radius: 17px;
+  }
+
+
+  .offer-icon {
+
+    flex: 0 0 44px;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 12px;
+
+    font-size: 21px;
+  }
+
+
+  .offer-content h2 {
+
+    font-size: 16px;
+  }
+
+
+  .offer-content p {
+
+    font-size: 11px;
+  }
+
+
+  .offer-example {
+
+    display: none;
+  }
+
+
+  .offer-top {
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+  }
+
+
+  .offer-badge {
+
+    font-size: 8px;
+  }
+
+
+  .offer-price {
+
+    font-size: 9px;
+  }
+
+
+  .shop-card-price strong {
+
+    font-size: 15px;
+  }
+
+}
+
+
+@media (max-width: 420px) {
+
+  .offer-banner {
+
+    padding: 14px;
+
+    gap: 11px;
+  }
+
+
+  .offer-icon {
+
+    flex-basis: 40px;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 19px;
+  }
+
+
+  .offer-content h2 {
+
+    font-size: 15px;
+  }
+
+}/* =========================================================
+   ZACK4GAMES — OFFER SYSTEM
+========================================================= */
+
+.zack-offer-box {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto 28px;
+  padding: 18px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(124, 58, 237, 0.12),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  border: 1px solid rgba(139, 92, 246, 0.28);
+  border-radius: 18px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+.zack-offer-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+
+.zack-offer-icon {
+  width: 44px;
+  height: 44px;
+
+  flex: 0 0 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(139, 92, 246, 0.15);
+
+  font-size: 21px;
+}
+
+
+.zack-offer-content {
+  min-width: 0;
+  flex: 1;
+}
+
+
+.zack-offer-title-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+
+.zack-offer-title-row strong {
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+
+.zack-offer-free-count {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 4px 8px;
+
+  border-radius: 999px;
+
+  background: rgba(34, 197, 94, 0.14);
+  border: 1px solid rgba(34, 197, 94, 0.28);
+
+  color: #86efac;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+
+.zack-offer-message {
+  margin: 5px 0 0;
+
+  color: rgba(255, 255, 255, 0.58);
+
+  font-size: 12px;
+  line-height: 1.4;
+
+  white-space: normal;
+}
+
+
+.zack-offer-progress-wrap {
+  margin-top: 15px;
+}
+
+
+.zack-offer-progress-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  margin-bottom: 7px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  color: rgba(255, 255, 255, 0.42);
+}
+
+
+.zack-offer-saved {
+  color: #86efac;
+}
+
+
+.zack-offer-progress {
+  width: 100%;
+  height: 6px;
+
+  background: rgba(255, 255, 255, 0.07);
+
+  border-radius: 999px;
+
+  overflow: hidden;
+}
+
+
+.zack-offer-progress-fill {
+  height: 100%;
+
+  min-width: 0;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      90deg,
+      #7c3aed,
+      #a855f7
+    );
+
+  transition:
+    width 0.35s ease;
+}
+
+
+.zack-offer-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  margin-top: 11px;
+
+  color: rgba(255, 255, 255, 0.38);
+
+  font-size: 10px;
+}
+
+
+.zack-offer-price span:last-child {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================================
+   FREE GAME STATE
+========================================================= */
+
+.zack-offer-box.has-free {
+
+  border-color:
+    rgba(34, 197, 94, 0.30);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(34, 197, 94, 0.09),
+      rgba(255, 255, 255, 0.025)
+    );
+}
+
+
+.zack-offer-box.has-free
+.zack-offer-progress-fill {
+
+  background:
+    linear-gradient(
+      90deg,
+      #16a34a,
+      #4ade80
+    );
+}
+
+
+.zack-offer-box.almost-free {
+
+  border-color:
+    rgba(250, 204, 21, 0.28);
+
+}
+
+
+.zack-offer-box.almost-free
+.zack-offer-progress-fill {
+
+  background:
+    linear-gradient(
+      90deg,
+      #eab308,
+      #facc15
+    );
+
+}
+
+
+/* =========================================================
+   CHECKOUT OFFER
+========================================================= */
+
+.checkout-offer-box {
+
+  width: 100%;
+  box-sizing: border-box;
+
+  margin-bottom: 18px;
+  padding: 16px;
+
+  border-radius: 16px;
+
+  border: 1px solid rgba(139, 92, 246, 0.25);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(124, 58, 237, 0.10),
+      rgba(255, 255, 255, 0.025)
+    );
+}
+
+
+.checkout-offer-top {
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  min-width: 0;
+}
+
+
+.checkout-offer-icon {
+
+  width: 40px;
+  height: 40px;
+
+  flex: 0 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background:
+    rgba(139, 92, 246, 0.14);
+
+  font-size: 19px;
+}
+
+
+.checkout-offer-copy {
+
+  flex: 1;
+  min-width: 0;
+}
+
+
+.checkout-offer-title {
+
+  font-size: 13px;
+  font-weight: 800;
+
+  color: #fff;
+
+  letter-spacing: 0.035em;
+}
+
+
+.checkout-offer-message {
+
+  margin-top: 4px;
+
+  color:
+    rgba(255, 255, 255, 0.55);
+
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+
+.checkout-free-badge {
+
+  flex: 0 0 auto;
+
+  padding: 6px 9px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(34, 197, 94, 0.13);
+
+  border:
+    1px solid rgba(34, 197, 94, 0.25);
+
+  color:
+    #86efac;
+
+  font-size: 9px;
+  font-weight: 900;
+
+  letter-spacing: 0.04em;
+}
+
+
+.checkout-offer-progress {
+
+  width: 100%;
+  height: 5px;
+
+  margin-top: 14px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255, 255, 255, 0.07);
+}
+
+
+.checkout-offer-fill {
+
+  height: 100%;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      90deg,
+      #7c3aed,
+      #a855f7
+    );
+
+  transition:
+    width 0.35s ease;
+}
+
+
+.checkout-offer-bottom {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-top: 8px;
+
+  color:
+    rgba(255, 255, 255, 0.40);
+
+  font-size: 10px;
+}
+
+
+.checkout-offer-bottom strong {
+
+  color: #86efac;
+
+  font-size: 10px;
+}
+
+
+.checkout-offer-box.has-free {
+
+  border-color:
+    rgba(34, 197, 94, 0.28);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(34, 197, 94, 0.08),
+      rgba(255, 255, 255, 0.025)
+    );
+}
+
+
+.checkout-offer-box.has-free
+.checkout-offer-fill {
+
+  background:
+    linear-gradient(
+      90deg,
+      #16a34a,
+      #4ade80
+    );
+}
+
+
+/* =========================================================
+   CHECKOUT GAME PRICE
+========================================================= */
+
+.checkout-item-price {
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 10px;
+}
+
+
+.checkout-item-price strong {
+
+  color: #ffffff;
+
+  font-size: 15px;
+}
+
+
+.checkout-old-price {
+
+  color:
+    rgba(255, 255, 255, 0.30);
+
+  text-decoration: line-through;
+
+  font-size: 12px;
+}
+
+
+.checkout-item.is-free {
+
+  border-color:
+    rgba(34, 197, 94, 0.24);
+}
+
+
+.checkout-item.is-free
+.checkout-item-price strong {
+
+  color: #86efac;
+}
+
+
+.checkout-free-label {
+
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+
+  padding: 5px 8px;
+
+  border-radius: 7px;
+
+  background:
+    #16a34a;
+
+  color: white;
+
+  font-size: 9px;
+  font-weight: 900;
+
+  letter-spacing: 0.05em;
+}
+
+
+/* =========================================================
+   MODAL FREE LABEL
+========================================================= */
+
+.modal-free {
+
+  display: inline-block;
+
+  margin-left: 6px;
+
+  padding: 3px 6px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(34, 197, 94, 0.13);
+
+  color:
+    #86efac;
+
+  font-size: 8px;
+  font-weight: 900;
+
+  vertical-align: middle;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .zack-offer-box {
+
+    margin:
+      0 0 20px;
+
+    padding:
+      14px;
+
+    border-radius:
+      15px;
+
+  }
+
+
+  .zack-offer-main {
+
+    gap: 10px;
+
+  }
+
+
+  .zack-offer-icon {
+
+    width: 38px;
+    height: 38px;
+
+    flex-basis: 38px;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+
+  }
+
+
+  .zack-offer-title-row {
+
+    gap: 6px;
+
+  }
+
+
+  .zack-offer-title-row strong {
+
+    font-size: 11px;
+
+  }
+
+
+  .zack-offer-free-count {
+
+    padding:
+      3px 6px;
+
+    font-size:
+      8px;
+
+  }
+
+
+  .zack-offer-message {
+
+    font-size:
+      10px;
+
+    margin-top:
+      4px;
+
+  }
+
+
+  .zack-offer-progress-wrap {
+
+    margin-top:
+      12px;
+
+  }
+
+
+  .zack-offer-progress-top {
+
+    font-size:
+      9px;
+
+  }
+
+
+  .zack-offer-price {
+
+    font-size:
+      9px;
+
+  }
+
+
+  .checkout-offer-box {
+
+    padding:
+      13px;
+
+    border-radius:
+      14px;
+
+  }
+
+
+  .checkout-offer-top {
+
+    gap:
+      9px;
+
+  }
+
+
+  .checkout-offer-icon {
+
+    width:
+      36px;
+
+    height:
+      36px;
+
+    flex-basis:
+      36px;
+
+    font-size:
+      16px;
+
+  }
+
+
+  .checkout-offer-title {
+
+    font-size:
+      11px;
+
+  }
+
+
+  .checkout-offer-message {
+
+    font-size:
+      9px;
+
+  }
+
+
+  .checkout-free-badge {
+
+    padding:
+      5px 7px;
+
+    font-size:
+      8px;
+
+  }
+
+
+  .checkout-offer-bottom {
+
+    font-size:
+      9px;
+
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .zack-offer-box {
+
+    padding:
+      12px;
+
+  }
+
+
+  .zack-offer-icon {
+
+    width:
+      34px;
+
+    height:
+      34px;
+
+    flex-basis:
+      34px;
+
+  }
+
+
+  .zack-offer-title-row strong {
+
+    font-size:
+      10px;
+
+  }
+
+
+  .zack-offer-message {
+
+    font-size:
+      9px;
+
+  }
+
+
+  .checkout-free-badge {
+
+    padding:
+      4px 6px;
+
+  }
+
 }

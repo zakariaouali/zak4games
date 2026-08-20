@@ -1,5 +1,8 @@
 /* =========================================================
    ZACK4GAMES — STORE APP
+   Pricing:
+   25 DH / game
+   Buy 5 games → 6th game FREE
 ========================================================= */
 
 const state = {
@@ -13,29 +16,32 @@ const state = {
 
 const pageSize = 30;
 
-const whatsappNumber = "212605689787";
+const GAME_PRICE = 25;
+const PAID_FOR_FREE_GAME = 5;
+
+const whatsappNumber = "212605689697";
 
 const CART_KEY = "zack4games_cart";
 
 
 /* =========================================================
-   PLACEHOLDER IMAGE
+   PLACEHOLDER
 ========================================================= */
 
 const PLACEHOLDER_IMAGE =
   "data:image/svg+xml;charset=utf-8," +
   encodeURIComponent(
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100">' +
-      "<defs>" +
+      '<defs>' +
         '<linearGradient id="g" x1="0" x2="1" y1="0" y2="1">' +
           '<stop stop-color="#191b20"/>' +
           '<stop offset="1" stop-color="#0b0c0f"/>' +
-        "</linearGradient>" +
-      "</defs>" +
+        '</linearGradient>' +
+      '</defs>' +
       '<rect width="1600" height="1100" fill="url(#g)"/>' +
       '<path d="M0 850L420 610L760 720L1160 430L1600 610V1100H0Z" fill="#050608" fill-opacity="0.58"/>' +
       '<text x="88" y="140" fill="#6d28d9" font-family="Arial, sans-serif" font-size="52" font-weight="700">Zack4Games</text>' +
-    "</svg>"
+    '</svg>'
   );
 
 
@@ -151,6 +157,262 @@ const dom = {
 
 
 /* =========================================================
+   OFFER CALCULATOR
+========================================================= */
+
+function getOffer(count) {
+
+  const safeCount = Math.max(
+    0,
+    Number(count) || 0
+  );
+
+  /*
+    Every 6 games:
+    5 paid + 1 free
+  */
+
+  const freeGames =
+    Math.floor(
+      safeCount / 6
+    );
+
+  const paidGames =
+    safeCount - freeGames;
+
+  const total =
+    paidGames * GAME_PRICE;
+
+  const savings =
+    freeGames * GAME_PRICE;
+
+  const remainder =
+    safeCount % 6;
+
+  let progress = 0;
+  let remaining = 0;
+  let message = "";
+
+  if (safeCount === 0) {
+
+    progress = 0;
+
+    remaining =
+      PAID_FOR_FREE_GAME;
+
+    message =
+      `Add ${PAID_FOR_FREE_GAME} games to unlock your FREE game`;
+
+  } else if (remainder === 5) {
+
+    /*
+      Five games selected.
+      The next game is free.
+    */
+
+    progress = 100;
+
+    remaining = 1;
+
+    message =
+      "FREE GAME UNLOCKED — add 1 more game";
+
+  } else {
+
+    /*
+      Normal progress.
+    */
+
+    progress =
+      (remainder / PAID_FOR_FREE_GAME) * 100;
+
+    remaining =
+      PAID_FOR_FREE_GAME - remainder;
+
+    message =
+      `${remaining} more ${remaining === 1 ? "game" : "games"} to unlock your FREE game`;
+
+  }
+
+  return {
+    count: safeCount,
+    freeGames,
+    paidGames,
+    total,
+    savings,
+    progress,
+    remaining,
+    message,
+  };
+}
+
+
+/* =========================================================
+   OFFER UI
+========================================================= */
+
+function renderOfferBox() {
+
+  const old =
+    document.getElementById(
+      "zackOfferBox"
+    );
+
+  if (old) {
+    old.remove();
+  }
+
+  const count =
+    state.selected.length;
+
+  const offer =
+    getOffer(count);
+
+  const box =
+    document.createElement("section");
+
+  box.id =
+    "zackOfferBox";
+
+  box.className =
+    "zack-offer-box";
+
+  let statusClass = "";
+
+  if (count > 0 && offer.freeGames > 0) {
+    statusClass = "has-free";
+  } else if (offer.remaining === 1) {
+    statusClass = "almost-free";
+  }
+
+  box.classList.add(statusClass);
+
+  const freeText =
+    offer.freeGames > 0
+      ? `
+        <span class="zack-offer-free-count">
+          ${offer.freeGames} FREE
+        </span>
+      `
+      : "";
+
+  box.innerHTML = `
+
+    <div class="zack-offer-main">
+
+      <div class="zack-offer-icon">
+        🎁
+      </div>
+
+      <div class="zack-offer-content">
+
+        <div class="zack-offer-title-row">
+
+          <strong>
+            BUY 5, GET 1 FREE
+          </strong>
+
+          ${freeText}
+
+        </div>
+
+        <p class="zack-offer-message">
+          ${offer.message}
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="zack-offer-progress-wrap">
+
+      <div class="zack-offer-progress-top">
+
+        <span>
+          ${count === 0
+            ? "0 / 5 paid games"
+            : `${Math.min(count % 6, 5)} / 5 paid games`
+          }
+        </span>
+
+        ${
+          offer.freeGames > 0
+            ? `<span class="zack-offer-saved">
+                Saved ${offer.savings} DH
+              </span>`
+            : ""
+        }
+
+      </div>
+
+      <div class="zack-offer-progress">
+
+        <div
+          class="zack-offer-progress-fill"
+          style="width:${offer.progress}%"
+        ></div>
+
+      </div>
+
+    </div>
+
+
+    <div class="zack-offer-price">
+
+      <span>
+        ${GAME_PRICE} DH / game
+      </span>
+
+      ${
+        count > 0
+          ? `
+            <span>
+              ${offer.paidGames} paid
+              ${
+                offer.freeGames
+                  ? ` • ${offer.freeGames} free`
+                  : ""
+              }
+            </span>
+          `
+          : ""
+      }
+
+    </div>
+
+  `;
+
+
+  /*
+    Put the offer before the catalog.
+  */
+
+  const store =
+    document.getElementById("store");
+
+  if (
+    store &&
+    store.parentNode
+  ) {
+
+    store.parentNode.insertBefore(
+      box,
+      store
+    );
+
+  } else if (dom.grid) {
+
+    dom.grid.parentNode.insertBefore(
+      box,
+      dom.grid
+    );
+
+  }
+}
+
+
+/* =========================================================
    CART STORAGE
 ========================================================= */
 
@@ -159,7 +421,9 @@ function loadCart() {
   try {
 
     const saved =
-      localStorage.getItem(CART_KEY);
+      localStorage.getItem(
+        CART_KEY
+      );
 
     if (!saved) {
 
@@ -171,7 +435,9 @@ function loadCart() {
     const parsed =
       JSON.parse(saved);
 
-    if (Array.isArray(parsed)) {
+    if (
+      Array.isArray(parsed)
+    ) {
 
       state.selected =
         parsed.map(String);
@@ -192,7 +458,9 @@ function saveCart() {
 
     localStorage.setItem(
       CART_KEY,
-      JSON.stringify(state.selected)
+      JSON.stringify(
+        state.selected
+      )
     );
 
   } catch {
@@ -210,7 +478,9 @@ function saveCart() {
 function decodeHtml(value) {
 
   const element =
-    document.createElement("textarea");
+    document.createElement(
+      "textarea"
+    );
 
   element.innerHTML =
     value ?? "";
@@ -221,7 +491,9 @@ function decodeHtml(value) {
 
 function escapeHtml(value) {
 
-  return String(value ?? "")
+  return String(
+    value ?? ""
+  )
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
@@ -248,19 +520,25 @@ function normalizeTag(tag) {
 
   }
 
-  if (/^online$/i.test(cleaned)) {
+  if (
+    /^online$/i.test(cleaned)
+  ) {
 
     return "Online";
 
   }
 
-  if (/^denuvo$/i.test(cleaned)) {
+  if (
+    /^denuvo$/i.test(cleaned)
+  ) {
 
     return "Denuvo";
 
   }
 
-  if (/^rockstar$/i.test(cleaned)) {
+  if (
+    /^rockstar$/i.test(cleaned)
+  ) {
 
     return "Rockstar";
 
@@ -276,7 +554,10 @@ function normalizeTag(tag) {
    NORMALIZE GAME
 ========================================================= */
 
-function normalizeGame(game, index) {
+function normalizeGame(
+  game,
+  index
+) {
 
   const tags = [
     ...new Set(
@@ -306,9 +587,17 @@ function normalizeGame(game, index) {
 
     index,
 
+    appid:
+      String(
+        game.appid ??
+        game.id ??
+        index
+      ),
+
     title,
 
-    desc: description,
+    desc:
+      description,
 
     image:
       game.image_url ||
@@ -339,17 +628,21 @@ function normalizeGame(game, index) {
 
 function sortGames(list) {
 
-  const sorted = [...list];
+  const sorted =
+    [...list];
 
-  switch (state.sort) {
+  switch (
+    state.sort
+  ) {
 
     case "title-asc":
 
       return sorted.sort(
         (a, b) =>
-          a.title.localeCompare(b.title)
+          a.title.localeCompare(
+            b.title
+          )
       );
-
 
     case "release-oldest":
 
@@ -359,7 +652,6 @@ function sortGames(list) {
           (b.releaseTs || 0)
       );
 
-
     case "release-newest":
 
       return sorted.sort(
@@ -368,15 +660,17 @@ function sortGames(list) {
           (a.releaseTs || 0)
       );
 
-
     case "newest":
 
       return sorted.sort(
         (a, b) =>
-          new Date(b.createdAt || 0).getTime() -
-          new Date(a.createdAt || 0).getTime()
+          new Date(
+            b.createdAt || 0
+          ).getTime() -
+          new Date(
+            a.createdAt || 0
+          ).getTime()
       );
-
 
     case "featured":
 
@@ -395,60 +689,24 @@ function sortGames(list) {
 
 /* =========================================================
    IMAGES
-   IMPORTANT:
-   We DO NOT use fetch() here.
-   We directly assign the external URL to <img>.
 ========================================================= */
 
 function imageUrlFor(game) {
 
-  return (
-    game.image ||
-    PLACEHOLDER_IMAGE
-  );
+  return game.image;
 }
 
 
-function setImageSource(img) {
+function resolveImage(url) {
 
-  const url =
-    img.dataset.imageUrl || "";
-
-  if (!url) {
-
-    img.src =
-      PLACEHOLDER_IMAGE;
-
-    return;
-  }
-
-  img.onerror = function () {
-
-    /*
-      Prevent an infinite loop if the
-      placeholder itself ever fails.
-    */
-
-    img.onerror = null;
-
-    img.src =
-      PLACEHOLDER_IMAGE;
-  };
-
-  /*
-    Direct image loading.
-
-    NO fetch()
-    NO blob()
-    NO object URL
-    NO CORS issue from JavaScript
-  */
-
-  img.src = url;
+  return url ||
+    PLACEHOLDER_IMAGE;
 }
 
 
-function hydrateImages(scope = document) {
+function hydrateImages(
+  scope = document
+) {
 
   const images = [
     ...scope.querySelectorAll(
@@ -456,20 +714,47 @@ function hydrateImages(scope = document) {
     ),
   ];
 
-  images.forEach((img) => {
+  images.forEach(
+    (img) => {
 
-    if (
-      img.dataset.hydrated === "true"
-    ) {
+      if (
+        img.dataset.hydrated === "true"
+      ) {
 
-      return;
+        return;
+      }
+
+      img.dataset.hydrated =
+        "true";
+
+      const url =
+        img.dataset.imageUrl ||
+        "";
+
+      img.src =
+        resolveImage(url);
+
+      /*
+        If SteamGridDB blocks the image,
+        don't let the card break.
+      */
+
+      img.onerror = () => {
+
+        if (
+          img.src !==
+          PLACEHOLDER_IMAGE
+        ) {
+
+          img.src =
+            PLACEHOLDER_IMAGE;
+
+        }
+
+      };
+
     }
-
-    img.dataset.hydrated = "true";
-
-    setImageSource(img);
-
-  });
+  );
 }
 
 
@@ -498,7 +783,9 @@ function filterGames() {
 
         const matchesQuery =
           !query ||
-          game.searchText.includes(query);
+          game.searchText.includes(
+            query
+          );
 
         return (
           matchesFilter &&
@@ -528,7 +815,9 @@ function getPageCount(total) {
 function getPageSlice(list) {
 
   const totalPages =
-    getPageCount(list.length);
+    getPageCount(
+      list.length
+    );
 
   const currentPage =
     Math.min(
@@ -547,11 +836,8 @@ function getPageSlice(list) {
   return {
 
     currentPage,
-
     totalPages,
-
     start,
-
     end,
 
     items:
@@ -564,33 +850,35 @@ function getPageSlice(list) {
 
 
 /* =========================================================
-   SELECTED GAMES
+   CART
 ========================================================= */
 
 function selectedGames() {
 
   const selectedIds =
-    new Set(state.selected);
+    new Set(
+      state.selected
+    );
 
   return state.games.filter(
     (game) =>
       selectedIds.has(
-        String(game.appid)
+        String(
+          game.appid
+        )
       )
   );
 }
 
-
-/* =========================================================
-   CART UI
-========================================================= */
 
 function updateCartUI() {
 
   const count =
     state.selected.length;
 
-  if (dom.navCartCount) {
+  if (
+    dom.navCartCount
+  ) {
 
     dom.navCartCount.textContent =
       String(count);
@@ -617,14 +905,18 @@ function updateCartUI() {
 
   }
 
-  if (dom.stats.selected) {
+  if (
+    dom.stats.selected
+  ) {
 
     dom.stats.selected.textContent =
       String(count);
 
   }
 
-  if (dom.stats.selectedPanel) {
+  if (
+    dom.stats.selectedPanel
+  ) {
 
     dom.stats.selectedPanel.textContent =
       String(count);
@@ -637,10 +929,11 @@ function updateCartUI() {
    TOAST
 ========================================================= */
 
-function showToast(message) {
+function showToast(
+  message
+) {
 
   if (!dom.toast) {
-
     return;
   }
 
@@ -670,18 +963,25 @@ function showToast(message) {
 
 
 /* =========================================================
-   FEATURED GAMES
+   FEATURED
 ========================================================= */
 
-function renderFeatured(games) {
+function renderFeatured(
+  games
+) {
 
-  if (!dom.featuredStrip) {
+  if (
+    !dom.featuredStrip
+  ) {
 
     return;
   }
 
   const picks =
-    games.slice(0, 5);
+    games.slice(
+      0,
+      5
+    );
 
   dom.featuredStrip.innerHTML =
     picks
@@ -697,7 +997,9 @@ function renderFeatured(games) {
               data-image-url="${escapeHtml(
                 imageUrlFor(game)
               )}"
-              alt="${escapeHtml(game.title)}"
+              alt="${escapeHtml(
+                game.title
+              )}"
               loading="lazy"
             />
 
@@ -736,10 +1038,15 @@ function renderFeatured(games) {
    GAME CARD
 ========================================================= */
 
-function createCard(game, index) {
+function createCard(
+  game,
+  index
+) {
 
   const card =
-    document.createElement("article");
+    document.createElement(
+      "article"
+    );
 
   card.className =
     "shop-card";
@@ -751,7 +1058,9 @@ function createCard(game, index) {
 
   const isSelected =
     state.selected.includes(
-      String(game.appid)
+      String(
+        game.appid
+      )
     );
 
   if (isSelected) {
@@ -759,6 +1068,7 @@ function createCard(game, index) {
     card.classList.add(
       "is-selected"
     );
+
   }
 
   const tags =
@@ -777,9 +1087,7 @@ function createCard(game, index) {
 
   card.innerHTML = `
 
-    <div
-      class="shop-card-img-wrap"
-    >
+    <div class="shop-card-img-wrap">
 
       <img
         class="shop-card-img"
@@ -787,17 +1095,15 @@ function createCard(game, index) {
         data-image-url="${escapeHtml(
           imageUrlFor(game)
         )}"
-        alt="${escapeHtml(game.title)}"
+        alt="${escapeHtml(
+          game.title
+        )}"
         loading="lazy"
       />
 
-      <div
-        class="shop-card-overlay"
-      >
+      <div class="shop-card-overlay">
 
-        <span
-          class="shop-card-overlay-add"
-        >
+        <span class="shop-card-overlay-add">
 
           ${
             isSelected
@@ -812,9 +1118,7 @@ function createCard(game, index) {
       ${
         isSelected
           ? `
-            <div
-              class="shop-card-selected-mark"
-            >
+            <div class="shop-card-selected-mark">
               ✓
             </div>
           `
@@ -824,24 +1128,19 @@ function createCard(game, index) {
     </div>
 
 
-    <div
-      class="shop-card-body"
-    >
+    <div class="shop-card-body">
 
-      <div
-        class="shop-card-head"
-      >
+      <div class="shop-card-head">
 
         <div>
 
-          <h3
-            class="shop-card-name"
-          >
-            ${escapeHtml(game.title)}
+          <h3 class="shop-card-name">
+            ${escapeHtml(
+              game.title
+            )}
           </h3>
 
         </div>
-
 
         <button
           class="shop-card-toggle ${
@@ -850,7 +1149,9 @@ function createCard(game, index) {
               : ""
           }"
           type="button"
-          data-appid="${game.appid}"
+          data-appid="${escapeHtml(
+            game.appid
+          )}"
         >
 
           ${
@@ -864,18 +1165,14 @@ function createCard(game, index) {
       </div>
 
 
-      <div
-        class="shop-card-tags"
-      >
+      <div class="shop-card-tags">
 
         ${tagsMarkup}
 
       </div>
 
 
-      <p
-        class="shop-card-desc"
-      >
+      <p class="shop-card-desc">
 
         ${
           escapeHtml(
@@ -887,16 +1184,11 @@ function createCard(game, index) {
       </p>
 
 
-      <div
-        class="shop-card-foot"
-      >
+      <div class="shop-card-foot">
 
-        <span
-          class="shop-card-meta"
-        >
-          Steam game
+        <span class="shop-card-meta">
+          25 DH
         </span>
-
 
         <button
           class="shop-card-button ${
@@ -905,7 +1197,9 @@ function createCard(game, index) {
               : ""
           }"
           type="button"
-          data-appid="${game.appid}"
+          data-appid="${escapeHtml(
+            game.appid
+          )}"
         >
 
           ${
@@ -991,39 +1285,55 @@ function render() {
   );
 
 
-  /* =====================================================
-     STATS
-  ====================================================== */
+  /* STATS */
 
-  if (dom.stats.visible) {
+  if (
+    dom.stats.visible
+  ) {
 
     dom.stats.visible.textContent =
-      String(items.length);
+      String(
+        items.length
+      );
 
   }
 
-  if (dom.stats.visibleInline) {
+  if (
+    dom.stats.visibleInline
+  ) {
 
     dom.stats.visibleInline.textContent =
-      String(visibleGames.length);
+      String(
+        visibleGames.length
+      );
 
   }
 
-  if (dom.stats.total) {
+  if (
+    dom.stats.total
+  ) {
 
     dom.stats.total.textContent =
-      String(state.games.length);
+      String(
+        state.games.length
+      );
 
   }
 
-  if (dom.stats.totalPanel) {
+  if (
+    dom.stats.totalPanel
+  ) {
 
     dom.stats.totalPanel.textContent =
-      String(state.games.length);
+      String(
+        state.games.length
+      );
 
   }
 
-  if (dom.stats.pageRange) {
+  if (
+    dom.stats.pageRange
+  ) {
 
     dom.stats.pageRange.textContent =
       visibleGames.length
@@ -1032,67 +1342,105 @@ function render() {
             visibleGames.length
           )}`
         : "0-0";
+
   }
 
-  if (dom.stats.pageCurrent) {
+  if (
+    dom.stats.pageCurrent
+  ) {
 
     dom.stats.pageCurrent.textContent =
-      String(currentPage);
+      String(
+        currentPage
+      );
 
   }
 
-  if (dom.stats.pageCurrentTop) {
+  if (
+    dom.stats.pageCurrentTop
+  ) {
 
     dom.stats.pageCurrentTop.textContent =
-      String(currentPage);
+      String(
+        currentPage
+      );
 
   }
 
-  if (dom.stats.pageCurrentBottom) {
+  if (
+    dom.stats.pageCurrentBottom
+  ) {
 
     dom.stats.pageCurrentBottom.textContent =
-      String(currentPage);
+      String(
+        currentPage
+      );
 
   }
 
-  if (dom.stats.pageTotal) {
+  if (
+    dom.stats.pageTotal
+  ) {
 
     dom.stats.pageTotal.textContent =
-      String(totalPages);
+      String(
+        totalPages
+      );
 
   }
 
-  if (dom.stats.pageTotalTop) {
+  if (
+    dom.stats.pageTotalTop
+  ) {
 
     dom.stats.pageTotalTop.textContent =
-      String(totalPages);
+      String(
+        totalPages
+      );
 
   }
 
-  if (dom.stats.pageTotalBottom) {
+  if (
+    dom.stats.pageTotalBottom
+  ) {
 
     dom.stats.pageTotalBottom.textContent =
-      String(totalPages);
+      String(
+        totalPages
+      );
 
   }
 
   updateCartUI();
+
+  /*
+    IMPORTANT:
+    Update the offer after every render.
+  */
+
+  renderOfferBox();
 }
 
 
 /* =========================================================
-   TOGGLE CART
+   CART TOGGLE
 ========================================================= */
 
-function toggleSelection(appid) {
+function toggleSelection(
+  appid
+) {
 
   const key =
     String(appid);
 
   const index =
-    state.selected.indexOf(key);
+    state.selected.indexOf(
+      key
+    );
 
-  if (index >= 0) {
+  if (
+    index >= 0
+  ) {
 
     state.selected.splice(
       index,
@@ -1105,11 +1453,14 @@ function toggleSelection(appid) {
 
   } else {
 
-    state.selected.push(key);
+    state.selected.push(
+      key
+    );
 
     showToast(
       "Game added to cart"
     );
+
   }
 
   saveCart();
@@ -1125,15 +1476,14 @@ function toggleSelection(appid) {
 async function loadData() {
 
   const response =
-    await fetch(
-      "./games.json"
-    );
+    await fetch("./games.json");
 
   if (!response.ok) {
 
     throw new Error(
       `Failed to load catalog (${response.status})`
     );
+
   }
 
   const payload =
@@ -1144,11 +1494,14 @@ async function loadData() {
       ? payload
       : payload.games;
 
-  if (!Array.isArray(games)) {
+  if (
+    !Array.isArray(games)
+  ) {
 
     throw new Error(
       "Invalid games.json format"
     );
+
   }
 
   state.games =
@@ -1168,7 +1521,9 @@ async function loadData() {
    FILTER
 ========================================================= */
 
-function setActiveFilter(value) {
+function setActiveFilter(
+  value
+) {
 
   state.filter =
     value;
@@ -1195,9 +1550,6 @@ function setActiveFilter(value) {
 /* =========================================================
    EVENTS
 ========================================================= */
-
-
-/* FILTERS */
 
 dom.filterButtons.forEach(
   (button) => {
@@ -1272,7 +1624,6 @@ if (dom.grid) {
         );
 
       if (!button) {
-
         return;
       }
 
@@ -1318,6 +1669,7 @@ dom.pageButtons.forEach(
               totalPages,
               state.currentPage + 1
             );
+
         }
 
         render();
@@ -1344,21 +1696,15 @@ loadCart();
 
 updateCartUI();
 
-
 loadData()
   .catch(
     (error) => {
 
-      console.error(
-        "Zack4Games catalog error:",
-        error
-      );
+      console.error(error);
 
       dom.grid.innerHTML = `
 
-        <div
-          class="catalog-load-error"
-        >
+        <div class="catalog-load-error">
 
           <div>
             ⚠️
@@ -1385,5 +1731,6 @@ loadData()
 
       dom.empty.hidden =
         true;
+
     }
   );
