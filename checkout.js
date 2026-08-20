@@ -1,34 +1,87 @@
 const CART_KEY = "zack4games_cart";
 const whatsappNumber = "212605689797";
 
+
+/* =========================================================
+   PLACEHOLDER
+========================================================= */
+
 const PLACEHOLDER_IMAGE =
   "data:image/svg+xml;charset=utf-8," +
   encodeURIComponent(
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100">' +
-      '<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1">' +
-      '<stop stop-color="#191b20"/><stop offset="1" stop-color="#0b0c0f"/>' +
-      "</linearGradient></defs>" +
+      "<defs>" +
+        '<linearGradient id="g" x1="0" x2="1" y1="0" y2="1">' +
+          '<stop stop-color="#191b20"/>' +
+          '<stop offset="1" stop-color="#0b0c0f"/>' +
+        "</linearGradient>" +
+      "</defs>" +
       '<rect width="1600" height="1100" fill="url(#g)"/>' +
       '<text x="80" y="140" fill="#4f8ef7" font-family="Arial" font-size="52" font-weight="700">Zack4Games</text>' +
       "</svg>"
   );
+
+
+/* =========================================================
+   STATE
+========================================================= */
 
 const state = {
   games: [],
   selected: [],
 };
 
-const dom = {
-  items: document.getElementById("checkoutItems"),
-  empty: document.getElementById("checkoutEmpty"),
-  count: document.getElementById("checkoutCount"),
-  summaryCount: document.getElementById("summaryCount"),
-  summaryTotal: document.getElementById("summaryTotal"),
-  confirmButton: document.getElementById("confirmOrderBtn"),
 
-  modal: document.getElementById("confirmModal"),
-  modalGameList: document.getElementById("modalGameList"),
-  modalConfirm: document.getElementById("modalConfirmBtn"),
+/* =========================================================
+   DOM
+========================================================= */
+
+const dom = {
+
+  items:
+    document.getElementById(
+      "checkoutItems"
+    ),
+
+  empty:
+    document.getElementById(
+      "checkoutEmpty"
+    ),
+
+  count:
+    document.getElementById(
+      "checkoutCount"
+    ),
+
+  summaryCount:
+    document.getElementById(
+      "summaryCount"
+    ),
+
+  summaryTotal:
+    document.getElementById(
+      "summaryTotal"
+    ),
+
+  confirmButton:
+    document.getElementById(
+      "confirmOrderBtn"
+    ),
+
+  modal:
+    document.getElementById(
+      "confirmModal"
+    ),
+
+  modalGameList:
+    document.getElementById(
+      "modalGameList"
+    ),
+
+  modalConfirm:
+    document.getElementById(
+      "modalConfirmBtn"
+    ),
 };
 
 
@@ -37,34 +90,75 @@ const dom = {
 ========================================================= */
 
 function loadCart() {
+
   try {
-    const saved = localStorage.getItem(CART_KEY);
+
+    const saved =
+      localStorage.getItem(
+        CART_KEY
+      );
+
 
     if (!saved) {
+
       state.selected = [];
+
       return;
     }
 
-    const parsed = JSON.parse(saved);
 
-    if (Array.isArray(parsed)) {
-      state.selected = parsed.map(String);
+    const parsed =
+      JSON.parse(
+        saved
+      );
+
+
+    if (
+      Array.isArray(parsed)
+    ) {
+
+      state.selected =
+        parsed.map(String);
+
     } else {
+
       state.selected = [];
+
     }
 
   } catch (error) {
-    console.error("Failed to load cart:", error);
+
+    console.error(
+      "Failed to load cart:",
+      error
+    );
+
     state.selected = [];
+
   }
 }
 
 
+
 function saveCart() {
-  localStorage.setItem(
-    CART_KEY,
-    JSON.stringify(state.selected)
-  );
+
+  try {
+
+    localStorage.setItem(
+      CART_KEY,
+      JSON.stringify(
+        state.selected
+      )
+    );
+
+  } catch (error) {
+
+    console.error(
+      "Failed to save cart:",
+      error
+    );
+
+  }
 }
 
 
@@ -73,29 +167,78 @@ function saveCart() {
 ========================================================= */
 
 function decodeHtml(value) {
-  const element = document.createElement("textarea");
-  element.innerHTML = value ?? "";
+
+  const element =
+    document.createElement(
+      "textarea"
+    );
+
+
+  element.innerHTML =
+    value ?? "";
+
+
   return element.value;
 }
 
 
+
+function escapeHtml(value) {
+
+  return String(
+    value ?? ""
+  )
+    .replace(
+      /&/g,
+      "&amp;"
+    )
+    .replace(
+      /</g,
+      "&lt;"
+    )
+    .replace(
+      />/g,
+      "&gt;"
+    )
+    .replace(
+      /"/g,
+      "&quot;"
+    )
+    .replace(
+      /'/g,
+      "&#039;"
+    );
+}
+
+
+/* =========================================================
+   NORMALIZE GAME
+========================================================= */
+
 function normalizeGame(game) {
+
   return {
+
     ...game,
 
-    appid: String(game.appid),
+    appid:
+      String(
+        game.appid
+      ),
 
-    title: decodeHtml(
-      game.name ||
-      game.title ||
-      ""
-    ),
+    title:
+      decodeHtml(
+        game.name ||
+        game.title ||
+        ""
+      ),
 
-    desc: decodeHtml(
-      game.description ||
-      game.desc ||
-      ""
-    ),
+    desc:
+      decodeHtml(
+        game.description ||
+        game.desc ||
+        ""
+      ),
 
     image:
       game.image_url ||
@@ -103,62 +246,126 @@ function normalizeGame(game) {
       game.image ||
       "",
 
-    tags: Array.isArray(game.tags)
-      ? game.tags
-      : [],
+    tags:
+      Array.isArray(
+        game.tags
+      )
+        ? game.tags
+        : [],
+
   };
 }
 
 
-function imageUrlFor(game) {
-  if (!game.image) {
-    return "";
-  }
+/* =========================================================
+   IMAGE
+========================================================= */
 
-  return `/api/image?url=${encodeURIComponent(
-    game.image
-  )}`;
+/*
+  IMPORTANT:
+
+  We DO NOT use fetch() for images.
+
+  GitHub Pages cannot proxy SteamGridDB images
+  through /api/image.
+
+  We simply give the external URL directly
+  to the <img> element.
+*/
+
+function imageUrlFor(game) {
+
+  return (
+    game.image ||
+    PLACEHOLDER_IMAGE
+  );
+
 }
 
 
-function getSelectedGames() {
-  const ids = new Set(
-    state.selected.map(String)
+/*
+  Direct browser image loading.
+
+  If the external image fails, replace it
+  with our local placeholder.
+*/
+
+function setupImage(
+  img,
+  url
+) {
+
+  if (!url) {
+
+    img.src =
+      PLACEHOLDER_IMAGE;
+
+    return;
+
+  }
+
+
+  img.src = url;
+
+
+  img.addEventListener(
+    "error",
+    () => {
+
+      /*
+        Prevent an infinite loop if
+        the placeholder itself somehow fails.
+      */
+
+      if (
+        img.dataset.failed ===
+        "true"
+      ) {
+
+        return;
+
+      }
+
+
+      img.dataset.failed =
+        "true";
+
+
+      img.src =
+        PLACEHOLDER_IMAGE;
+
+    },
+    {
+      once: true,
+    }
   );
 
-  return state.games.filter((game) =>
-    ids.has(String(game.appid))
-  );
 }
 
 
 /* =========================================================
-   IMAGES
+   SELECTED GAMES
 ========================================================= */
 
-async function loadImage(img, url) {
-  if (!url) {
-    img.src = PLACEHOLDER_IMAGE;
-    return;
-  }
+function getSelectedGames() {
 
-  try {
-    const response = await fetch(url);
+  const ids =
+    new Set(
+      state.selected.map(
+        String
+      )
+    );
 
-    if (!response.ok) {
-      throw new Error(
-        `Image request failed: ${response.status}`
-      );
-    }
 
-    const blob = await response.blob();
+  return state.games.filter(
+    (game) =>
+      ids.has(
+        String(
+          game.appid
+        )
+      )
+  );
 
-    img.src = URL.createObjectURL(blob);
-
-  } catch (error) {
-    console.warn("Image could not be loaded:", error);
-    img.src = PLACEHOLDER_IMAGE;
-  }
 }
 
 
@@ -166,40 +373,67 @@ async function loadImage(img, url) {
    CART OPERATIONS
 ========================================================= */
 
-function removeGame(appid) {
-  state.selected = state.selected.filter(
-    (id) => String(id) !== String(appid)
-  );
+function removeGame(
+  appid
+) {
+
+  state.selected =
+    state.selected.filter(
+      (id) =>
+        String(id) !==
+        String(appid)
+    );
+
 
   saveCart();
+
   render();
+
 }
 
 
 /* =========================================================
-   RENDER CHECKOUT ITEM
+   CHECKOUT ITEM
 ========================================================= */
 
-function createCheckoutItem(game) {
-  const article = document.createElement("article");
+function createCheckoutItem(
+  game
+) {
 
-  article.className = "checkout-item";
+  const article =
+    document.createElement(
+      "article"
+    );
 
-  const tags = game.tags
-    .slice(0, 3)
-    .map(
-      (tag) =>
-        `<span class="checkout-item-tag">${tag}</span>`
-    )
-    .join("");
+
+  article.className =
+    "checkout-item";
+
+
+  const tags =
+    game.tags
+      .slice(
+        0,
+        3
+      )
+      .map(
+        (tag) =>
+          `<span class="checkout-item-tag">${escapeHtml(tag)}</span>`
+      )
+      .join("");
+
 
   article.innerHTML = `
+
     <div class="checkout-item-image">
+
       <img
         src="${PLACEHOLDER_IMAGE}"
-        alt="${game.title}"
+        alt="${escapeHtml(game.title)}"
       />
+
     </div>
+
 
     <div class="checkout-item-content">
 
@@ -212,44 +446,61 @@ function createCheckoutItem(game) {
           </p>
 
           <h3>
-            ${game.title}
+            ${escapeHtml(game.title)}
           </h3>
 
         </div>
 
+
         <button
           class="checkout-remove"
           type="button"
-          data-remove-id="${game.appid}"
-          aria-label="Remove ${game.title}"
+          data-remove-id="${escapeHtml(game.appid)}"
+          aria-label="Remove ${escapeHtml(game.title)}"
         >
           Remove
         </button>
 
       </div>
 
+
       <div class="checkout-item-tags">
+
         ${tags}
+
       </div>
 
+
       <p class="checkout-item-description">
+
         ${
-          game.desc ||
-          "Steam game available in the Zack4Games catalog."
+          escapeHtml(
+            game.desc ||
+            "Steam game available in the Zack4Games catalog."
+          )
         }
+
       </p>
 
     </div>
+
   `;
 
-  const image = article.querySelector("img");
 
-  loadImage(
+  const image =
+    article.querySelector(
+      "img"
+    );
+
+
+  setupImage(
     image,
     imageUrlFor(game)
   );
 
+
   return article;
+
 }
 
 
@@ -258,47 +509,106 @@ function createCheckoutItem(game) {
 ========================================================= */
 
 function render() {
-  const games = getSelectedGames();
-  const count = games.length;
 
-  if (count === 0) {
-    dom.items.innerHTML = "";
+  const games =
+    getSelectedGames();
 
-    dom.items.hidden = true;
-    dom.empty.hidden = false;
 
-    dom.confirmButton.disabled = true;
+  const count =
+    games.length;
 
-    dom.count.textContent = "0 games";
-    dom.summaryCount.textContent = "0";
-    dom.summaryTotal.textContent = "0";
+
+  /*
+    EMPTY CART
+  */
+
+  if (
+    count === 0
+  ) {
+
+    dom.items.innerHTML =
+      "";
+
+
+    dom.items.hidden =
+      true;
+
+
+    dom.empty.hidden =
+      false;
+
+
+    dom.confirmButton.disabled =
+      true;
+
+
+    dom.count.textContent =
+      "0 games";
+
+
+    dom.summaryCount.textContent =
+      "0";
+
+
+    dom.summaryTotal.textContent =
+      "0";
+
 
     return;
+
   }
 
-  dom.items.hidden = false;
-  dom.empty.hidden = true;
 
-  dom.confirmButton.disabled = false;
+  /*
+    CART HAS ITEMS
+  */
 
-  dom.items.innerHTML = "";
+  dom.items.hidden =
+    false;
 
-  games.forEach((game) => {
-    dom.items.appendChild(
-      createCheckoutItem(game)
-    );
-  });
+
+  dom.empty.hidden =
+    true;
+
+
+  dom.confirmButton.disabled =
+    false;
+
+
+  dom.items.innerHTML =
+    "";
+
+
+  games.forEach(
+    (game) => {
+
+      dom.items.appendChild(
+        createCheckoutItem(
+          game
+        )
+      );
+
+    }
+  );
+
 
   dom.count.textContent =
     count === 1
       ? "1 game"
       : `${count} games`;
 
+
   dom.summaryCount.textContent =
-    String(count);
+    String(
+      count
+    );
+
 
   dom.summaryTotal.textContent =
-    String(count);
+    String(
+      count
+    );
+
 }
 
 
@@ -307,43 +617,108 @@ function render() {
 ========================================================= */
 
 async function loadGames() {
-  try {
-    const response = await fetch("/api/games");
 
-    if (!response.ok) {
+  try {
+
+    /*
+      GitHub Pages:
+
+      CORRECT:
+      ./games.json
+
+      NOT:
+      /api/games
+    */
+
+    const response =
+      await fetch(
+        "./games.json"
+      );
+
+
+    if (
+      !response.ok
+    ) {
+
       throw new Error(
         `Catalog request failed (${response.status})`
       );
+
     }
 
-    const data = await response.json();
 
-    if (!Array.isArray(data)) {
+    const payload =
+      await response.json();
+
+
+    /*
+      Your games.json format is:
+
+      {
+        "games": [
+          ...
+        ]
+      }
+
+      But we also support a plain array.
+    */
+
+    const data =
+      Array.isArray(payload)
+        ? payload
+        : payload.games;
+
+
+    if (
+      !Array.isArray(data)
+    ) {
+
       throw new Error(
-        "Invalid catalog response."
+        "Invalid games.json format."
       );
+
     }
 
-    state.games = data.map(normalizeGame);
+
+    state.games =
+      data.map(
+        normalizeGame
+      );
+
 
     render();
 
   } catch (error) {
-    console.error(error);
 
-    dom.items.hidden = false;
-    dom.empty.hidden = true;
+    console.error(
+      "Catalog loading error:",
+      error
+    );
+
+
+    dom.items.hidden =
+      false;
+
+
+    dom.empty.hidden =
+      true;
+
 
     dom.items.innerHTML = `
+
       <div class="checkout-error">
 
         <h3>
           Unable to load your cart
         </h3>
 
+
         <p>
-          ${error.message}
+          ${escapeHtml(
+            error.message
+          )}
         </p>
+
 
         <a
           href="index.html"
@@ -353,10 +728,15 @@ async function loadGames() {
         </a>
 
       </div>
+
     `;
 
-    dom.confirmButton.disabled = true;
+
+    dom.confirmButton.disabled =
+      true;
+
   }
+
 }
 
 
@@ -365,17 +745,30 @@ async function loadGames() {
 ========================================================= */
 
 function buildWhatsappMessage() {
-  const games = getSelectedGames();
 
-  if (!games.length) {
+  const games =
+    getSelectedGames();
+
+
+  if (
+    !games.length
+  ) {
+
     return "";
+
   }
 
-  const titles = games
-    .map(
-      (game) => `- ${game.title}`
-    )
-    .join("\n");
+
+  const titles =
+    games
+      .map(
+        (game) =>
+          `- ${game.title}`
+      )
+      .join(
+        "\n"
+      );
+
 
   return (
     `Hello, I want these Steam games from Zack4Games:\n\n` +
@@ -383,6 +776,7 @@ function buildWhatsappMessage() {
     `Total games: ${games.length}\n\n` +
     `Please send me the details.`
   );
+
 }
 
 
@@ -391,55 +785,78 @@ function buildWhatsappMessage() {
 ========================================================= */
 
 function openModal() {
-  const games = getSelectedGames();
 
-  if (!games.length) {
+  const games =
+    getSelectedGames();
+
+
+  if (
+    !games.length
+  ) {
+
     return;
+
   }
 
-  dom.modalGameList.innerHTML = games
-    .map(
-      (game) => `
-        <div class="modal-game">
 
-          <span>
-            ${game.title}
-          </span>
+  dom.modalGameList.innerHTML =
+    games
+      .map(
+        (game) => `
 
-          <strong class="modal-game-check">
-            ✓
-          </strong>
+          <div class="modal-game">
 
-        </div>
-      `
-    )
-    .join("");
+            <span>
+              ${escapeHtml(
+                game.title
+              )}
+            </span>
 
-  /*
-    IMPORTANT:
-    We use the HTML hidden attribute.
-    We DO NOT use display:none in CSS.
-  */
+            <strong
+              class="modal-game-check"
+            >
+              ✓
+            </strong>
 
-  dom.modal.hidden = false;
+          </div>
+
+        `
+      )
+      .join("");
+
+
+  dom.modal.hidden =
+    false;
+
 
   document.body.classList.add(
     "modal-open"
   );
 
-  // Focus confirm button for accessibility
-  setTimeout(() => {
-    dom.modalConfirm.focus();
-  }, 50);
+
+  setTimeout(
+    () => {
+
+      dom.modalConfirm.focus();
+
+    },
+    50
+  );
+
 }
 
 
+
 function closeModal() {
-  dom.modal.hidden = true;
+
+  dom.modal.hidden =
+    true;
+
 
   document.body.classList.remove(
     "modal-open"
   );
+
 }
 
 
@@ -448,27 +865,33 @@ function closeModal() {
 ========================================================= */
 
 function confirmOrder() {
-  const message = buildWhatsappMessage();
 
-  if (!message) {
+  const message =
+    buildWhatsappMessage();
+
+
+  if (
+    !message
+  ) {
+
     return;
+
   }
+
 
   const url =
     `https://wa.me/${whatsappNumber}?text=` +
-    encodeURIComponent(message);
+    encodeURIComponent(
+      message
+    );
 
-  /*
-    Open WhatsApp.
-    On phones this normally opens the WhatsApp app.
-    On desktop it opens WhatsApp Web.
-  */
 
   window.open(
     url,
     "_blank",
     "noopener,noreferrer"
   );
+
 }
 
 
@@ -477,76 +900,94 @@ function confirmOrder() {
 ========================================================= */
 
 
-/* Remove game */
+/* REMOVE GAME */
 
 dom.items.addEventListener(
   "click",
   (event) => {
+
     const button =
       event.target.closest(
         "[data-remove-id]"
       );
 
+
     if (!button) {
+
       return;
+
     }
+
 
     removeGame(
       button.dataset.removeId
     );
+
   }
 );
 
 
-/* Main "Confirm order" button */
+/* CONFIRM ORDER */
 
 dom.confirmButton.addEventListener(
   "click",
   (event) => {
+
     event.preventDefault();
 
     openModal();
+
   }
 );
 
 
-/* Modal "Confirm & open WhatsApp" */
+/* MODAL CONFIRM */
 
 dom.modalConfirm.addEventListener(
   "click",
   (event) => {
+
     event.preventDefault();
 
     confirmOrder();
+
   }
 );
 
 
-/* Close modal */
+/* CLOSE MODAL */
 
 document
   .querySelectorAll(
     "[data-close-modal]"
   )
-  .forEach((element) => {
-    element.addEventListener(
-      "click",
-      closeModal
-    );
-  });
+  .forEach(
+    (element) => {
+
+      element.addEventListener(
+        "click",
+        closeModal
+      );
+
+    }
+  );
 
 
-/* ESC closes modal */
+/* ESC */
 
 document.addEventListener(
   "keydown",
   (event) => {
+
     if (
       event.key === "Escape" &&
       !dom.modal.hidden
     ) {
+
       closeModal();
+
     }
+
   }
 );
 
@@ -556,4 +997,5 @@ document.addEventListener(
 ========================================================= */
 
 loadCart();
+
 loadGames();
