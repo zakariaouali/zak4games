@@ -1,0 +1,3863 @@
+{
+  "games": [
+    {
+      "aliases": [
+        "007 first light",
+        "0fl"
+      ],
+      "appid": 3768760,
+      "batch_id": "2026-08-03T08:40:20.760970+00:00",
+      "created_at": "2026-08-03T08:40:20.760970+00:00",
+      "description": "Earn the Number. 007 First Light is a thrilling espionage action-adventure game from IO Interactive. Follow James Bond as a young, resourceful and sometimes reckless recruit in MI6's training programme, and discover an origin story of the world’s most famous spy.",
+      "gen_count": 0,
+      "id": 19,
+      "image_url": "https://cdn2.steamgriddb.com/grid/0165365fc0e3d11c4ee6492784221cbd.png",
+      "name": "007 First Light",
+      "orders_count": 18,
+      "price": 10,
+      "release_date": "May 26, 2026",
+      "release_ts": 1779753600,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "a plague tale innocence",
+        "pti"
+      ],
+      "appid": 752590,
+      "batch_id": "2026-08-03T09:00:17.905948+00:00",
+      "created_at": "2026-08-03T09:00:17.905948+00:00",
+      "description": "Follow the grim tale of young Amicia and her little brother Hugo, in a heartrending journey through the darkest hours of history.",
+      "gen_count": 0,
+      "id": 52,
+      "image_url": "https://cdn2.steamgriddb.com/grid/c57308dbc364628556b75e71d3093050.png",
+      "name": "A Plague Tale: Innocence",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2019-05-14",
+      "release_ts": 1557792000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "a plague tale requiem",
+        "ptr"
+      ],
+      "appid": 1182900,
+      "batch_id": "2026-08-03T09:00:18.615744+00:00",
+      "created_at": "2026-08-03T09:00:18.615744+00:00",
+      "description": "Embark on a heartrending journey into a brutal, breathtaking world, and discover the cost of saving those you love in a desperate struggle for survival. Strike from the shadows or unleash hell with a variety of weapons, tools and unearthly powers.",
+      "gen_count": 0,
+      "id": 53,
+      "image_url": "https://cdn2.steamgriddb.com/grid/d5334e318b8f9a348393f1a37b984064.png",
+      "name": "A Plague Tale: Requiem",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2022-10-17",
+      "release_ts": 1665964800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "a rats quest the way back home season 1",
+        "rqwbhs1"
+      ],
+      "appid": 1124420,
+      "batch_id": "2026-08-11T14:07:34.648591+00:00",
+      "created_at": "2026-08-11T14:07:34.650486+00:00",
+      "description": "Mat, a young rat, is willing to risk everything for love. Determined to reunite with Nat, a pet mouse, he secretly ventures to the upper floors of &quot;the Giants&quot; house. Longing for a new life on the &quot;Outside&quot;, Mat's actions and the dark secrets harbored by his commune put both their lives in danger.",
+      "gen_count": 0,
+      "id": 157,
+      "image_url": "https://cdn2.steamgriddb.com/grid/625b4de33c8796154ab283d4ee455768.png",
+      "name": "A Rat's Quest - The Way Back Home | Season 1",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2026-04-03",
+      "release_ts": 1775174400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "a way out"
+      ],
+      "appid": 1222700,
+      "batch_id": "2026-08-03T17:37:32.781502+00:00",
+      "created_at": "2026-08-03T17:37:32.783146+00:00",
+      "description": "A Way Out is an exclusively co-op adventure where you play the role of one of two prisoners making their daring escape from prison.",
+      "gen_count": 0,
+      "id": 119,
+      "image_url": "https://cdn2.steamgriddb.com/grid/1c8dcf919f8a604f3a488b0e4b0f1420.png",
+      "name": "A Way Out",
+      "orders_count": 19,
+      "price": 10,
+      "release_date": "2020-06-18",
+      "release_ts": 1592438400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "alan wake"
+      ],
+      "appid": 108710,
+      "batch_id": "2026-08-03T08:59:21.387445+00:00",
+      "created_at": "2026-08-03T08:59:21.387445+00:00",
+      "description": "A Dark Presence stalks the small town of Bright Falls, pushing Alan Wake to the brink of sanity in his fight to unravel the mystery and save his love.",
+      "gen_count": 0,
+      "id": 37,
+      "image_url": "https://cdn2.steamgriddb.com/grid/aae550cfa6974cf68a93c8309e5cc926.png",
+      "name": "Alan Wake",
+      "orders_count": 5,
+      "price": 10,
+      "release_date": "2012-02-16",
+      "release_ts": 1329350400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "among us"
+      ],
+      "appid": 945360,
+      "batch_id": "2026-08-03T11:16:52.594707+00:00",
+      "created_at": "2026-08-03T11:16:52.596096+00:00",
+      "description": "An online and local party game of teamwork and betrayal for 4-15 players...in space!",
+      "gen_count": 0,
+      "id": 88,
+      "image_url": "https://cdn2.steamgriddb.com/grid/75c0aa52af187c4cd20744efafa1c7c7.png",
+      "name": "Among Us",
+      "orders_count": 5,
+      "price": 10,
+      "release_date": "2018-11-16",
+      "release_ts": 1542326400,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "ark survival ascended",
+        "asa"
+      ],
+      "appid": 2399830,
+      "batch_id": "2026-08-03T11:16:56.447542+00:00",
+      "created_at": "2026-08-03T11:16:56.448708+00:00",
+      "description": "ARK is reimagined from the ground-up into the next-generation of video game technology with Unreal Engine 5! Form a tribe, tame &amp; breed hundreds of unique dinosaurs and primeval creatures, explore, craft, build, and fight your way to the top of the food-chain. Your new world awaits!",
+      "gen_count": 0,
+      "id": 92,
+      "image_url": "https://cdn2.steamgriddb.com/grid/b36bc2ba21baa79340faaf7dfabae66d.jpg",
+      "name": "ARK: Survival Ascended",
+      "orders_count": 16,
+      "price": 10,
+      "release_date": "Oct 25, 2023",
+      "release_ts": 1698192000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "ac2",
+        "assassins creed 2",
+        "assassins creed ii"
+      ],
+      "appid": 33230,
+      "batch_id": "2026-08-03T11:52:49.763542+00:00",
+      "created_at": "2026-08-03T11:52:49.765314+00:00",
+      "description": "An epic story of family, vengeance and conspiracy set in the pristine, yet brutal, backdrop of a Renaissance Italy. New low price!",
+      "gen_count": 0,
+      "id": 99,
+      "image_url": "https://cdn2.steamgriddb.com/grid/a5ba7a5076ca059bb1741d8b8f1e9c78.png",
+      "name": "Assassin's Creed 2",
+      "orders_count": 7,
+      "price": 10,
+      "release_date": "2010-03-09",
+      "release_ts": 1268092800,
+      "tags": [
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "acbfr",
+        "assassins creed black flag resynced"
+      ],
+      "appid": 3751950,
+      "batch_id": "2026-08-16T13:28:10.925716+00:00",
+      "created_at": "2026-08-16T13:28:10.927219+00:00",
+      "description": "The iconic solo pirate adventure returns. Sail the Caribbean as Edward Kenway during the Golden Age of Piracy in this faithfully enhanced remake featuring stunning visuals, upgraded gameplay, and new content.",
+      "gen_count": 0,
+      "id": 179,
+      "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751950/9b046115b1663a4be2b252712328e4f6c162da68/header.jpg?t=1786449132",
+      "name": "Assassin's Creed Black Flag Resynced",
+      "orders_count": 8,
+      "price": 10,
+      "release_date": "2026-07-09",
+      "release_ts": 1783555200,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "acm",
+        "assassins creed mirage"
+      ],
+      "appid": 3035570,
+      "batch_id": "2026-08-03T09:09:58.453640+00:00",
+      "created_at": "2026-08-03T09:09:58.454630+00:00",
+      "description": "Become a deadly Master Assassin in this action-adventure game. Explore the streets of ninth-century Baghdad through the eyes of Basim. Take down your targets while seeking justice as part of the Hidden Ones.",
+      "gen_count": 0,
+      "id": 80,
+      "image_url": "https://cdn2.steamgriddb.com/grid/b1dba97a08321825ef86da13f4dede38.png",
+      "name": "Assassin's Creed Mirage",
+      "orders_count": 34,
+      "price": 10,
+      "release_date": "2024-10-17",
+      "release_ts": 1729123200,
+      "tags": [
+        "denuvo",
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "ac valhalla",
+        "acv",
+        "assassins creed valhalla"
+      ],
+      "appid": 2208920,
+      "batch_id": "2026-08-03T11:52:50.779906+00:00",
+      "created_at": "2026-08-03T11:52:50.780743+00:00",
+      "description": "Assassin’s Creed Valhalla is an action-adventure game in which you are a Viking warrior raised on tales of battle and glory. Explore a dynamic open world set in England’s Dark Ages. Raid your enemies and grow your settlement to earn your place among the gods in Valhalla.",
+      "gen_count": 0,
+      "id": 100,
+      "image_url": "https://cdn2.steamgriddb.com/grid/6cacfe3068bc0e3c6db10b85dbb18b06.png",
+      "name": "Assassin's Creed Valhalla",
+      "orders_count": 9,
+      "price": 10,
+      "release_date": "2022-12-06",
+      "release_ts": 1670284800,
+      "tags": [
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "ac odyssey",
+        "aco",
+        "assassins creed odyssey"
+      ],
+      "appid": 812140,
+      "batch_id": "2026-08-03T11:52:51.621067+00:00",
+      "created_at": "2026-08-03T11:52:51.622016+00:00",
+      "description": "In this action-adventure game, set sail for Ancient Greece to alter its fate. Fight in visceral battles on land and sea, shape your destiny from outcast to legend, and uncover secrets of your past.",
+      "gen_count": 0,
+      "id": 101,
+      "image_url": "https://cdn2.steamgriddb.com/grid/0729480724847e6fde22501c8360f5af.png",
+      "name": "Assassin's Creed® Odyssey",
+      "orders_count": 7,
+      "price": 10,
+      "release_date": "2018-10-05",
+      "release_ts": 1538697600,
+      "tags": [
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "ac origins",
+        "aco",
+        "assassins creed mirrage",
+        "assassins creed origins"
+      ],
+      "appid": 582160,
+      "batch_id": "2026-08-03T11:52:52.531613+00:00",
+      "created_at": "2026-08-03T11:52:52.532545+00:00",
+      "description": "Explore Ancient Egypt in this action-adventure game. Battle powerful enemies, unveil conspiracies, and discover the origin story of the Assassin’s Brotherhood.",
+      "gen_count": 0,
+      "id": 102,
+      "image_url": "https://cdn2.steamgriddb.com/grid/be0bbb0f90bc9a8c1124eb992bae98f9.png",
+      "name": "Assassin's Creed® Origins",
+      "orders_count": 9,
+      "price": 10,
+      "release_date": "2017-10-26",
+      "release_ts": 1508976000,
+      "tags": [
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "acr",
+        "assassins creed revelations"
+      ],
+      "appid": 201870,
+      "batch_id": "2026-08-03T11:52:53.407262+00:00",
+      "created_at": "2026-08-03T11:52:53.408287+00:00",
+      "description": "Ezio Auditore walks in the footsteps of the legendary mentor Altair, on a dangerous journey of discovery and revelation.",
+      "gen_count": 0,
+      "id": 103,
+      "image_url": "https://cdn2.steamgriddb.com/grid/480262a8c8a59b699e77de6ad8bb0001.png",
+      "name": "Assassin's Creed® Revelations",
+      "orders_count": 6,
+      "price": 10,
+      "release_date": "2011-11-29",
+      "release_ts": 1322524800,
+      "tags": [
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "acs",
+        "assassins creed syndicate"
+      ],
+      "appid": 368500,
+      "batch_id": "2026-08-03T11:52:54.226555+00:00",
+      "created_at": "2026-08-03T11:52:54.227428+00:00",
+      "description": "London, 1868. Lead your underworld organization in the midst of the Industrial Revolution to break the corrupt stranglehold on the city in a visceral adventure filled with action, intrigue, and brutal combat.",
+      "gen_count": 0,
+      "id": 104,
+      "image_url": "https://cdn2.steamgriddb.com/grid/928d86171c65a039d2eb1789fd1bf49f.png",
+      "name": "Assassin's Creed® Syndicate",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "2015-11-18",
+      "release_ts": 1447804800,
+      "tags": [
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "acu",
+        "assassins creed unity"
+      ],
+      "appid": 289650,
+      "batch_id": "2026-08-03T11:52:55.023500+00:00",
+      "created_at": "2026-08-03T11:52:55.024441+00:00",
+      "description": "Paris, 1789. In this action-adventure game, experience the French Revolution through the eyes of Arno Dorian. Become an Assassin and expose the true powers behind the Revolution for the fate of a nation.",
+      "gen_count": 0,
+      "id": 105,
+      "image_url": "https://cdn2.steamgriddb.com/grid/78cb7fa4cd7b891a867134cf4885e1f5.png",
+      "name": "Assassin's Creed® Unity",
+      "orders_count": 7,
+      "price": 10,
+      "release_date": "2014-11-11",
+      "release_ts": 1415664000,
+      "tags": [
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "acs",
+        "assasin creed shadows",
+        "assassins creed shadows"
+      ],
+      "appid": 3159330,
+      "batch_id": "2026-08-03T08:40:21.046836+00:00",
+      "created_at": "2026-08-03T08:40:21.046836+00:00",
+      "description": "Experience an epic action-adventure story set in feudal Japan! Become a lethal shinobi assassin and powerful legendary samurai as you explore a beautiful open world in a time of chaos.",
+      "gen_count": 0,
+      "id": 20,
+      "image_url": "https://cdn2.steamgriddb.com/grid/749967fa69170bb23c768a805f9f7ab1.png",
+      "name": "Assassin’s Creed Shadows",
+      "orders_count": 13,
+      "price": 10,
+      "release_date": "Mar 19, 2025",
+      "release_ts": 1742342400,
+      "tags": [
+        "denuvo",
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "assetto corsa"
+      ],
+      "appid": 244210,
+      "batch_id": "2026-08-04T23:27:40.913288+00:00",
+      "created_at": "2026-08-04T23:27:40.914559+00:00",
+      "description": "Assetto Corsa v1.16 introduces the new &quot;Laguna Seca&quot; laser-scanned track, 7 new cars among which the eagerly awaited Alfa Romeo Giulia Quadrifoglio! Check the changelog for further info!",
+      "gen_count": 0,
+      "id": 131,
+      "image_url": "https://cdn2.steamgriddb.com/grid/43bf67f752b620ea7bcaafa1a4e8ec0d.png",
+      "name": "Assetto Corsa",
+      "orders_count": 5,
+      "price": 10,
+      "release_date": "2014-12-19",
+      "release_ts": 1418947200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "ace",
+        "assetto corsa evo"
+      ],
+      "appid": 3058630,
+      "batch_id": "2026-08-19T17:09:31.962487+00:00",
+      "created_at": "2026-08-19T17:09:31.963531+00:00",
+      "description": "Assetto Corsa EVO redefines the realism and features of one of the most popular multiplatform driving simulations ever developed. Featuring cars and tracks from different classes spanning across years of motoring history.",
+      "gen_count": 0,
+      "id": 201,
+      "image_url": "https://cdn2.steamgriddb.com/grid/fe85d09cd06ce97946bf6d51dcf05e79.png",
+      "name": "Assetto Corsa EVO",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2025-01-16",
+      "release_ts": 1736985600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "acr",
+        "assetto corsa rally"
+      ],
+      "appid": 3917090,
+      "batch_id": "2026-08-19T17:09:19.058048+00:00",
+      "created_at": "2026-08-19T17:09:19.058990+00:00",
+      "description": "Assetto Corsa Rally is a high-fidelity rally sim built for precision and challenge. With 3D laser-scanned stages and cars, professional co-driver support, and dynamic conditions, it delivers a demanding, immersive experience where every second behind the wheel counts.",
+      "gen_count": 0,
+      "id": 200,
+      "image_url": "https://cdn2.steamgriddb.com/grid/7e7cb242c56114fd0062e2d16ebc64c9.png",
+      "name": "Assetto Corsa Rally",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2025-11-13",
+      "release_ts": 1762992000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "atomic heart"
+      ],
+      "appid": 668580,
+      "batch_id": "2026-08-03T09:01:30.595228+00:00",
+      "created_at": "2026-08-03T09:01:30.595228+00:00",
+      "description": "In a mad and sublime utopian world, take part in explosive encounters. Adapt your fighting style to each opponent, use your environment and upgrade your equipment to fulfill your mission. If you want to reach the truth, you'll have to pay in blood.",
+      "gen_count": 0,
+      "id": 67,
+      "image_url": "https://cdn2.steamgriddb.com/grid/522aee16e8142a2f17e22549c3830313.png",
+      "name": "Atomic Heart",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2023-02-20",
+      "release_ts": 1676851200,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "afp",
+        "avatar frontiers of pandora"
+      ],
+      "appid": 2840770,
+      "batch_id": "2026-08-05T02:41:57.557435+00:00",
+      "created_at": "2026-08-05T02:41:57.558945+00:00",
+      "description": "Avatar: Frontiers of Pandora™ is a third and first-person action-adventure game set in the Western Frontier. Reconnect with your lost heritage and discover what it means to be Na'vi.",
+      "gen_count": 0,
+      "id": 132,
+      "image_url": "https://cdn2.steamgriddb.com/grid/97d6241ad0aa309e40e0956d6d9472ee.png",
+      "name": "Avatar: Frontiers of Pandora™",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2024-06-17",
+      "release_ts": 1718582400,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "balatro"
+      ],
+      "appid": 2379780,
+      "batch_id": "2026-08-03T09:01:32.177091+00:00",
+      "created_at": "2026-08-03T09:01:32.177091+00:00",
+      "description": "The poker roguelike. Balatro is a hypnotically satisfying deckbuilder where you play illegal poker hands, discover game-changing jokers, and trigger adrenaline-pumping, outrageous combos.",
+      "gen_count": 0,
+      "id": 69,
+      "image_url": "https://cdn2.steamgriddb.com/grid/c3f52ca23a2f66336f824a1b05a97090.png",
+      "name": "Balatro",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2024-02-20",
+      "release_ts": 1708387200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "baldurs gate 3",
+        "bg3"
+      ],
+      "appid": 1086940,
+      "batch_id": "2026-08-18T13:17:19.793512+00:00",
+      "created_at": "2026-08-18T13:17:19.794480+00:00",
+      "description": "Baldur’s Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons &amp; Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power.",
+      "gen_count": 0,
+      "id": 193,
+      "image_url": "https://cdn2.steamgriddb.com/grid/6c9d3b5601e73160a1230e0572523ba2.png",
+      "name": "Baldur's Gate 3",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2023-08-03",
+      "release_ts": 1691020800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "banker simulator"
+      ],
+      "appid": 3393240,
+      "batch_id": "2026-08-03T08:40:23.450935+00:00",
+      "created_at": "2026-08-03T08:40:23.450935+00:00",
+      "description": "Banker Simulator is a single-player game where you revive a bankrupt bank. With active and passive (idle) gameplay, make strategic decisions to grow your bank, satisfy customers, and tackle financial crises.",
+      "gen_count": 0,
+      "id": 27,
+      "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3393240/cddf1d364b55c867151f3998097bb8fe0ccd88dd/header.jpg?t=1784304089",
+      "name": "Banker Simulator",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2026-07-17",
+      "release_ts": 1784246400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "big walk"
+      ],
+      "appid": 1478500,
+      "batch_id": "2026-08-05T04:05:25.830845+00:00",
+      "created_at": "2026-08-05T04:05:25.832458+00:00",
+      "description": "Hang out and get lost with close friends in a big world. A cooperative online walker-talker from the creators of Untitled Goose Game.",
+      "gen_count": 0,
+      "id": 136,
+      "image_url": "https://cdn2.steamgriddb.com/grid/3ecf8c9dc64fbacdc1b45037a8ba92dd.png",
+      "name": "Big Walk",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2026-08-04",
+      "release_ts": 1785801600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "6 black myth wukong",
+        "black myth wukong",
+        "bmw"
+      ],
+      "appid": 2358720,
+      "batch_id": "2026-08-03T08:40:14.567803+00:00",
+      "created_at": "2026-08-03T08:40:14.567803+00:00",
+      "description": "Black Myth: Wukong is an action RPG rooted in Chinese mythology. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past.",
+      "gen_count": 0,
+      "id": 4,
+      "image_url": "https://cdn2.steamgriddb.com/grid/222c0c2328e2bc68fef0d2b8a5553278.png",
+      "name": "Black Myth: Wukong",
+      "orders_count": 38,
+      "price": 10,
+      "release_date": "2024-08-19",
+      "release_ts": 1724025600,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "bodycam"
+      ],
+      "appid": 2406770,
+      "batch_id": "2026-08-14T17:24:51.778694+00:00",
+      "created_at": "2026-08-14T17:24:51.779949+00:00",
+      "description": "Bodycam is the first tactical multiplayer FPS with a true body-camera view in Unreal Engine 5. Close-quarters combats feel raw and loud. Every angle, callout, and bullet matters. Play Deathmatch, Team Deathmatch, and Wingman on photoreal maps where teamplay, tactics, and clutch skill are key.",
+      "gen_count": 0,
+      "id": 170,
+      "image_url": "https://cdn2.steamgriddb.com/grid/6acdda39017a67d21bdb38014e91332f.png",
+      "name": "Bodycam",
+      "orders_count": 9,
+      "price": 10,
+      "release_date": "2024-06-07",
+      "release_ts": 1717718400,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "buckshot roulette",
+        "buckshot roullette"
+      ],
+      "appid": 2835570,
+      "batch_id": "2026-08-03T11:16:58.624648+00:00",
+      "created_at": "2026-08-03T11:16:58.625683+00:00",
+      "description": "Play Russian roulette with a 12-gauge shotgun. Four enter. One leaves. Roll the dice with your life. Good luck!",
+      "gen_count": 0,
+      "id": 94,
+      "image_url": "https://cdn2.steamgriddb.com/grid/7b2e0c30c3c895d61d93983ec2a84008.png",
+      "name": "Buckshot Roulette",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "Apr 4, 2024",
+      "release_ts": 1712188800,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "burglin gnomes"
+      ],
+      "appid": 3844970,
+      "batch_id": "2026-08-09T14:08:18.734864+00:00",
+      "created_at": "2026-08-09T14:08:18.736866+00:00",
+      "description": "An online Co-op game about breaking into houses and causing havoc as a tiny gnome. Avoid danger, repurpose stolen household items, and complete tasks to meet the High-Gnome’s demands. Craft equipment and upgrade your home to make your missions easier and more successful.",
+      "gen_count": 0,
+      "id": 155,
+      "image_url": "https://cdn2.steamgriddb.com/icon/b790dce90e98e0e4a03f898d38e3e5da.ico",
+      "name": "Burglin' Gnomes",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2026-06-10",
+      "release_ts": 1781049600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "call of duty 4 modern warfare 2007",
+        "cd4mw2"
+      ],
+      "appid": 7940,
+      "batch_id": "2026-08-03T12:04:17.746688+00:00",
+      "created_at": "2026-08-03T12:04:17.749568+00:00",
+      "description": "The new action-thriller from the award-winning team at Infinity Ward, the creators of the Call of Duty® series, delivers the most intense and cinematic action experience ever. Call of Duty 4: Modern Warfare arms gamers with an arsenal of advanced and powerful modern day firepower and transports them to the most treacherous hotspots...",
+      "gen_count": 0,
+      "id": 108,
+      "image_url": "https://cdn2.steamgriddb.com/grid/a7572e51d89da5dcfc00ce1c2e20e86c.png",
+      "name": "Call of Duty® 4: Modern Warfare® (2007)",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2007-11-12",
+      "release_ts": 1194825600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty black ops",
+        "cdbo"
+      ],
+      "appid": 42700,
+      "batch_id": "2026-08-03T12:04:18.589936+00:00",
+      "created_at": "2026-08-03T12:04:18.591586+00:00",
+      "description": "The biggest first-person action series of all time and the follow-up to critically acclaimed Call of Duty®: Modern Warfare 2 returns with Call of Duty®: Black Ops.",
+      "gen_count": 0,
+      "id": 109,
+      "image_url": "https://cdn2.steamgriddb.com/grid/93935dd523dab5829eb26461055fbeeb.png",
+      "name": "Call of Duty®: Black Ops",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2010-11-09",
+      "release_ts": 1289260800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty black ops cold war",
+        "cdbocw"
+      ],
+      "appid": 1985810,
+      "batch_id": "2026-08-03T09:00:29.131672+00:00",
+      "created_at": "2026-08-03T09:00:29.131672+00:00",
+      "description": "Black Ops Cold War, the direct sequel to Call of Duty®: Black Ops, will drop fans into the depths of the Cold War’s volatile geopolitical battle of the early 1980s.",
+      "gen_count": 0,
+      "id": 56,
+      "image_url": "https://cdn2.steamgriddb.com/grid/d068c993124185d91f92a2ebf384d1b6.png",
+      "name": "Call of Duty®: Black Ops Cold War",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "Mar 8, 2023",
+      "release_ts": 1678233600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty black ops ii",
+        "cdbo",
+        "cdboi"
+      ],
+      "appid": 202970,
+      "batch_id": "2026-08-03T12:04:19.621891+00:00",
+      "created_at": "2026-08-03T12:04:19.623817+00:00",
+      "description": "Pushing the boundaries of what fans have come to expect from the record-setting entertainment franchise, Call of Duty®: Black Ops II propels players into a near future Cold War",
+      "gen_count": 0,
+      "id": 110,
+      "image_url": "https://cdn2.steamgriddb.com/grid/6986d34e841be45852a878ec218ec5c2.png",
+      "name": "Call of Duty®: Black Ops II",
+      "orders_count": 6,
+      "price": 10,
+      "release_date": "2012-11-12",
+      "release_ts": 1352678400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty black ops 3",
+        "call of duty black ops iii",
+        "cdbo",
+        "cdboi"
+      ],
+      "appid": 311210,
+      "batch_id": "2026-08-03T09:01:33.947195+00:00",
+      "created_at": "2026-08-03T09:01:33.947195+00:00",
+      "description": "Call of Duty®: Black Ops III Zombies Chronicles Edition includes the full base game plus the Zombies Chronicles content expansion.",
+      "gen_count": 0,
+      "id": 71,
+      "image_url": "https://cdn2.steamgriddb.com/grid/f950b287fd8a3aef797b08b45346e579.png",
+      "name": "Call of Duty®: Black Ops III",
+      "orders_count": 17,
+      "price": 10,
+      "release_date": "2015-11-05",
+      "release_ts": 1446681600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty ghosts",
+        "cdg"
+      ],
+      "appid": 209160,
+      "batch_id": "2026-08-03T12:02:49.372938+00:00",
+      "created_at": "2026-08-03T12:02:49.374554+00:00",
+      "description": "Outnumbered and outgunned, but not outmatched.Call of Duty®: Ghosts is an extraordinary step forward for one of the largest entertainment franchises of all-time. This new chapter in the Call of Duty® franchise features a new dynamic where players are on the side of a crippled nation fighting not for freedom, or liberty, but simply to...",
+      "gen_count": 0,
+      "id": 107,
+      "image_url": "https://cdn2.steamgriddb.com/grid/194d1e857ccb2b389f5d8c240c58c754.png",
+      "name": "Call of Duty®: Ghosts",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "2014-03-25",
+      "release_ts": 1395705600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty infinite warfare",
+        "cdiw"
+      ],
+      "appid": 292730,
+      "batch_id": "2026-08-03T12:04:20.730381+00:00",
+      "created_at": "2026-08-03T12:04:20.732742+00:00",
+      "description": "Infinite Warfare delivers three unique game modes: Campaign, Multiplayer, and Zombies.",
+      "gen_count": 0,
+      "id": 111,
+      "image_url": "https://cdn2.steamgriddb.com/grid/b3f7721e4fdd224885d290d6f6f655d2.png",
+      "name": "Call of Duty®: Infinite Warfare",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2016-11-03",
+      "release_ts": 1478131200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty modern warfare",
+        "cdmw"
+      ],
+      "appid": 2000950,
+      "batch_id": "2026-08-03T08:40:16.379393+00:00",
+      "created_at": "2026-08-03T08:40:16.379393+00:00",
+      "description": "Experience a visceral Campaign or assemble your team in the ultimate online playground with multiple Special Ops challenges and a mix of Multiplayer maps and modes.",
+      "gen_count": 0,
+      "id": 8,
+      "image_url": "https://cdn2.steamgriddb.com/grid/28c399dadd9b1e40116a17d996f80684.png",
+      "name": "Call of Duty®: Modern Warfare®",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2023-03-08",
+      "release_ts": 1678233600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty modern warfare 2 2009",
+        "cdmw22"
+      ],
+      "appid": 10180,
+      "batch_id": "2026-08-03T12:04:21.762515+00:00",
+      "created_at": "2026-08-03T12:04:21.764184+00:00",
+      "description": "The most-anticipated game of the year and the sequel to the best-selling first-person action game of all time, Modern Warfare 2 continues the gripping and heart-racing action as players face off against a new threat dedicated to bringing the world to the brink of collapse.",
+      "gen_count": 0,
+      "id": 112,
+      "image_url": "https://cdn2.steamgriddb.com/grid/e1ea274b18a0e5bde67da64ea2010562.png",
+      "name": "Call of Duty®: Modern Warfare® 2 (2009)",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2009-11-11",
+      "release_ts": 1257897600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty modern warfare 3 2011",
+        "cdmw32"
+      ],
+      "appid": 115300,
+      "batch_id": "2026-08-03T12:04:55.488332+00:00",
+      "created_at": "2026-08-03T12:04:55.489199+00:00",
+      "description": "The best-selling first-person action series of all-time returns with an epic sequel to the multiple GOTY award winner Call of Duty®: Modern Warfare® 2",
+      "gen_count": 0,
+      "id": 115,
+      "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/42680/header.jpg?t=1782415611",
+      "name": "Call of Duty®: Modern Warfare® 3 (2011)",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2011-11-08",
+      "release_ts": 1320710400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty modern warfare ii",
+        "cdmw",
+        "cdmwi"
+      ],
+      "appid": 3595230,
+      "batch_id": "2026-08-03T10:17:16.778854+00:00",
+      "created_at": "2026-08-03T10:17:16.778854+00:00",
+      "description": "Call of Duty®: Modern Warfare® II drops players into an unprecedented global conflict that features the iconic Operators of Task Force 141.",
+      "gen_count": 0,
+      "id": 83,
+      "image_url": "https://cdn2.steamgriddb.com/grid/6480670292da1f6fd1906b03ccadfc52.png",
+      "name": "Call of Duty®: Modern Warfare® II",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "Oct 22, 2022",
+      "release_ts": 1666396800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty modern warfare iii",
+        "cdmw",
+        "cdmwi"
+      ],
+      "appid": 3595270,
+      "batch_id": "2026-08-18T17:10:54.838030+00:00",
+      "created_at": "2026-08-18T17:10:54.840056+00:00",
+      "description": "In the direct sequel to the record-breaking Call of Duty®: Modern Warfare® II, Captain Price and Task Force 141 face off against the ultimate threat.",
+      "gen_count": 0,
+      "id": 198,
+      "image_url": "https://cdn2.steamgriddb.com/grid/5c95d7bf19fdbc4c74b99f8aa68e040c.png",
+      "name": "Call of Duty®: Modern Warfare® III",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2023-11-10",
+      "release_ts": 1699574400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty vanguard",
+        "cdv"
+      ],
+      "appid": 1985820,
+      "batch_id": "2026-08-03T12:04:22.814627+00:00",
+      "created_at": "2026-08-03T12:04:22.816581+00:00",
+      "description": "Call of Duty®: Vanguard includes a deeply engaging single player Campaign, a massive Multiplayer offering featuring over 20 maps including 16 built for core Multiplayer and an exciting new Zombies experience developed by Treyarch.",
+      "gen_count": 0,
+      "id": 113,
+      "image_url": "https://cdn2.steamgriddb.com/grid/965eec6b363a698eaef2f028ef441b7c.png",
+      "name": "Call of Duty®: Vanguard",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2023-03-08",
+      "release_ts": 1678233600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "call of duty wwii",
+        "cdw"
+      ],
+      "appid": 476600,
+      "batch_id": "2026-08-03T12:04:23.615890+00:00",
+      "created_at": "2026-08-03T12:04:23.617614+00:00",
+      "description": "Call of Duty®: WWII - a breathtaking experience that redefines World War II.",
+      "gen_count": 0,
+      "id": 114,
+      "image_url": "https://cdn2.steamgriddb.com/grid/294bd6dcca044b093378b82bc098dc76.png",
+      "name": "Call of Duty®: WWII",
+      "orders_count": 8,
+      "price": 10,
+      "release_date": "2017-11-02",
+      "release_ts": 1509580800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "car for sale simulator 2023",
+        "css2"
+      ],
+      "appid": 2248760,
+      "batch_id": "2026-08-09T23:19:30.507044+00:00",
+      "created_at": "2026-08-09T23:19:30.508692+00:00",
+      "description": "Car For Sale Simulator 2023 - Developed for car enthusiasts, grow your own car sales business by buying and selling different car models. Drive the purchased cars as you wish, repair them, modify them, and sell them to customers at affordable prices.",
+      "gen_count": 0,
+      "id": 156,
+      "image_url": "https://cdn2.steamgriddb.com/grid/66a4060b34b16b452b49ffc8e8953035.jpg",
+      "name": "Car For Sale Simulator 2023",
+      "orders_count": 9,
+      "price": 10,
+      "release_date": "2024-11-01",
+      "release_ts": 1730419200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "carrier command 2",
+        "cc2"
+      ],
+      "appid": 1489630,
+      "batch_id": "2026-08-14T14:37:25.349956+00:00",
+      "created_at": "2026-08-14T14:37:25.351387+00:00",
+      "description": "Carrier Command 2 is the real-time strategy game that puts you in command of a futuristic carrier capable of deploying a vast array of aircraft and amphibious units. Compete against AI or human players and hop into every single vehicle to take matters into your own hands!",
+      "gen_count": 0,
+      "id": 169,
+      "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1489630/header.jpg?t=1772367494",
+      "name": "Carrier Command 2",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2021-08-10",
+      "release_ts": 1628553600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "carry the glass"
+      ],
+      "appid": 3263320,
+      "batch_id": "2026-08-11T14:11:55.684244+00:00",
+      "created_at": "2026-08-11T14:11:55.686038+00:00",
+      "description": "Team up as two quirky construction workers in this fun 2-player co-op platformer! Carry a fragile glass window through colorful levels filled with challenges. Communicate and coordinate to dodge obstacles and solve puzzles. Can you finish the job without breaking the glass?",
+      "gen_count": 0,
+      "id": 158,
+      "image_url": "https://cdn2.steamgriddb.com/grid/e93fdccfe787d2e4e32fafe8d114868f.jpg",
+      "name": "Carry The Glass",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2024-10-23",
+      "release_ts": 1729641600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "chained together"
+      ],
+      "appid": 2567870,
+      "batch_id": "2026-08-03T11:16:55.677494+00:00",
+      "created_at": "2026-08-03T11:16:55.679018+00:00",
+      "description": "Climb up from the depths of Hell. Scale various worlds solo or chained together with your friends in the 1-4 player platforming sensation.",
+      "gen_count": 0,
+      "id": 91,
+      "image_url": "https://cdn2.steamgriddb.com/grid/e5ffcfeeaeb2904223a1fef33ae1c14e.jpg",
+      "name": "Chained Together",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "Jun 19, 2024",
+      "release_ts": 1718755200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "choochoo charles"
+      ],
+      "appid": 1766740,
+      "batch_id": "2026-08-16T00:17:02.190886+00:00",
+      "created_at": "2026-08-16T00:17:02.192562+00:00",
+      "description": "Navigate an open-world island in an old train, upgrade it over time, and use it to fight an evil spider train named Charles.",
+      "gen_count": 0,
+      "id": 178,
+      "image_url": "https://cdn2.steamgriddb.com/grid/5abc1fd797707da96a56b751b388285c.png",
+      "name": "Choo-Choo Charles",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2022-12-09",
+      "release_ts": 1670544000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "clair obscur expedition 33",
+        "coe3",
+        "expedition 33"
+      ],
+      "appid": 1903340,
+      "batch_id": "2026-08-03T08:59:21.964525+00:00",
+      "created_at": "2026-08-03T08:59:21.964525+00:00",
+      "description": "Lead the members of Expedition 33 on their quest to destroy the Paintress so that she can never paint death again. Explore a world of wonders inspired by Belle Époque France and battle unique enemies in this turn-based RPG with real-time mechanics.",
+      "gen_count": 0,
+      "id": 38,
+      "image_url": "https://cdn2.steamgriddb.com/grid/bb4f73a3b83f2abb1fdab868b8ef6a80.png",
+      "name": "Clair Obscur: Expedition 33",
+      "orders_count": 10,
+      "price": 10,
+      "release_date": "Apr 24, 2025",
+      "release_ts": 1745452800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "crimson desert"
+      ],
+      "appid": 3321460,
+      "batch_id": "2026-08-04T20:35:56.013059+00:00",
+      "created_at": "2026-08-04T20:35:56.014859+00:00",
+      "description": "Crimson Desert is an open-world action-adventure set on the continent of Pywel. Join Kliff on his journey to rebuild the Greymane faction and to save the land from a looming threat. From vast wilderness and cities to ruins and the mysterious Abyss, forge your path through battles and discovery.",
+      "gen_count": 0,
+      "id": 128,
+      "image_url": "https://cdn2.steamgriddb.com/grid/0b2d58c0c31848d2102ebac0783d510a.png",
+      "name": "Crimson Desert",
+      "orders_count": 8,
+      "price": 10,
+      "release_date": "2026-03-19",
+      "release_ts": 1773878400,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "cup head",
+        "cuphead"
+      ],
+      "appid": 268910,
+      "batch_id": "2026-08-08T04:02:07.250951+00:00",
+      "created_at": "2026-08-08T04:02:07.250951+00:00",
+      "description": "Cuphead is a classic run and gun action game heavily focused on boss battles. Inspired by cartoons of the 1930s, the visuals and audio are painstakingly created with the same techniques of the era, i.e. traditional hand drawn cel animation, watercolor backgrounds, and original jazz recordings.",
+      "gen_count": 0,
+      "id": 152,
+      "image_url": "https://cdn2.steamgriddb.com/grid/2f51c2752425afd8ede9b4456729251b.png",
+      "name": "Cuphead",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2017-09-29",
+      "release_ts": 1506643200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "3 cyberpunk 2077",
+        "cp2077",
+        "cyberpunk",
+        "cyberpunk 2077",
+        "cyper punk"
+      ],
+      "appid": 1091500,
+      "batch_id": "2026-08-03T08:59:49.064873+00:00",
+      "created_at": "2026-08-03T08:59:49.064873+00:00",
+      "description": "Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City — a dangerous megalopolis obsessed with power, glamor, and ceaseless body modification.",
+      "gen_count": 0,
+      "id": 47,
+      "image_url": "https://cdn2.steamgriddb.com/grid/ff0d6a3101157e4b041c73e7e47d0808.png",
+      "name": "Cyberpunk 2077",
+      "orders_count": 23,
+      "price": 10,
+      "release_date": "2020-12-09",
+      "release_ts": 1607472000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "332950",
+        "dark deception"
+      ],
+      "appid": 332950,
+      "batch_id": "2026-08-15T23:52:31.548235+00:00",
+      "created_at": "2026-08-15T23:52:31.549889+00:00",
+      "description": "Death awaits you in Dark Deception, a story-driven first-person horror maze game. There's nowhere to hide &amp; nowhere to catch your breath. Run or die - it's your choice. Trapped in a realm of nightmarish mazes with a mysterious woman, your only hope of survival is to find a way to escape.",
+      "gen_count": 0,
+      "id": 173,
+      "image_url": "https://cdn2.steamgriddb.com/grid/bcca03b1d9c72e11493d5bc49c86f065.png",
+      "name": "Dark Deception",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2018-09-26",
+      "release_ts": 1537920000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "dark souls ii scholar of the first sin",
+        "dsisfs"
+      ],
+      "appid": 335300,
+      "batch_id": "2026-08-03T08:59:46.373187+00:00",
+      "created_at": "2026-08-03T08:59:46.373187+00:00",
+      "description": "DARK SOULS™ II: Scholar of the First Sin brings the franchise’s renowned obscurity &amp; gripping gameplay to a new level. Join the dark journey and experience overwhelming enemy encounters, diabolical hazards, and unrelenting challenge.",
+      "gen_count": 0,
+      "id": 43,
+      "image_url": "https://cdn2.steamgriddb.com/grid/69cd21a0e0b7d5f05dc88a0be36950c7.png",
+      "name": "DARK SOULS™ II: Scholar of the First Sin",
+      "orders_count": 6,
+      "price": 10,
+      "release_date": "2015-04-01",
+      "release_ts": 1427846400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "dark souls 3",
+        "dark souls iii",
+        "ds3",
+        "dsi"
+      ],
+      "appid": 374320,
+      "batch_id": "2026-08-03T08:59:46.981252+00:00",
+      "created_at": "2026-08-03T08:59:46.981252+00:00",
+      "description": "Dark Souls continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and Embrace The Darkness!",
+      "gen_count": 0,
+      "id": 44,
+      "image_url": "https://cdn2.steamgriddb.com/grid/89c86ad4bb118af4b7d49925b1b319e1.png",
+      "name": "DARK SOULS™ III",
+      "orders_count": 8,
+      "price": 10,
+      "release_date": "2016-04-11",
+      "release_ts": 1460332800,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "dark souls remastered",
+        "ds1",
+        "dsr"
+      ],
+      "appid": 570940,
+      "batch_id": "2026-08-03T11:16:51.739090+00:00",
+      "created_at": "2026-08-03T11:16:51.739990+00:00",
+      "description": "Then, there was fire. Re-experience the critically acclaimed, genre-defining game that started it all. Beautifully remastered, return to Lordran in stunning high-definition detail running at 60fps.",
+      "gen_count": 0,
+      "id": 87,
+      "image_url": "https://cdn2.steamgriddb.com/grid/8291147824f5712d2c342d34df21f193.png",
+      "name": "DARK SOULS™: REMASTERED",
+      "orders_count": 10,
+      "price": 10,
+      "release_date": "May 23, 2018",
+      "release_ts": 1527033600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "days gone"
+      ],
+      "appid": 1259420,
+      "batch_id": "2026-08-03T08:40:15.941911+00:00",
+      "created_at": "2026-08-03T08:40:15.941911+00:00",
+      "description": "Ride and fight into a deadly, post pandemic America. Play as Deacon St. John, a drifter and bounty hunter who rides the broken road, fighting to survive while searching for a reason to live in this open-world action-adventure game.",
+      "gen_count": 0,
+      "id": 7,
+      "image_url": "https://cdn2.steamgriddb.com/grid/ef2d55e21a20d5f983cd888a070e71ee.png",
+      "name": "Days Gone",
+      "orders_count": 5,
+      "price": 10,
+      "release_date": "2021-05-17",
+      "release_ts": 1621209600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "dead space"
+      ],
+      "appid": 1693980,
+      "batch_id": "2026-08-16T15:23:48.616035+00:00",
+      "created_at": "2026-08-16T15:23:48.616035+00:00",
+      "description": "The sci-fi survival-horror classic returns, completely rebuilt to offer an even more immersive experience — including visual, audio, and gameplay improvements — while staying faithful to the original game’s thrilling vision.",
+      "gen_count": 0,
+      "id": 184,
+      "image_url": "https://cdn2.steamgriddb.com/grid/dbb3d71caac64f125882014b2b78be9d.png",
+      "name": "Dead Space",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2023-01-27",
+      "release_ts": 1674777600,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "13 detroit become human",
+        "dbh",
+        "detoirt become human",
+        "detroit",
+        "detroit become human"
+      ],
+      "appid": 1222140,
+      "batch_id": "2026-08-03T08:40:22.686151+00:00",
+      "created_at": "2026-08-03T08:40:22.686151+00:00",
+      "description": "Detroit: Become Human puts the destiny of both mankind and androids in your hands, taking you to a near future where machines have become more intelligent than humans. Every choice you make affects the outcome of the game, with one of the most intricately branching narratives ever created.",
+      "gen_count": 0,
+      "id": 25,
+      "image_url": "https://cdn2.steamgriddb.com/grid/688523b6452e54d2c4eb72108561623c.png",
+      "name": "Detroit: Become Human",
+      "orders_count": 9,
+      "price": 10,
+      "release_date": "2020-06-18",
+      "release_ts": 1592438400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "devil may cry 5",
+        "dmc",
+        "dmc5"
+      ],
+      "appid": 601150,
+      "batch_id": "2026-08-03T08:59:32.591668+00:00",
+      "created_at": "2026-08-03T08:59:32.591668+00:00",
+      "description": "The ultimate Devil Hunter is back in style, in the game action fans have been waiting for.",
+      "gen_count": 0,
+      "id": 39,
+      "image_url": "https://cdn2.steamgriddb.com/grid/a09ea27f35beb3eb22556f53030ba867.png",
+      "name": "Devil May Cry 5",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2019-03-07",
+      "release_ts": 1551916800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "devour"
+      ],
+      "appid": 1274570,
+      "batch_id": "2026-08-05T10:59:43.456942+00:00",
+      "created_at": "2026-08-05T10:59:43.458414+00:00",
+      "description": "DEVOUR is a co-op horror survival game for 1-4 players. Stop possessed cultists before they drag you to hell. Run. Scream. Hide. Just don't get caught.",
+      "gen_count": 0,
+      "id": 138,
+      "image_url": "https://cdn2.steamgriddb.com/grid/f0315c8c38368ed55c8f4078910d13e7.png",
+      "name": "DEVOUR",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2021-01-28",
+      "release_ts": 1611792000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "dispatch"
+      ],
+      "appid": 2592160,
+      "batch_id": "2026-08-03T09:01:56.224449+00:00",
+      "created_at": "2026-08-03T09:01:56.224449+00:00",
+      "description": "Dispatch is a superhero workplace comedy where choices matter. Manage a dysfunctional team of misfit heroes and strategize who to send to emergencies around the city, all while balancing office politics, personal relationships, and your own quest to become a hero. All episodes out now!",
+      "gen_count": 0,
+      "id": 78,
+      "image_url": "https://cdn2.steamgriddb.com/grid/c940ecb436d1f8bec1fd365785168e4f.png",
+      "name": "Dispatch",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2025-10-22",
+      "release_ts": 1761091200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "doom eternal"
+      ],
+      "appid": 782330,
+      "batch_id": "2026-08-18T17:09:13.402868+00:00",
+      "created_at": "2026-08-18T17:09:13.403705+00:00",
+      "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
+      "gen_count": 0,
+      "id": 197,
+      "image_url": "https://cdn2.steamgriddb.com/grid/1a1d636c98f9e63b3cbb63f069ffe923.png",
+      "name": "DOOM Eternal",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2020-03-19",
+      "release_ts": 1584576000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "dda",
+        "doom the dark ages"
+      ],
+      "appid": 3017860,
+      "batch_id": "2026-08-16T14:10:24.795660+00:00",
+      "created_at": "2026-08-16T14:10:24.795660+00:00",
+      "description": "DOOM: The Dark Ages is the prequel to the critically acclaimed DOOM (2016) and DOOM Eternal that tells an epic cinematic story worthy of the DOOM Slayer’s legend. Players will step into the blood-stained boots of the DOOM Slayer, in this never-before-seen dark and sinister medieval war against Hell.",
+      "gen_count": 0,
+      "id": 180,
+      "image_url": "https://cdn2.steamgriddb.com/grid/cb85cddae43bf9ec011d079ea71aab22.png",
+      "name": "DOOM: The Dark Ages",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2025-05-14",
+      "release_ts": 1747180800,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "dbx",
+        "dbx2",
+        "dragon ball xenoverse 2"
+      ],
+      "appid": 454650,
+      "batch_id": "2026-08-19T15:34:21.553338+00:00",
+      "created_at": "2026-08-19T15:34:21.554305+00:00",
+      "description": "DRAGON BALL XENOVERSE 2 builds upon the highly popular DRAGON BALL XENOVERSE with enhanced graphics that will further immerse players into the largest and most detailed Dragon Ball world ever developed.",
+      "gen_count": 0,
+      "id": 199,
+      "image_url": "https://cdn2.steamgriddb.com/grid/789f537bcdf7638af5c97b59bc69a60d.png",
+      "name": "DRAGON BALL XENOVERSE 2",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2016-10-27",
+      "release_ts": 1477526400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "dbsz",
+        "dragon ball sparking zero"
+      ],
+      "appid": 1790600,
+      "batch_id": "2026-08-04T18:44:59.387552+00:00",
+      "created_at": "2026-08-04T18:44:59.387552+00:00",
+      "description": "DRAGON BALL: Sparking! ZERO takes the legendary gameplay of the Budokai Tenkaichi series and raises it to whole new levels. Make yours the destructive power of the strongest fighters ever to appear in Dragon Ball!",
+      "gen_count": 0,
+      "id": 127,
+      "image_url": "https://cdn2.steamgriddb.com/grid/f663c9cad27e8b8ca1e71a3c20b14f62.png",
+      "name": "DRAGON BALL: Sparking! ZERO",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2024-10-10",
+      "release_ts": 1728518400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "dqvr",
+        "dragon quest vii reimagined"
+      ],
+      "appid": 2499860,
+      "batch_id": "2026-08-05T02:53:31.566823+00:00",
+      "created_at": "2026-08-05T02:53:31.568477+00:00",
+      "description": "Unravel the mysteries of the past in DRAGON QUEST VII Reimagined! Gather your companions and travel beyond the shores of your small kingdom to discover why it is the only remaining island in the world.",
+      "gen_count": 0,
+      "id": 133,
+      "image_url": "https://cdn2.steamgriddb.com/grid/4a5bc38383460e0eeb378956f0ed35e6.png",
+      "name": "DRAGON QUEST VII Reimagined",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2026-02-05",
+      "release_ts": 1770249600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "dying light"
+      ],
+      "appid": 239140,
+      "batch_id": "2026-08-03T09:00:16.243281+00:00",
+      "created_at": "2026-08-03T09:00:16.243281+00:00",
+      "description": "First-person action survival game set in a post-apocalyptic open world overrun by flesh-hungry zombies. Roam a city devastated by a mysterious virus epidemic. Scavenge for supplies, craft weapons, and face hordes of the infected.",
+      "gen_count": 0,
+      "id": 51,
+      "image_url": "https://cdn2.steamgriddb.com/grid/3a23af3b64beff72f881c209bc10cd0a.png",
+      "name": "Dying Light",
+      "orders_count": 5,
+      "price": 10,
+      "release_date": "2015-01-26",
+      "release_ts": 1422230400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "ea sports fc 26 activation of fc26 showcase",
+        "esf2afs",
+        "fc 26",
+        "fc26"
+      ],
+      "appid": 3405690,
+      "batch_id": "2026-08-03T16:22:39.296986+00:00",
+      "created_at": "2026-08-03T16:22:39.299037+00:00",
+      "description": "Experience The World's Game like never before in EA SPORTS FC™ 26. Go for glory in a 48-team international tournament mode, take on themed Manager Live Challenges, and step into Player Career with new international ICONs and Heroes.",
+      "gen_count": 0,
+      "id": 116,
+      "image_url": "https://cdn2.steamgriddb.com/grid/24a6cde7e4311efb41af1d6d8ed368c6.png",
+      "name": "EA SPORTS FC™ 26 ( Activation of FC26 Showcase )",
+      "orders_count": 60,
+      "price": 10,
+      "release_date": "2025-09-25",
+      "release_ts": 1758758400,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "2 elden ring",
+        "elden ring"
+      ],
+      "appid": 1245620,
+      "batch_id": "2026-08-03T08:40:19.472763+00:00",
+      "created_at": "2026-08-03T08:40:19.472763+00:00",
+      "description": "THE CRITICALLY ACCLAIMED FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+      "gen_count": 0,
+      "id": 16,
+      "image_url": "https://cdn2.steamgriddb.com/grid/dd8e364354903ef4266b983579cb7d7b.png",
+      "name": "ELDEN RING",
+      "orders_count": 77,
+      "price": 10,
+      "release_date": "2022-02-24",
+      "release_ts": 1645660800,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "elden ring nightreign",
+        "ern"
+      ],
+      "appid": 2622380,
+      "batch_id": "2026-08-03T08:40:24.705941+00:00",
+      "created_at": "2026-08-03T08:40:24.705941+00:00",
+      "description": "ELDEN RING NIGHTREIGN is a standalone adventure within the ELDEN RING universe, crafted to offer players a new gaming experience by reimagining the game’s core design.",
+      "gen_count": 0,
+      "id": 30,
+      "image_url": "https://cdn2.steamgriddb.com/grid/359c87dbbfc4b7fb5a867323920eecd5.png",
+      "name": "ELDEN RING NIGHTREIGN",
+      "orders_count": 13,
+      "price": 10,
+      "release_date": "2025-05-29",
+      "release_ts": 1748476800,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "ets",
+        "ets2",
+        "euro truck sim 2",
+        "euro truck simulator 2"
+      ],
+      "appid": 227300,
+      "batch_id": "2026-08-03T08:40:13.675983+00:00",
+      "created_at": "2026-08-03T08:40:13.675983+00:00",
+      "description": "Travel across Europe as king of the road, a trucker who delivers important cargo across impressive distances! With dozens of cities to explore, your endurance, skill and speed will all be pushed to their limits.",
+      "gen_count": 0,
+      "id": 2,
+      "image_url": "https://cdn2.steamgriddb.com/grid/2aa5c500d507e80b97ab244d3d80c4d7.png",
+      "name": "Euro Truck Simulator 2",
+      "orders_count": 19,
+      "price": 10,
+      "release_date": "2012-10-12",
+      "release_ts": 1350000000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "far cry 3",
+        "fc3"
+      ],
+      "appid": 220240,
+      "batch_id": "2026-08-03T09:01:17.768973+00:00",
+      "created_at": "2026-08-03T09:01:17.768973+00:00",
+      "description": "Stranded on the Rook Islands as Jason Brody, fight your way through a lawless tropical open world using a powerful arsenal to save your friends and escape the madness of this acclaimed visceral FPS.",
+      "gen_count": 0,
+      "id": 63,
+      "image_url": "https://cdn2.steamgriddb.com/grid/84b3f2becbf70a03239d7fae55dcaa40.png",
+      "name": "Far Cry 3",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2012-12-04",
+      "release_ts": 1354579200,
+      "tags": [
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "far cry 4",
+        "farcry4",
+        "fc4"
+      ],
+      "appid": 298110,
+      "batch_id": "2026-08-03T09:01:18.587750+00:00",
+      "created_at": "2026-08-03T09:01:18.587750+00:00",
+      "description": "Fight to liberate a war-torn Himalayan region in this open world FPS. Wield a deadly arsenal, dominate land and sky with gyrocopters and war elephants, and take on enemy territory solo or in co-op.",
+      "gen_count": 0,
+      "id": 64,
+      "image_url": "https://cdn2.steamgriddb.com/grid/2958e5b2793f55646adc38f7f2982860.png",
+      "name": "Far Cry® 4",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2014-11-17",
+      "release_ts": 1416182400,
+      "tags": [
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "far cry 6",
+        "fc6"
+      ],
+      "appid": 2369390,
+      "batch_id": "2026-08-03T08:40:21.552954+00:00",
+      "created_at": "2026-08-03T08:40:21.552954+00:00",
+      "description": "Lead the revolution in this first-person open world guerrilla shooter. Fight with improvised weapons, travel however you can, and build your rebel network to take down Castillo's regime.",
+      "gen_count": 0,
+      "id": 21,
+      "image_url": "https://cdn2.steamgriddb.com/grid/b99c7879f96a3936c47e2efc01eefd3c.png",
+      "name": "Far Cry® 6",
+      "orders_count": 17,
+      "price": 10,
+      "release_date": "2023-05-11",
+      "release_ts": 1683763200,
+      "tags": [
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "farming simulator 25",
+        "fs2"
+      ],
+      "appid": 2300320,
+      "batch_id": "2026-08-03T08:40:18.378496+00:00",
+      "created_at": "2026-08-03T08:40:18.378496+00:00",
+      "description": "Farming Simulator 25 invites you to join the rewarding farm life, single-handedly or cooperatively in multiplayer. This Farm is Your Farm!",
+      "gen_count": 0,
+      "id": 12,
+      "image_url": "https://cdn2.steamgriddb.com/grid/63243408665035f0bdf38bcd9f92b6fe.png",
+      "name": "Farming Simulator 25",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "Nov 12, 2024",
+      "release_ts": 1731369600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "ffvr",
+        "final fantasy 7 rebirth",
+        "final fantasy vii rebirth"
+      ],
+      "appid": 2909400,
+      "batch_id": "2026-08-07T19:17:34.167555+00:00",
+      "created_at": "2026-08-07T19:17:34.167555+00:00",
+      "description": "The Unknown Journey Continues... After escaping the city of Midgar, Cloud and his friends set out on a journey across the planet. New adventures await in a vibrant, expansive world in this standalone entry of the FFVII remake trilogy.",
+      "gen_count": 0,
+      "id": 148,
+      "image_url": "https://cdn2.steamgriddb.com/grid/31f6851403b18d21a530022683aaf863.png",
+      "name": "FINAL FANTASY VII REBIRTH",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2025-01-23",
+      "release_ts": 1737590400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "ffvri",
+        "final fantasy vii remake intergrade"
+      ],
+      "appid": 1462040,
+      "batch_id": "2026-08-03T09:00:28.604654+00:00",
+      "created_at": "2026-08-03T09:00:28.604654+00:00",
+      "description": "Cloud Strife, an ex-SOLDIER operative, descends on the mako-powered city of Midgar. The world of the timeless classic FINAL FANTASY VII is reborn, using cutting-edge graphics technology, a new battle system and an additional adventure featuring Yuffie Kisaragi.",
+      "gen_count": 0,
+      "id": 55,
+      "image_url": "https://cdn2.steamgriddb.com/grid/a0dced761e88855e3bc7183addaba819.png",
+      "name": "FINAL FANTASY VII REMAKE INTERGRADE",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "Jun 17, 2022",
+      "release_ts": 1655424000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "firewatch"
+      ],
+      "appid": 383870,
+      "batch_id": "2026-08-03T09:01:13.039244+00:00",
+      "created_at": "2026-08-03T09:01:13.039244+00:00",
+      "description": "Firewatch is a single-player first-person mystery set in the Wyoming wilderness, where your only emotional lifeline is the person on the other end of a handheld radio.",
+      "gen_count": 0,
+      "id": 58,
+      "image_url": "https://cdn2.steamgriddb.com/grid/3d3f53e1702fe7d002b4dd7d166d1996.png",
+      "name": "Firewatch",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "Feb 9, 2016",
+      "release_ts": 1454976000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "fh5",
+        "forza 5",
+        "forza horizon 5"
+      ],
+      "appid": 1551360,
+      "batch_id": "2026-08-03T11:16:57.451394+00:00",
+      "created_at": "2026-08-03T11:16:57.452252+00:00",
+      "description": "Explore the vibrant open world landscapes of Mexico with limitless, fun driving action in the world’s greatest cars.",
+      "gen_count": 0,
+      "id": 93,
+      "image_url": "https://cdn2.steamgriddb.com/grid/9baa32e93ad0c674ad7c0f84352fdeff.png",
+      "name": "Forza Horizon 5",
+      "orders_count": 16,
+      "price": 10,
+      "release_date": "2021-11-08",
+      "release_ts": 1636329600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "fh6",
+        "forza 6",
+        "forza horizon 6",
+        "forza hozrizon 6"
+      ],
+      "appid": 2483190,
+      "batch_id": "2026-08-03T08:40:17.871767+00:00",
+      "created_at": "2026-08-03T08:40:17.871767+00:00",
+      "description": "Discover the breathtaking landscapes of Japan in over 550 real-world cars and become a racing Legend in Forza Horizon's biggest open world driving adventure yet.",
+      "gen_count": 0,
+      "id": 11,
+      "image_url": "https://cdn2.steamgriddb.com/grid/a3f8380d71aca0464dbe07dc814269f1.png",
+      "name": "Forza Horizon 6",
+      "orders_count": 71,
+      "price": 10,
+      "release_date": "May 18, 2026",
+      "release_ts": 1779062400,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "funnel runners"
+      ],
+      "appid": 3712080,
+      "batch_id": "2026-08-14T17:25:15.450251+00:00",
+      "created_at": "2026-08-14T17:25:15.452043+00:00",
+      "description": "Trapped in a doomed city, you and up to 7 friends must scavenge parts, fix your van, and escape the brutal tornado that approaches. A first-person co-op survival game with escalating disasters and total environmental destruction.",
+      "gen_count": 0,
+      "id": 171,
+      "image_url": "/static/uploads/shop/3712080.jpg?v=1786894984",
+      "name": "Funnel Runners",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2026-07-16",
+      "release_ts": 1784160000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "geometry dash"
+      ],
+      "appid": 322170,
+      "batch_id": "2026-08-04T18:31:34.704241+00:00",
+      "created_at": "2026-08-04T18:31:34.705813+00:00",
+      "description": "Jump and fly your way through danger in this rhythm-based action platformer!",
+      "gen_count": 0,
+      "id": 126,
+      "image_url": "https://cdn2.steamgriddb.com/grid/ab2478b39699bd2afa117ca9370ac245.png",
+      "name": "Geometry Dash",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2014-12-22",
+      "release_ts": 1419206400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "getting over it",
+        "getting over it with bennett foddy",
+        "goiwbf"
+      ],
+      "appid": 240720,
+      "batch_id": "2026-08-05T10:59:55.648730+00:00",
+      "created_at": "2026-08-05T10:59:55.650616+00:00",
+      "description": "A game I made for a certain kind of person. To hurt them.",
+      "gen_count": 0,
+      "id": 139,
+      "image_url": "https://cdn2.steamgriddb.com/grid/5f8d8411ff393c9cb54249e010b017b4.png",
+      "name": "Getting Over It with Bennett Foddy",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2017-12-06",
+      "release_ts": 1512518400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "7 ghost of tsushima directors cut",
+        "ghost",
+        "ghost of tsushima",
+        "ghost of tsushima directors cut",
+        "gtdc"
+      ],
+      "appid": 2215430,
+      "batch_id": "2026-08-03T08:59:18.516630+00:00",
+      "created_at": "2026-08-03T08:59:18.516630+00:00",
+      "description": "A storm is coming. Venture into the complete Ghost of Tsushima DIRECTOR’S CUT on PC; forge your own path through this open-world action adventure and uncover its hidden wonders. Brought to you by Sucker Punch Productions, Nixxes Software and PlayStation Studios.",
+      "gen_count": 0,
+      "id": 34,
+      "image_url": "https://cdn2.steamgriddb.com/grid/9f12e56b1d11de9dedaa044b38d001cb.png",
+      "name": "Ghost of Tsushima DIRECTOR'S CUT",
+      "orders_count": 39,
+      "price": 10,
+      "release_date": "2024-05-16",
+      "release_ts": 1715817600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "5 god of war",
+        "god of war",
+        "gow"
+      ],
+      "appid": 1593500,
+      "batch_id": "2026-08-03T08:59:18.123271+00:00",
+      "created_at": "2026-08-03T08:59:18.123271+00:00",
+      "description": "His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.",
+      "gen_count": 0,
+      "id": 33,
+      "image_url": "https://cdn2.steamgriddb.com/grid/125af017862ca385a0c1933cb85adde0.png",
+      "name": "God of War",
+      "orders_count": 36,
+      "price": 10,
+      "release_date": "2022-01-14",
+      "release_ts": 1642118400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "4 god of war ragnarök",
+        "god of war ragnarok",
+        "god of war ragnarök",
+        "gwrk"
+      ],
+      "appid": 2322010,
+      "batch_id": "2026-08-03T08:40:23.001515+00:00",
+      "created_at": "2026-08-03T08:40:23.001515+00:00",
+      "description": "Kratos and Atreus embark on a mythic journey for answers before Ragnarök arrives – now on PC.",
+      "gen_count": 0,
+      "id": 26,
+      "image_url": "https://cdn2.steamgriddb.com/grid/5fa3e2ad93fc4ae23f9cca959bc8257a.png",
+      "name": "God of War Ragnarök",
+      "orders_count": 62,
+      "price": 10,
+      "release_date": "Sep 19, 2024",
+      "release_ts": 1726704000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "gfr",
+        "granblue fantasy relink"
+      ],
+      "appid": 881020,
+      "batch_id": "2026-08-07T19:17:35.084683+00:00",
+      "created_at": "2026-08-07T19:17:35.084683+00:00",
+      "description": "A grand adventure in the skies awaits! Form a party of four from a diverse roster of skyfarers and slash—or shoot or hex—your way to victory against treacherous foes in this action RPG. Take on quests solo or with the help of others in up to 4-player co-op play!",
+      "gen_count": 0,
+      "id": 149,
+      "image_url": "https://cdn2.steamgriddb.com/grid/cee8f305cdbcb9b2d9e7beb416bb9991.png",
+      "name": "Granblue Fantasy: Relink",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2024-01-31",
+      "release_ts": 1706659200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "grand theft auto iv the complete edition",
+        "gta",
+        "gta iv",
+        "gtaice"
+      ],
+      "appid": 12210,
+      "batch_id": "2026-08-17T00:58:24.445584+00:00",
+      "created_at": "2026-08-17T00:58:24.447068+00:00",
+      "description": "Niko Bellic, Johnny Klebitz and Luis Lopez all have one thing in common - they live in the worst city in America. Liberty City worships money and status, and is heaven for those who have them and a living nightmare for those who don't.",
+      "gen_count": 0,
+      "id": 188,
+      "image_url": "https://cdn2.steamgriddb.com/grid/6e751378dcbfeaed4a3ef9434504e0de.png",
+      "name": "Grand Theft Auto IV: The Complete Edition",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2020-03-24",
+      "release_ts": 1585008000,
+      "tags": [
+        "rockstar"
+      ]
+    },
+    {
+      "aliases": [
+        "10 gta v",
+        "grand theft auto v",
+        "grand theft auto v enhance",
+        "grand theft auto v enhanced",
+        "gta",
+        "gta 5",
+        "gta v",
+        "gta v enhanced",
+        "gta5",
+        "gtave"
+      ],
+      "appid": 3240220,
+      "batch_id": "2026-08-03T08:40:13.075726+00:00",
+      "created_at": "2026-08-03T08:40:13.075726+00:00",
+      "description": "Experience entertainment blockbusters Grand Theft Auto V and Grand Theft Auto Online — now upgraded for a new generation with stunning visuals, faster loading, 3D audio, and more, plus exclusive content for GTA Online players.",
+      "gen_count": 0,
+      "id": 1,
+      "image_url": "https://cdn2.steamgriddb.com/grid/c4e74c8ff5df0367504fa94984b9149b.png",
+      "name": "Grand Theft Auto V Enhanced",
+      "orders_count": 76,
+      "price": 10,
+      "release_date": "Mar 4, 2025",
+      "release_ts": 1741046400,
+      "tags": [
+        "rockstar"
+      ]
+    },
+    {
+      "aliases": [
+        "grand theft auto v legacy",
+        "gta",
+        "gta legacy",
+        "gta v legacy",
+        "gtavl",
+        "legacy"
+      ],
+      "appid": 271590,
+      "batch_id": "2026-08-03T11:41:21.895271+00:00",
+      "created_at": "2026-08-03T11:41:21.896719+00:00",
+      "description": "Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second.",
+      "gen_count": 0,
+      "id": 98,
+      "image_url": "https://cdn2.steamgriddb.com/grid/c3b6d1a2b6a5ef5e2630265e9826cd4a.png",
+      "name": "Grand Theft Auto V Legacy",
+      "orders_count": 7,
+      "price": 10,
+      "release_date": "2015-04-13",
+      "release_ts": 1428883200,
+      "tags": [
+        "rockstar"
+      ]
+    },
+    {
+      "aliases": [
+        "grand theft auto san andreas the definitive edition",
+        "gtasa",
+        "gtasade"
+      ],
+      "appid": 1547000,
+      "batch_id": "2026-08-04T23:27:29.669220+00:00",
+      "created_at": "2026-08-04T23:27:29.670757+00:00",
+      "description": "Grand Theft Auto: San Andreas: It’s the early ’90s. After a couple of cops frame him for homicide, Carl ‘CJ’ Johnson is forced on a journey that takes him across the entire state of San Andreas, to save his family and to take control of the streets.",
+      "gen_count": 0,
+      "id": 130,
+      "image_url": "https://cdn2.steamgriddb.com/grid/62c5568b274907f9389db86125f48312.png",
+      "name": "Grand Theft Auto: San Andreas – The Definitive Edition",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2023-01-19",
+      "release_ts": 1674086400,
+      "tags": [
+        "rockstar"
+      ]
+    },
+    {
+      "aliases": [
+        "grounded"
+      ],
+      "appid": 962130,
+      "batch_id": "2026-08-12T00:09:16.230596+00:00",
+      "created_at": "2026-08-12T00:09:16.232983+00:00",
+      "description": "The world is a vast, beautiful and dangerous place – especially when you have been shrunk to the size of an ant. Can you thrive alongside the hordes of giant insects, fighting to survive the perils of the backyard?",
+      "gen_count": 0,
+      "id": 163,
+      "image_url": "https://cdn2.steamgriddb.com/grid/5dff88d9fa4946d8af3816b165e4811f.png",
+      "name": "Grounded",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2022-09-27",
+      "release_ts": 1664236800,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "grounded 2"
+      ],
+      "appid": 2661300,
+      "batch_id": "2026-08-12T00:14:47.098287+00:00",
+      "created_at": "2026-08-12T00:14:47.099358+00:00",
+      "description": "Shrunk again, but the world is much larger. In this open-world, single-player or co-op survival adventure, craft weapons and armor, build your base, and traverse the playground on your buggy. But something else is out there—and it hasn’t forgotten you.",
+      "gen_count": 0,
+      "id": 168,
+      "image_url": "https://cdn2.steamgriddb.com/grid/0a41df51c827a9c558c810a4e422a632.jpg",
+      "name": "Grounded 2",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "2025-07-29",
+      "release_ts": 1753747200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "h2sa",
+        "hitman 2 silent assassin"
+      ],
+      "appid": 6850,
+      "batch_id": "2026-08-05T11:00:08.361854+00:00",
+      "created_at": "2026-08-05T11:00:08.363566+00:00",
+      "description": "Enter the realm of a retired assassin, forced back into action by treason. You may be a hired killer but you still have a sense of loyalty and justice. Visit the dark recesses of a world corrupted by crime, greed, degradation and dishonor. And a past that catches up with you.",
+      "gen_count": 0,
+      "id": 140,
+      "image_url": "https://cdn2.steamgriddb.com/grid/8cbf1695be0572428dbb70f41f833783.png",
+      "name": "Hitman 2: Silent Assassin",
+      "orders_count": 11,
+      "price": 10,
+      "release_date": "2007-03-15",
+      "release_ts": 1173916800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "hitman absolution",
+        "hitman absolutions"
+      ],
+      "appid": 203140,
+      "batch_id": "2026-08-03T09:01:16.647612+00:00",
+      "created_at": "2026-08-03T09:01:16.647612+00:00",
+      "description": "The original assassin is back! Betrayed by the Agency and hunted by the police, Agent 47 finds himself pursuing redemption in a corrupt and twisted world.",
+      "gen_count": 0,
+      "id": 62,
+      "image_url": "https://cdn2.steamgriddb.com/grid/30350d339657124f669f16092ab27276.png",
+      "name": "Hitman: Absolution™",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "Nov 19, 2012",
+      "release_ts": 1353283200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "hitman contracts"
+      ],
+      "appid": 247430,
+      "batch_id": "2026-08-18T13:17:50.415375+00:00",
+      "created_at": "2026-08-18T13:17:50.417080+00:00",
+      "description": "Enter the world of a HITMAN - a world of crime, sin and greed. Delve into the mind of Agent 47 and encounter his greatest adversaries, completing the work that made him so brutally efficient and shaped him as an assassin. Eliminate your targets by any means necessary. There are no rules... only the contract, signed in blood.",
+      "gen_count": 0,
+      "id": 194,
+      "image_url": "https://cdn2.steamgriddb.com/grid/0ab605102670807b661d9a1a4e618745.png",
+      "name": "Hitman: Contracts",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2014-01-21",
+      "release_ts": 1390262400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "hitman 2"
+      ],
+      "appid": 863550,
+      "batch_id": "2026-08-05T13:03:09.149496+00:00",
+      "created_at": "2026-08-05T13:03:09.149496+00:00",
+      "description": "Travel the globe and track your targets across exotic sandbox locations in HITMAN™ 2. From sun-drenched streets to dark and dangerous rainforests, nowhere is safe from the world’s most creative assassin, Agent 47 in the ultimate spy thriller story.",
+      "gen_count": 0,
+      "id": 141,
+      "image_url": "https://cdn2.steamgriddb.com/grid/81b3ec9661802c747930d66a6e98dad1.png",
+      "name": "HITMAN™ 2",
+      "orders_count": 19,
+      "price": 10,
+      "release_date": "2018-11-13",
+      "release_ts": 1542067200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "hogwarts legacy"
+      ],
+      "appid": 990080,
+      "batch_id": "2026-08-03T09:01:30.080854+00:00",
+      "created_at": "2026-08-03T09:01:30.080854+00:00",
+      "description": "Hogwarts Legacy is an immersive, open-world action RPG. Now you can take control of the action and be at the center of your own adventure in the wizarding world.",
+      "gen_count": 0,
+      "id": 66,
+      "image_url": "https://cdn2.steamgriddb.com/grid/98f94e1877956d5900ce1455a0e07d26.png",
+      "name": "Hogwarts Legacy",
+      "orders_count": 5,
+      "price": 10,
+      "release_date": "2023-02-10",
+      "release_ts": 1675987200,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "hollow knight",
+        "hollowknight"
+      ],
+      "appid": 367520,
+      "batch_id": "2026-08-03T08:53:08.691800+00:00",
+      "created_at": "2026-08-03T08:53:08.691800+00:00",
+      "description": "Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.",
+      "gen_count": 0,
+      "id": 31,
+      "image_url": "https://cdn2.steamgriddb.com/grid/5ca177e9af12f0d5d9c4c72668c81b63.png",
+      "name": "Hollow Knight",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "Feb 24, 2017",
+      "release_ts": 1487894400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "hks",
+        "hollow knight silksong"
+      ],
+      "appid": 1030300,
+      "batch_id": "2026-08-03T09:01:14.637389+00:00",
+      "created_at": "2026-08-03T09:01:14.637389+00:00",
+      "description": "Discover a vast, haunted kingdom in Hollow Knight: Silksong! Explore, fight and survive as you ascend to the peak of a land ruled by silk and song.",
+      "gen_count": 0,
+      "id": 61,
+      "image_url": "https://cdn2.steamgriddb.com/grid/105c9231a45ffab502a699c77060a80f.png",
+      "name": "Hollow Knight: Silksong",
+      "orders_count": 5,
+      "price": 10,
+      "release_date": "2025-09-04",
+      "release_ts": 1756944000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "hfw",
+        "hfwce",
+        "horizon forbidden west complete edition"
+      ],
+      "appid": 2420110,
+      "batch_id": "2026-08-11T17:56:08.845930+00:00",
+      "created_at": "2026-08-11T17:56:08.848020+00:00",
+      "description": "Experience the epic Horizon Forbidden West™ in its entirety with bonus content and the Burning Shores expansion included. The Burning Shores add-on contains additional content for Aloy’s adventure, including new storylines, characters, and experiences in a stunning yet hazardous new area.",
+      "gen_count": 0,
+      "id": 159,
+      "image_url": "https://cdn2.steamgriddb.com/grid/3464235150e05e3f1246158fb90254c1.png",
+      "name": "Horizon Forbidden West™ Complete Edition",
+      "orders_count": 8,
+      "price": 10,
+      "release_date": "2024-03-21",
+      "release_ts": 1710979200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "hf2",
+        "house flipper 2"
+      ],
+      "appid": 1190970,
+      "batch_id": "2026-08-12T00:06:36.187721+00:00",
+      "created_at": "2026-08-12T00:06:36.189322+00:00",
+      "description": "Clean your worries away with this relaxing renovation simulator! Buy, fix, sell, and become a local legend. Or grab your power tools and build anything from scratch! With the online 2-4 players co-op mode, you can play both in sandbox and story mode together.",
+      "gen_count": 0,
+      "id": 160,
+      "image_url": "https://cdn2.steamgriddb.com/grid/9299f600fc021817189d17624f026873.png",
+      "name": "House Flipper 2",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "2023-12-14",
+      "release_ts": 1702512000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "it takes two",
+        "itt"
+      ],
+      "appid": 1426210,
+      "batch_id": "2026-08-04T21:03:30.948762+00:00",
+      "created_at": "2026-08-04T21:03:30.951211+00:00",
+      "description": "Embark on the craziest journey of your life in It Takes Two. Invite a friend to join for free with Friend’s Pass and work together across a huge variety of gleefully disruptive gameplay challenges. Winner of GAME OF THE YEAR at the Game Awards 2021.",
+      "gen_count": 0,
+      "id": 129,
+      "image_url": "https://cdn2.steamgriddb.com/grid/220cd001795358a2e932e81301092fc6.png",
+      "name": "It Takes Two",
+      "orders_count": 19,
+      "price": 10,
+      "release_date": "2021-03-25",
+      "release_ts": 1616630400,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "king of retail 2",
+        "kr2"
+      ],
+      "appid": 2425150,
+      "batch_id": "2026-08-07T12:54:28.990073+00:00",
+      "created_at": "2026-08-07T12:54:28.991272+00:00",
+      "description": "Build a retail empire across dozens of locations with hundreds of employees. Design every inch of your stores with a deep building tool, then fine-tune pricing, staffing, and product mix to stay profitable. Scale up, customize everything, and manage the details that make or break your bottom line.",
+      "gen_count": 0,
+      "id": 146,
+      "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2425150/518dc3d34fcbe376e398e03459e270454d9380e5/header.jpg?t=1778781659",
+      "name": "King of Retail 2",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2025-05-22",
+      "release_ts": 1747872000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "kcd",
+        "kcdi",
+        "kingdom come deliverance ii"
+      ],
+      "appid": 1771300,
+      "batch_id": "2026-08-07T12:22:56.750443+00:00",
+      "created_at": "2026-08-07T12:22:56.752272+00:00",
+      "description": "A thrilling story-driven action RPG, with a rich open world, set in 15th century Medieval Europe. Experience the ultimate medieval adventure - through the eyes of young Henry - as you embark on a journey of epic proportions.",
+      "gen_count": 0,
+      "id": 143,
+      "image_url": "https://cdn2.steamgriddb.com/grid/cee026c5d3b300f981b8219a24abf523.png",
+      "name": "Kingdom Come: Deliverance II",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2025-02-04",
+      "release_ts": 1738627200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "la noire"
+      ],
+      "appid": 110800,
+      "batch_id": "2026-08-17T00:58:48.437540+00:00",
+      "created_at": "2026-08-17T00:58:48.438983+00:00",
+      "description": "In his fight to climb the ranks and do what's right, LAPD detective Cole Phelps must unravel the truth behind a string of arson attacks, conspiracies, and brutal murders, battling the L.A. underworld and even members of his own department.",
+      "gen_count": 0,
+      "id": 189,
+      "image_url": "https://cdn2.steamgriddb.com/grid/088ec7579c5b76a7c6bff8e6efe7ee3a.png",
+      "name": "L.A. Noire",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2011-11-08",
+      "release_ts": 1320710400,
+      "tags": [
+        "rockstar"
+      ]
+    },
+    {
+      "aliases": [
+        "lbldk",
+        "lego batman",
+        "lego batman legacy of the dark knight"
+      ],
+      "appid": 2215200,
+      "batch_id": "2026-08-03T09:01:29.563677+00:00",
+      "created_at": "2026-08-03T09:01:29.563677+00:00",
+      "description": "Rise as the Dark Knight and experience the essential Batman story in a bold, action-packed adventure with hard-hitting combat, an open-world Gotham City, and the signature LEGO charm that fans know and love.",
+      "gen_count": 0,
+      "id": 65,
+      "image_url": "https://cdn2.steamgriddb.com/grid/21793e9e979e8ffa6cb5108aa6fca157.png",
+      "name": "LEGO® Batman™: Legacy of the Dark Knight",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "May 22, 2026",
+      "release_ts": 1779408000,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "lethal company"
+      ],
+      "appid": 1966720,
+      "batch_id": "2026-08-03T11:16:54.318441+00:00",
+      "created_at": "2026-08-03T11:16:54.319926+00:00",
+      "description": "A co-op horror about scavenging at abandoned moons to sell scrap to the Company.",
+      "gen_count": 0,
+      "id": 90,
+      "image_url": "https://cdn2.steamgriddb.com/grid/9ac2b6c668fbb3007f38f359a00d02f3.png",
+      "name": "Lethal Company",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "Oct 23, 2023",
+      "release_ts": 1698019200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "lies of p"
+      ],
+      "appid": 1627720,
+      "batch_id": "2026-08-03T09:01:55.332597+00:00",
+      "created_at": "2026-08-03T09:01:55.332597+00:00",
+      "description": "Lies of P is a thrilling soulslike that takes the story of Pinocchio, turns it on its head, and sets it against the darkly elegant backdrop of the Belle Epoque era.",
+      "gen_count": 0,
+      "id": 76,
+      "image_url": "https://cdn2.steamgriddb.com/grid/5836ec9645011e40f4f10291bda82c57.png",
+      "name": "Lies of P",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2023-09-18",
+      "release_ts": 1694995200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "life is strange remastered",
+        "lis",
+        "lisr"
+      ],
+      "appid": 1265920,
+      "batch_id": "2026-08-03T08:59:33.252388+00:00",
+      "created_at": "2026-08-03T08:59:33.252388+00:00",
+      "description": "Experience the BAFTA award-winning story of Life is Strange now beautifully remastered with enhanced visuals and vastly improved animation using mocap technology.",
+      "gen_count": 0,
+      "id": 40,
+      "image_url": "https://cdn2.steamgriddb.com/grid/460d49ea02692f00c8e029495e64da8d.png",
+      "name": "Life is Strange Remastered",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "Feb 1, 2022",
+      "release_ts": 1643673600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "little nightmares"
+      ],
+      "appid": 424840,
+      "batch_id": "2026-08-03T09:01:54.168651+00:00",
+      "created_at": "2026-08-03T09:01:54.168651+00:00",
+      "description": "Take on the role of Six, a lone child lost in a massive metal vessel known as the Maw, surrounded by dangerous, distorted versions of adults. You’ll need to do your best to escape in one piece or your fate will be worse than you ever dared dream.",
+      "gen_count": 0,
+      "id": 74,
+      "image_url": "https://cdn2.steamgriddb.com/grid/a792113bb3e7dbb10067989ea36f38cf.png",
+      "name": "Little Nightmares",
+      "orders_count": 6,
+      "price": 10,
+      "release_date": "2017-04-27",
+      "release_ts": 1493251200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "little nightmares iii",
+        "lni"
+      ],
+      "appid": 1392860,
+      "batch_id": "2026-08-09T14:07:42.441104+00:00",
+      "created_at": "2026-08-09T14:07:42.443188+00:00",
+      "description": "Little Nightmares III is an atmospheric adventure game in which you follow the journey of Low and Alone, two best friends in search of a way out of the Nowhere. In 2 players online cooperation or solo with an A.I., work together to solve puzzles and survive in this nightmarish world.",
+      "gen_count": 0,
+      "id": 154,
+      "image_url": "https://cdn2.steamgriddb.com/grid/8f9fe3c6095c8cd03721a83c8f0291e8.png",
+      "name": "Little Nightmares III",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "2025-10-09",
+      "release_ts": 1759968000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "mad max"
+      ],
+      "appid": 234140,
+      "batch_id": "2026-08-03T09:01:54.625839+00:00",
+      "created_at": "2026-08-03T09:01:54.625839+00:00",
+      "description": "Play as Mad Max, a reluctant hero and survivor who wants nothing more than to leave the madness behind and find solace.",
+      "gen_count": 0,
+      "id": 75,
+      "image_url": "https://cdn2.steamgriddb.com/grid/8c78bd132fff9eb9d47d4759fb8eda13.png",
+      "name": "Mad Max",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2015-09-01",
+      "release_ts": 1441065600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "mafia definitive edition",
+        "mde"
+      ],
+      "appid": 1030840,
+      "batch_id": "2026-08-03T17:35:47.651832+00:00",
+      "created_at": "2026-08-03T17:35:47.653847+00:00",
+      "description": "An inadvertent brush with the mob thrusts cabdriver Tommy Angelo into the world of organized crime. Initially uneasy about falling in with the Salieri family, the rewards become too big to ignore.",
+      "gen_count": 0,
+      "id": 117,
+      "image_url": "https://cdn2.steamgriddb.com/grid/67db41445ace0316b82e6970b1c353ab.png",
+      "name": "Mafia: Definitive Edition",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2020-09-24",
+      "release_ts": 1600905600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "mafia the old country",
+        "moc"
+      ],
+      "appid": 1941540,
+      "batch_id": "2026-08-03T09:10:33.113161+00:00",
+      "created_at": "2026-08-03T09:10:33.113945+00:00",
+      "description": "Uncover the origins of organized crime in Mafia: The Old Country, a gritty mob story set in the brutal underworld of 1900s Sicily. Fight to survive as Enzo Favara and prove your worth to the Family in this immersive third-person action-adventure.",
+      "gen_count": 0,
+      "id": 81,
+      "image_url": "https://cdn2.steamgriddb.com/grid/409b35274803d73b0697509cb9871f04.png",
+      "name": "Mafia: The Old Country",
+      "orders_count": 6,
+      "price": 10,
+      "release_date": "2025-08-07",
+      "release_ts": 1754524800,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "mage arena"
+      ],
+      "appid": 3716600,
+      "batch_id": "2026-08-03T11:17:00.056816+00:00",
+      "created_at": "2026-08-03T11:17:00.058097+00:00",
+      "description": "A co-op PvP experience about using your voice to cast spells in the Mage Arena to settle an ages-old feud between sorcerers and warlocks.",
+      "gen_count": 0,
+      "id": 95,
+      "image_url": "https://cdn2.steamgriddb.com/icon/08420f746d130713026fd17c5d877838.ico",
+      "name": "Mage Arena",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "Jul 24, 2025",
+      "release_ts": 1753315200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "manor lords"
+      ],
+      "appid": 1363080,
+      "batch_id": "2026-08-04T13:08:18.806378+00:00",
+      "created_at": "2026-08-04T13:08:18.806378+00:00",
+      "description": "Manor Lords is a medieval strategy game featuring in-depth city building, large-scale tactical battles, and complex economic and social simulations. Rule your lands as a medieval lord – the seasons pass, the weather changes, and cities rise and fall.",
+      "gen_count": 0,
+      "id": 123,
+      "image_url": "https://cdn2.steamgriddb.com/grid/b530a0bc73626d18b9594035170ca67d.png",
+      "name": "Manor Lords",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2024-04-26",
+      "release_ts": 1714089600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "9 marvels spiderman 2",
+        "marvels spiderman 2",
+        "ms2",
+        "sider man 2",
+        "spider man 2",
+        "spiderman 2"
+      ],
+      "appid": 2651280,
+      "batch_id": "2026-08-03T08:40:19.227367+00:00",
+      "created_at": "2026-08-03T08:40:19.227367+00:00",
+      "description": "Be Greater. Together. The incredible power of the symbiote forces Peter Parker and Miles Morales into a desperate fight as they balance their lives, friendships, and their duty to protect in an exciting chapter of the critically acclaimed Spider-Man franchise on PC.",
+      "gen_count": 0,
+      "id": 15,
+      "image_url": "https://cdn2.steamgriddb.com/grid/bf4937559217ab5f1f8912bf1eabc5f7.png",
+      "name": "Marvel's Spider-Man 2",
+      "orders_count": 63,
+      "price": 10,
+      "release_date": "2025-01-30",
+      "release_ts": 1738195200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "marvels spider man remastered",
+        "marvels spiderman remastered",
+        "msr",
+        "spider man remastered",
+        "spiderman"
+      ],
+      "appid": 1817070,
+      "batch_id": "2026-08-03T08:40:18.977495+00:00",
+      "created_at": "2026-08-03T08:40:18.977495+00:00",
+      "description": "In Marvel’s Spider-Man Remastered, the worlds of Peter Parker and Spider-Man collide in an original action-packed story. Play as an experienced Peter Parker, fighting big crime and iconic villains in Marvel’s New York. Web-swing through vibrant neighborhoods and defeat villains with epic takedowns.",
+      "gen_count": 0,
+      "id": 14,
+      "image_url": "https://cdn2.steamgriddb.com/grid/eb78d7d4ab40b31882d6ed4a6919f2d5.png",
+      "name": "Marvel’s Spider-Man Remastered",
+      "orders_count": 25,
+      "price": 10,
+      "release_date": "2022-08-12",
+      "release_ts": 1660262400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "marvels spiderman miles morales",
+        "msmm",
+        "spider man miles morales"
+      ],
+      "appid": 1817190,
+      "batch_id": "2026-08-03T08:59:48.506595+00:00",
+      "created_at": "2026-08-03T08:59:48.506595+00:00",
+      "description": "After the events of Marvel’s Spider-Man Remastered, teenage Miles Morales is adjusting to his new home while following in the footsteps of his mentor, Peter Parker, as a new Spider-Man. When a fierce power struggle threatens to destroy his home, Miles must take up the mantle of Spider-Man and own it",
+      "gen_count": 0,
+      "id": 46,
+      "image_url": "https://cdn2.steamgriddb.com/grid/ec540cdfd38fa9e7c2c9e19f6b00e2a4.png",
+      "name": "Marvel’s Spider-Man: Miles Morales",
+      "orders_count": 21,
+      "price": 10,
+      "release_date": "Nov 18, 2022",
+      "release_ts": 1668729600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "max payne 3",
+        "mp3"
+      ],
+      "appid": 204100,
+      "batch_id": "2026-08-03T17:36:26.999357+00:00",
+      "created_at": "2026-08-03T17:36:27.000972+00:00",
+      "description": "No longer a New York City cop, Max Payne moves to São Paulo to protect a wealthy family in an effort to finally escape his troubled past. This complete edition of Max Payne 3 includes the complete original game and all previously released downloadable content.",
+      "gen_count": 0,
+      "id": 118,
+      "image_url": "https://cdn2.steamgriddb.com/grid/2e41cf896aeb42ae117dbaff02e5f7c7.png",
+      "name": "Max Payne 3",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "2012-05-31",
+      "release_ts": 1338422400,
+      "tags": [
+        "rockstar"
+      ]
+    },
+    {
+      "aliases": [
+        "meccha chameleon",
+        "meccha chamelon"
+      ],
+      "appid": 4704690,
+      "batch_id": "2026-08-03T11:16:48.356882+00:00",
+      "created_at": "2026-08-03T11:16:48.358060+00:00",
+      "description": "Paint yourself to blend in! &quot;Meccha Chameleon&quot; is a new-sensation hide-and-seek game where you paint your white body to mimic the stage. Spot, pose, and &quot;artistic skill&quot; are keys to survival. Deceive Seekers with techniques that put chameleons to shame! Supports public matches and streaming.",
+      "gen_count": 0,
+      "id": 84,
+      "image_url": "https://cdn2.steamgriddb.com/grid/be0fe07e6dbae25ba440ceffa8f31a74.png",
+      "name": "MECCHA CHAMELEON",
+      "orders_count": 32,
+      "price": 10,
+      "release_date": "Jun 9, 2026",
+      "release_ts": 1780963200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "mimesis"
+      ],
+      "appid": 2827200,
+      "batch_id": "2026-08-12T00:12:07.807431+00:00",
+      "created_at": "2026-08-12T00:12:07.809264+00:00",
+      "description": "4 Player co-op survival horror game. When the cursed rain falls, 'Mimesis' appear, perfectly imitating your teammates, bringing a new level of tension you've never experienced before.",
+      "gen_count": 0,
+      "id": 165,
+      "image_url": "https://cdn2.steamgriddb.com/grid/56df001ca081ba09041874c1ce6719ec.jpg",
+      "name": "MIMESIS",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2025-10-27",
+      "release_ts": 1761523200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "mini motorways"
+      ],
+      "appid": 1127500,
+      "batch_id": "2026-08-07T12:32:59.282412+00:00",
+      "created_at": "2026-08-07T12:32:59.283863+00:00",
+      "description": "Mini Motorways is a strategy simulation game about designing the road map for a growing city. Build a traffic network, one road at a time, to create a bustling metropolis. Redesign your roads and place your motorways to get everyone where they need to go. How long can you keep the city moving?",
+      "gen_count": 0,
+      "id": 145,
+      "image_url": "https://cdn2.steamgriddb.com/grid/0b8021d28170751a32ef2fa5b776a431.png",
+      "name": "Mini Motorways",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2021-07-20",
+      "release_ts": 1626739200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "mk1",
+        "mortal kombat 11"
+      ],
+      "appid": 976310,
+      "batch_id": "2026-08-05T03:54:58.399918+00:00",
+      "created_at": "2026-08-05T03:54:58.401597+00:00",
+      "description": "Mortal Kombat is back and better than ever in the next evolution of the iconic franchise.",
+      "gen_count": 0,
+      "id": 134,
+      "image_url": "https://cdn2.steamgriddb.com/grid/e3f13b88bedd3f0c9346814b957bb0f9.png",
+      "name": "Mortal Kombat 11",
+      "orders_count": 6,
+      "price": 10,
+      "release_date": "2019-04-23",
+      "release_ts": 1555977600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "mortal shell ii",
+        "msi"
+      ],
+      "appid": 2584270,
+      "batch_id": "2026-08-20T19:14:15.042056+00:00",
+      "created_at": "2026-08-20T19:14:15.043399+00:00",
+      "description": "Their Flesh Is Your Weapon. Mortal Shell II is a standalone sequel action-RPG with adrenaline-charged, high-stakes combat. Possess warrior Shells, dethrone false gods, redeem a ravaged world.",
+      "gen_count": 0,
+      "id": 206,
+      "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2584270/0a4c23b70ced29fac344186ea564dae67c80cfd6/header.jpg?t=1787231571",
+      "name": "Mortal Shell II",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2026-08-20",
+      "release_ts": 1787184000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "naruto shippuden ultimate ninja storm revolution",
+        "nsunsr"
+      ],
+      "appid": 272510,
+      "batch_id": "2026-08-18T12:41:16.349062+00:00",
+      "created_at": "2026-08-18T12:41:16.351427+00:00",
+      "description": "THE REVOLUTIONARY STORM SERIES RETURNS! Live a new experience in the deep &amp; rich NARUTO environment. Tons of new techniques, enhanced mechanics, over 100 playable characters &amp; Support Ninjas, and a brand new exclusive character (Mecha-Naruto) designed by Masashi Kishimoto.",
+      "gen_count": 0,
+      "id": 192,
+      "image_url": "https://cdn2.steamgriddb.com/grid/2342d8a616837cd6d79017fe68172b28.png",
+      "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM Revolution",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "2014-09-15",
+      "release_ts": 1410739200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "need for speed heat",
+        "nsh"
+      ],
+      "appid": 1222680,
+      "batch_id": "2026-08-16T15:23:49.938967+00:00",
+      "created_at": "2026-08-16T15:23:49.938967+00:00",
+      "description": "Hustle by day and risk it all at night in Need for Speed™ Heat Deluxe Edition, a white-knuckle street racer, where the lines of the law fade as the sun starts to set.",
+      "gen_count": 0,
+      "id": 186,
+      "image_url": "https://cdn2.steamgriddb.com/grid/04b416786c09e988ddd7e60d58cfd00e.png",
+      "name": "Need for Speed™ Heat",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2020-06-04",
+      "release_ts": 1591228800,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "need for speed hot pursuit remastered",
+        "nshp",
+        "nshpr"
+      ],
+      "appid": 1328660,
+      "batch_id": "2026-08-16T15:23:50.658671+00:00",
+      "created_at": "2026-08-16T15:23:50.658671+00:00",
+      "description": "Feel the thrill of the chase and the rush of escape behind the wheels of the world’s hottest high-performance cars in Need for Speed™ Hot Pursuit Remastered– a heart-pumping, socially competitive racing experience.",
+      "gen_count": 0,
+      "id": 187,
+      "image_url": "https://cdn2.steamgriddb.com/grid/192964f28b9898709d15e1ba9682a2f5.png",
+      "name": "Need for Speed™ Hot Pursuit Remastered",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2020-11-06",
+      "release_ts": 1604620800,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "nier automata",
+        "nierautomata"
+      ],
+      "appid": 524220,
+      "batch_id": "2026-08-07T19:18:07.127316+00:00",
+      "created_at": "2026-08-07T19:18:07.127316+00:00",
+      "description": "NieR: Automata tells the story of androids 2B, 9S and A2 and their battle to reclaim the machine-driven dystopia overrun by powerful machines.",
+      "gen_count": 0,
+      "id": 150,
+      "image_url": "https://cdn2.steamgriddb.com/grid/997767fc114a4a0c7e1eeb3e15f43075.png",
+      "name": "NieR:Automata™",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2017-03-17",
+      "release_ts": 1489708800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "no straight roads encore edition",
+        "nsre",
+        "nsree"
+      ],
+      "appid": 1726190,
+      "batch_id": "2026-08-16T00:16:01.221388+00:00",
+      "created_at": "2026-08-16T00:16:01.222955+00:00",
+      "description": "Start a rock band &amp; end the EDM empire in NO STRAIGHT ROADS, a rockin' action-adventure that mashes together rhythm-infused third-person combat with a kick-ass soundtrack!",
+      "gen_count": 0,
+      "id": 177,
+      "image_url": "https://cdn2.steamgriddb.com/icon/76b6bc63289595c217847bfba8463470.ico",
+      "name": "No Straight Roads: Encore Edition",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2021-10-21",
+      "release_ts": 1634774400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "ninh",
+        "no im not a human"
+      ],
+      "appid": 3180070,
+      "batch_id": "2026-08-08T04:02:08.057195+00:00",
+      "created_at": "2026-08-08T04:02:08.057195+00:00",
+      "description": "WARNING. Stay inside. Lock your doors. Close the blinds. Only let humans in. Eliminate all Visitors. An anxiety horror about paranoia in the End of Times.",
+      "gen_count": 0,
+      "id": 153,
+      "image_url": "https://cdn2.steamgriddb.com/grid/2990477a6fa7cd83e7c6dbbb69b2d693.png",
+      "name": "No, I'm not a Human",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2025-09-15",
+      "release_ts": 1757894400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "ori and the will of the wisps",
+        "oww"
+      ],
+      "appid": 1057090,
+      "batch_id": "2026-08-16T00:14:18.821698+00:00",
+      "created_at": "2026-08-16T00:14:18.822520+00:00",
+      "description": "Play the critically acclaimed masterpiece. Embark on a new journey in a vast, exotic world where you’ll encounter towering enemies and challenging puzzles on your quest to unravel Ori’s destiny.",
+      "gen_count": 0,
+      "id": 176,
+      "image_url": "https://cdn2.steamgriddb.com/grid/0c4471ab6423c73a95835496b5d3911c.png",
+      "name": "Ori and the Will of the Wisps",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2020-03-10",
+      "release_ts": 1583798400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "outer wilds"
+      ],
+      "appid": 753640,
+      "batch_id": "2026-08-03T09:01:12.532094+00:00",
+      "created_at": "2026-08-03T09:01:12.532094+00:00",
+      "description": "Named Game of the Year 2019 by Giant Bomb, Polygon, Eurogamer, and The Guardian, Outer Wilds is a critically-acclaimed and award-winning open world mystery about a solar system trapped in an endless time loop.",
+      "gen_count": 0,
+      "id": 57,
+      "image_url": "https://cdn2.steamgriddb.com/grid/52eeaf9f1eb952e476fe29e3d9eae992.png",
+      "name": "Outer Wilds",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "Jun 18, 2020",
+      "release_ts": 1592438400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "outlast"
+      ],
+      "appid": 238320,
+      "batch_id": "2026-08-03T09:01:55.743384+00:00",
+      "created_at": "2026-08-03T09:01:55.743384+00:00",
+      "description": "Hell is an experiment you can't survive in Outlast, a first-person survival horror game developed by veterans of some of the biggest game franchises in history. As investigative journalist Miles Upshur, explore Mount Massive Asylum and try to survive long enough to discover its terrible secret... if you dare.",
+      "gen_count": 0,
+      "id": 77,
+      "image_url": "https://cdn2.steamgriddb.com/grid/13e28b82b739928c070be77afbc668ea.png",
+      "name": "Outlast",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2013-09-04",
+      "release_ts": 1378252800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "outlast 2",
+        "outlast ii"
+      ],
+      "appid": 414700,
+      "batch_id": "2026-08-03T08:59:34.105351+00:00",
+      "created_at": "2026-08-03T08:59:34.105351+00:00",
+      "description": "Outlast 2 introduces you to Sullivan Knoth and his followers, who left our wicked world behind to give birth to Temple Gate, a town, deep in the wilderness and hidden from civilization. Knoth and his flock are preparing for the tribulations of the end of times and you’re right in the thick of it.",
+      "gen_count": 0,
+      "id": 42,
+      "image_url": "https://cdn2.steamgriddb.com/grid/eacbec704544fb3e45efadf8eedbf9c8.png",
+      "name": "Outlast 2",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2017-04-24",
+      "release_ts": 1492992000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "palworld",
+        "plaworld"
+      ],
+      "appid": 1623730,
+      "batch_id": "2026-08-03T08:59:33.681845+00:00",
+      "created_at": "2026-08-03T08:59:33.681845+00:00",
+      "description": "Fight, farm, build and work alongside mysterious creatures called &quot;Pals&quot; in this completely new multiplayer, open world survival and crafting game!",
+      "gen_count": 0,
+      "id": 41,
+      "image_url": "https://cdn2.steamgriddb.com/grid/c0bb1df67d35fe62c7d4d7c8412dce0d.png",
+      "name": "Palworld",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2026-07-09",
+      "release_ts": 1783555200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "panicore"
+      ],
+      "appid": 2695940,
+      "batch_id": "2026-08-05T10:59:23.903175+00:00",
+      "created_at": "2026-08-05T10:59:23.905400+00:00",
+      "description": "PANICORE is a survival horror game that mixes permadeath, AI monsters and a co-op experience up to 5 players (4 players in demo). Try to escape and don't get caught, but beware: they don't only hear your steps, but also your voice.",
+      "gen_count": 0,
+      "id": 137,
+      "image_url": "https://cdn2.steamgriddb.com/grid/52f0441c6a74e700b8b3eeba7d95f06a.png",
+      "name": "PANICORE",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2024-05-31",
+      "release_ts": 1717113600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "peak"
+      ],
+      "appid": 3527290,
+      "batch_id": "2026-08-03T11:16:49.291746+00:00",
+      "created_at": "2026-08-03T11:16:49.292658+00:00",
+      "description": "PEAK is a co-op climbing game where the slightest mistake can spell your doom. Either solo or as a group of lost nature scouts, your only hope of rescue from a mysterious island is to scale the mountain at its center. Do you have what it takes to reach the PEAK?",
+      "gen_count": 0,
+      "id": 85,
+      "image_url": "https://cdn2.steamgriddb.com/grid/4b94fc39226915da20f0c654b2b9f186.png",
+      "name": "PEAK",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2025-06-16",
+      "release_ts": 1750032000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "phasmophobia"
+      ],
+      "appid": 739630,
+      "batch_id": "2026-08-03T09:01:13.722461+00:00",
+      "created_at": "2026-08-03T09:01:13.722461+00:00",
+      "description": "Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on the rise and it’s up to you and your team to use all the ghost-hunting equipment at your disposal in order to gather as much evidence as you can.",
+      "gen_count": 0,
+      "id": 59,
+      "image_url": "https://cdn2.steamgriddb.com/grid/62103c47ad5855326b18e20b52b58176.png",
+      "name": "Phasmophobia",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2020-09-18",
+      "release_ts": 1600387200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "poppy playtime"
+      ],
+      "appid": 1721470,
+      "batch_id": "2026-08-15T23:52:08.352379+00:00",
+      "created_at": "2026-08-15T23:52:08.353497+00:00",
+      "description": "You must stay alive in this horror/puzzle adventure. Try to survive the vengeful toys waiting for you in the abandoned toy factory. Use your GrabPack to hack electrical circuits or nab anything from afar. Explore the mysterious facility... and don't get caught.",
+      "gen_count": 0,
+      "id": 172,
+      "image_url": "https://cdn2.steamgriddb.com/grid/244f2d76754b047fe50a0699439d7d0d.png",
+      "name": "Poppy Playtime",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "2021-10-12",
+      "release_ts": 1633996800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "pragmata"
+      ],
+      "appid": 3357650,
+      "batch_id": "2026-08-03T09:08:31.541786+00:00",
+      "created_at": "2026-08-03T09:08:31.544601+00:00",
+      "description": "Pragmata is a unique, sci-fi action-adventure game from Capcom. Follow Hugh, a member of an ill-fated investigation team, and Diana, a young android, as they navigate a lunar facility taken over by rogue AI in search of a way to Earth.",
+      "gen_count": 0,
+      "id": 79,
+      "image_url": "https://cdn2.steamgriddb.com/grid/5bb5f47e81b1b6993e1e1cde23d0a11e.png",
+      "name": "PRAGMATA",
+      "orders_count": 9,
+      "price": 10,
+      "release_date": "2026-04-16",
+      "release_ts": 1776297600,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "pratfall"
+      ],
+      "appid": 4244510,
+      "batch_id": "2026-08-12T00:11:08.078332+00:00",
+      "created_at": "2026-08-12T00:11:08.079793+00:00",
+      "description": "A co-op game for 1-6+ players where you fall, dig, and explode your way down a dangerous cave system to find your lost dog. Catch your friends and watch your step on this journey full of traps, hazards, and the most deadly force of all: gravity. Will you jump into the unknown to rescue your dog?",
+      "gen_count": 0,
+      "id": 164,
+      "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4244510/aa5134d11626034935daa974478c834d03d73f54/header.jpg?t=1784880390",
+      "name": "Pratfall",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2026-04-20",
+      "release_ts": 1776643200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "repo"
+      ],
+      "appid": 3241660,
+      "batch_id": "2026-08-03T08:40:19.689993+00:00",
+      "created_at": "2026-08-03T08:40:19.689993+00:00",
+      "description": "An online co-op horror game with up to 6 players. Locate valuable, fully physics-based objects and handle them with care as you retrieve and extract to satisfy your creator's desires.",
+      "gen_count": 0,
+      "id": 17,
+      "image_url": "https://cdn2.steamgriddb.com/grid/18720a71ff99e51dc682bdbb16953ccc.png",
+      "name": "R.E.P.O.",
+      "orders_count": 5,
+      "price": 10,
+      "release_date": "2025-02-26",
+      "release_ts": 1740528000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "raft"
+      ],
+      "appid": 648800,
+      "batch_id": "2026-08-03T11:16:53.442516+00:00",
+      "created_at": "2026-08-03T11:16:53.443380+00:00",
+      "description": "Raft™ throws you and your friends into an epic oceanic adventure! Alone or together, players battle to survive a perilous voyage across a vast sea! Gather debris, scavenge reefs and build your own floating home, but be wary of the man-eating sharks!",
+      "gen_count": 0,
+      "id": 89,
+      "image_url": "https://cdn2.steamgriddb.com/grid/6c0f058cefc6bef6c20c9b1f818f9f24.png",
+      "name": "Raft",
+      "orders_count": 6,
+      "price": 10,
+      "release_date": "Jun 20, 2022",
+      "release_ts": 1655683200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "ranch simulator build hunt farm",
+        "rsbhf"
+      ],
+      "appid": 1119730,
+      "batch_id": "2026-08-03T12:00:17.348882+00:00",
+      "created_at": "2026-08-03T12:00:17.350907+00:00",
+      "description": "Builder. Farmer. Hunter. Trader. Ranching certainly isn’t your average job. Think you have the skills to turn your family’s rundown homestead into the most prosperous ranch in the valley? Then it’s time to head out into the wilderness in this captivating single and multiplayer open-world simulator.",
+      "gen_count": 0,
+      "id": 106,
+      "image_url": "https://cdn2.steamgriddb.com/icon/3350b83f62306e25b3bdad98f05d035b.png",
+      "name": "Ranch Simulator: Build, Hunt, Farm",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2023-11-03",
+      "release_ts": 1698969600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "ready or not"
+      ],
+      "appid": 1144200,
+      "batch_id": "2026-08-18T16:58:49.452379+00:00",
+      "created_at": "2026-08-18T16:58:49.453418+00:00",
+      "description": "Become an elite SWAT commander and bring order to a city overwhelmed by chaos and corruption.",
+      "gen_count": 0,
+      "id": 196,
+      "image_url": "https://cdn2.steamgriddb.com/grid/dcb06a0320f42944a47fbfbcb4521ecf.png",
+      "name": "Ready or Not",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2023-12-13",
+      "release_ts": 1702425600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "reanimal"
+      ],
+      "appid": 2129530,
+      "batch_id": "2026-08-12T00:13:40.906545+00:00",
+      "created_at": "2026-08-12T00:13:40.908328+00:00",
+      "description": "The creators of Little Nightmares™ I &amp; II have returned to take you on a darker, more terrifying journey than ever before. In this horror adventure game, a brother &amp; sister go through hell to rescue their missing friends and escape the island that they used to call home.",
+      "gen_count": 0,
+      "id": 167,
+      "image_url": "https://cdn2.steamgriddb.com/grid/18eeeff30c1953e8c8e16faddd92e78b.png",
+      "name": "REANIMAL",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2026-02-13",
+      "release_ts": 1770940800,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "rdr",
+        "red dead redemption"
+      ],
+      "appid": 2668510,
+      "batch_id": "2026-08-03T11:38:05.462809+00:00",
+      "created_at": "2026-08-03T11:38:05.463904+00:00",
+      "description": "Experience the story of former outlaw John Marston as he tracks down the last remaining members of the notorious Van der Linde Gang in the PC debut of the critically acclaimed predecessor to Red Dead Redemption 2.",
+      "gen_count": 0,
+      "id": 97,
+      "image_url": "https://cdn2.steamgriddb.com/grid/245df3ac851e5816b7566bf55290bce6.png",
+      "name": "Red Dead Redemption",
+      "orders_count": 14,
+      "price": 10,
+      "release_date": "2024-10-29",
+      "release_ts": 1730160000,
+      "tags": [
+        "rockstar"
+      ]
+    },
+    {
+      "aliases": [
+        "1 red dead redemption 2",
+        "rdr",
+        "rdr2",
+        "read dead 2",
+        "red dead redemption 2"
+      ],
+      "appid": 1174180,
+      "batch_id": "2026-08-03T08:40:15.121201+00:00",
+      "created_at": "2026-08-03T08:40:15.121201+00:00",
+      "description": "Arthur Morgan and the Van der Linde Gang are outlaws on the run. With federal agents and bounty hunters massing on their heels, the gang must rob, steal, and fight their way across the rugged heartland in order to survive.",
+      "gen_count": 0,
+      "id": 5,
+      "image_url": "https://cdn2.steamgriddb.com/grid/26df67ad05c8582376897ed5966778ca.png",
+      "name": "Red Dead Redemption 2",
+      "orders_count": 79,
+      "price": 10,
+      "release_date": "2019-12-05",
+      "release_ts": 1575504000,
+      "tags": [
+        "rockstar"
+      ]
+    },
+    {
+      "aliases": [
+        "re2",
+        "resident evil 2",
+        "resident evil 2 remake"
+      ],
+      "appid": 883710,
+      "batch_id": "2026-08-03T09:00:12.673017+00:00",
+      "created_at": "2026-08-03T09:00:12.673017+00:00",
+      "description": "A deadly virus engulfs the residents of Raccoon City in September of 1998, plunging the city into chaos as flesh eating zombies roam the streets for survivors. An unparalleled adrenaline rush, gripping storyline, and unimaginable horrors await you. Witness the return of Resident Evil 2.",
+      "gen_count": 0,
+      "id": 48,
+      "image_url": "https://cdn2.steamgriddb.com/grid/1c93fcaee58c77f06673632f80b2e0b5.png",
+      "name": "Resident Evil 2",
+      "orders_count": 5,
+      "price": 10,
+      "release_date": "2019-01-24",
+      "release_ts": 1548288000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "re3",
+        "resident evil 3",
+        "resident evil 3 remake"
+      ],
+      "appid": 952060,
+      "batch_id": "2026-08-03T09:00:13.181763+00:00",
+      "created_at": "2026-08-03T09:00:13.181763+00:00",
+      "description": "Jill Valentine is one of the last remaining people in Raccoon City to witness the atrocities Umbrella performed. To stop her, Umbrella unleashes their ultimate secret weapon: Nemesis! Also includes Resident Evil Resistance, a new 1 vs 4 online multiplayer game set in the Resident Evil universe.",
+      "gen_count": 0,
+      "id": 49,
+      "image_url": "https://cdn2.steamgriddb.com/grid/7fce5240a4f9c7b034d6fd4a461ac49f.png",
+      "name": "Resident Evil 3",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2020-04-02",
+      "release_ts": 1585785600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "11 resident evil 4 remake",
+        "re4",
+        "resident evil",
+        "resident evil 4",
+        "resident evil 4 remake",
+        "resident evil 8"
+      ],
+      "appid": 2050650,
+      "batch_id": "2026-08-03T08:40:22.113495+00:00",
+      "created_at": "2026-08-03T08:40:22.113495+00:00",
+      "description": "Survival is just the beginning. Six years have passed since the biological disaster in Raccoon City. Leon S. Kennedy, one of the survivors, tracks the president's kidnapped daughter to a secluded European village, where there is something terribly wrong with the locals.",
+      "gen_count": 0,
+      "id": 23,
+      "image_url": "https://cdn2.steamgriddb.com/grid/8d5bec2e57f518d7f0115f8426d21e4c.png",
+      "name": "Resident Evil 4",
+      "orders_count": 28,
+      "price": 10,
+      "release_date": "2023-03-23",
+      "release_ts": 1679529600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "re7b",
+        "resident evil 7 biohazard"
+      ],
+      "appid": 418370,
+      "batch_id": "2026-08-03T09:00:14.398812+00:00",
+      "created_at": "2026-08-03T09:00:14.398812+00:00",
+      "description": "Fear and isolation seep through the walls of an abandoned southern farmhouse. &quot;7&quot; marks a new beginning for survival horror with the “Isolated View” of the visceral new first-person perspective.",
+      "gen_count": 0,
+      "id": 50,
+      "image_url": "https://cdn2.steamgriddb.com/grid/7161cb3019b24fcbf8f77de40f511642.png",
+      "name": "Resident Evil 7 Biohazard",
+      "orders_count": 11,
+      "price": 10,
+      "release_date": "2017-01-23",
+      "release_ts": 1485129600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "rer",
+        "resident evil requiem",
+        "résident evil requiem"
+      ],
+      "appid": 3764200,
+      "batch_id": "2026-08-03T08:40:24.216524+00:00",
+      "created_at": "2026-08-03T08:40:24.216524+00:00",
+      "description": "Requiem for the dead. Nightmare for the living. Prepare to escape death in a heart-stopping experience that will chill you to your core.",
+      "gen_count": 0,
+      "id": 28,
+      "image_url": "https://cdn2.steamgriddb.com/grid/719ff32e652813f56fbf4bc0d5433507.png",
+      "name": "Resident Evil Requiem",
+      "orders_count": 10,
+      "price": 10,
+      "release_date": "2026-02-26",
+      "release_ts": 1772064000,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "resident evil 8 village",
+        "resident evil village",
+        "rev"
+      ],
+      "appid": 1196590,
+      "batch_id": "2026-08-03T08:40:24.460820+00:00",
+      "created_at": "2026-08-03T08:40:24.460820+00:00",
+      "description": "Experience survival horror like never before in the 8th major installment in the Resident Evil franchise - Resident Evil Village. With detailed graphics, intense first-person action and masterful storytelling, the terror has never felt more realistic.",
+      "gen_count": 0,
+      "id": 29,
+      "image_url": "https://cdn2.steamgriddb.com/grid/ebfa2bdc97570d21167a0de805ee4f93.png",
+      "name": "Resident Evil Village",
+      "orders_count": 6,
+      "price": 10,
+      "release_date": "2021-05-06",
+      "release_ts": 1620259200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "s2hc",
+        "stalker 2 heart of chornobyl"
+      ],
+      "appid": 1643320,
+      "batch_id": "2026-08-18T16:55:56.290723+00:00",
+      "created_at": "2026-08-18T16:55:56.291615+00:00",
+      "description": "Discover the vast Chornobyl Exclusion Zone full of dangerous enemies, deadly anomalies and powerful artifacts. Unveil your own epic story as you make your way to the Heart of Chornobyl. Make your choices wisely, as they will determine your fate in the end.",
+      "gen_count": 0,
+      "id": 195,
+      "image_url": "https://cdn2.steamgriddb.com/grid/0d6b025620ce2ce64a5803f8a0b306f5.png",
+      "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2024-11-20",
+      "release_ts": 1732060800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "schedule i"
+      ],
+      "appid": 3164500,
+      "batch_id": "2026-08-03T08:40:21.790787+00:00",
+      "created_at": "2026-08-03T08:40:21.790787+00:00",
+      "description": "From small-time dope pusher to kingpin - manufacture and distribute a range of drugs throughout the grungy city of Hyland Point. Expand your empire with properties, businesses, employees and more.",
+      "gen_count": 0,
+      "id": 22,
+      "image_url": "https://cdn2.steamgriddb.com/grid/72df55af95bb233010c60449af3b42e7.png",
+      "name": "Schedule I",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "Mar 24, 2025",
+      "release_ts": 1742774400,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "scott pilgrim vs the world the game complete edition",
+        "spvw",
+        "spvwgce"
+      ],
+      "appid": 2215260,
+      "batch_id": "2026-08-16T15:23:47.961494+00:00",
+      "created_at": "2026-08-16T15:23:47.961494+00:00",
+      "description": "Rediscover the beloved 2D arcade-style beat 'em up inspired by the iconic comic and movie Scott Pilgrim vs. The World!",
+      "gen_count": 0,
+      "id": 183,
+      "image_url": "https://cdn2.steamgriddb.com/grid/87292f3cd3732c6f99ad8e7f5cb9e3a0.png",
+      "name": "Scott Pilgrim vs. The World™: The Game – Complete Edition",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2023-01-05",
+      "release_ts": 1672876800,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "12 sekiro shadows die twice",
+        "sekiro shadows die twice",
+        "sekiro shadows die twice goty edition",
+        "ssdt",
+        "ssdtge"
+      ],
+      "appid": 814380,
+      "batch_id": "2026-08-03T08:40:15.556050+00:00",
+      "created_at": "2026-08-03T08:40:15.556050+00:00",
+      "description": "Game of the Year - The Game Awards 2019 Best Action Game of 2019 - IGN Carve your own clever path to vengeance in the award winning adventure from developer FromSoftware, creators of Bloodborne and the Dark Souls series. Take Revenge. Restore Your Honor. Kill Ingeniously.",
+      "gen_count": 0,
+      "id": 6,
+      "image_url": "https://cdn2.steamgriddb.com/grid/7dcf8773e0db912ac8a9bd8914aed99e.png",
+      "name": "Sekiro™: Shadows Die Twice - GOTY Edition",
+      "orders_count": 11,
+      "price": 10,
+      "release_date": "2019-03-21",
+      "release_ts": 1553126400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "sh2",
+        "silent hill 2"
+      ],
+      "appid": 2124490,
+      "batch_id": "2026-08-03T08:59:19.078098+00:00",
+      "created_at": "2026-08-03T08:59:19.078098+00:00",
+      "description": "Investigating a letter from his late wife, James returns to where they made so many memories - Silent Hill. What he finds is a ghost town, prowled by disturbing monsters and cloaked in deep fog. Confront the monsters, solve puzzles, and search for traces of your wife in this remake of SILENT HILL 2.",
+      "gen_count": 0,
+      "id": 35,
+      "image_url": "https://cdn2.steamgriddb.com/grid/f9b85282b17c96e3117374fe32501deb.png",
+      "name": "SILENT HILL 2",
+      "orders_count": 5,
+      "price": 10,
+      "release_date": "Oct 7, 2024",
+      "release_ts": 1728259200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "shf",
+        "silent hill f"
+      ],
+      "appid": 2947440,
+      "batch_id": "2026-08-03T08:59:19.785177+00:00",
+      "created_at": "2026-08-03T08:59:19.785177+00:00",
+      "description": "Hinako's hometown is engulfed in fog, driving her to fight grotesque monsters and solve eerie puzzles. Uncover the disturbing beauty hidden in terror.",
+      "gen_count": 0,
+      "id": 36,
+      "image_url": "https://cdn2.steamgriddb.com/grid/408f2cc925c0ce2cc4bed322f697d1eb.png",
+      "name": "SILENT HILL f",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2025-09-24",
+      "release_ts": 1758672000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "scu",
+        "sonic colors ultimate"
+      ],
+      "appid": 2055290,
+      "batch_id": "2026-08-16T15:23:49.255879+00:00",
+      "created_at": "2026-08-16T15:23:49.255879+00:00",
+      "description": "Join Sonic in the high-speed adventure of a lifetime across a colorful interstellar amusement park. Color the Universe in Sonic Colors: Ultimate!",
+      "gen_count": 0,
+      "id": 185,
+      "image_url": "https://cdn2.steamgriddb.com/grid/1680d250bdc132290159d80294c63aa8.png",
+      "name": "Sonic Colors: Ultimate",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2023-02-06",
+      "release_ts": 1675641600,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "sonic frontiers"
+      ],
+      "appid": 1237320,
+      "batch_id": "2026-08-16T15:20:40.682903+00:00",
+      "created_at": "2026-08-16T15:20:40.682903+00:00",
+      "description": "Sonic Frontiers is a groundbreaking open-zone action-adventure game set on the ancient Starfall Islands. Join Sonic as he battles hordes of powerful enemies with an all-new combat system, explores the mysteries of the islands, and saves his friends!",
+      "gen_count": 0,
+      "id": 181,
+      "image_url": "https://cdn2.steamgriddb.com/grid/455fe5adc38de2f4c48426cb31c5e8ae.png",
+      "name": "Sonic Frontiers",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2022-11-07",
+      "release_ts": 1667779200,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "sons of the forest"
+      ],
+      "appid": 1326470,
+      "batch_id": "2026-08-03T08:40:18.720480+00:00",
+      "created_at": "2026-08-03T08:40:18.720480+00:00",
+      "description": "Sent to find a missing billionaire on a remote island, you find yourself in a cannibal-infested hellscape. Craft, build, and struggle to survive, alone or with friends, in this terrifying new open-world survival horror simulator.",
+      "gen_count": 0,
+      "id": 13,
+      "image_url": "https://cdn2.steamgriddb.com/grid/4133b013e74edf1c1f312f6065f74c1a.png",
+      "name": "Sons Of The Forest",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "Feb 22, 2024",
+      "release_ts": 1708560000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "split fiction"
+      ],
+      "appid": 2001120,
+      "batch_id": "2026-08-03T09:01:35.118436+00:00",
+      "created_at": "2026-08-03T09:01:35.118436+00:00",
+      "description": "Embrace mind-blowing moments as you’re pulled deep into the many worlds of Split Fiction, a boundary-pushing co-op adventure.",
+      "gen_count": 0,
+      "id": 73,
+      "image_url": "https://cdn2.steamgriddb.com/grid/7d8e700b3e1679a93a99ae50cfe85eab.png",
+      "name": "Split Fiction",
+      "orders_count": 8,
+      "price": 10,
+      "release_date": "Mar 6, 2025",
+      "release_ts": 1741219200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "stardew",
+        "stardew valley"
+      ],
+      "appid": 413150,
+      "batch_id": "2026-08-03T09:01:14.159438+00:00",
+      "created_at": "2026-08-03T09:01:14.159438+00:00",
+      "description": "You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home?",
+      "gen_count": 0,
+      "id": 60,
+      "image_url": "https://cdn2.steamgriddb.com/grid/f9c1e83924ec2b3b79247ac16c7c966b.png",
+      "name": "Stardew Valley",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2016-02-26",
+      "release_ts": 1456444800,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "stellar blade"
+      ],
+      "appid": 3489700,
+      "batch_id": "2026-08-05T03:55:56.943741+00:00",
+      "created_at": "2026-08-05T03:55:56.944585+00:00",
+      "description": "Save humanity from extinction in post-apocalyptic action-adventure Stellar Blade™. Experience blistering combat and a twisting storyline as you unravel the mysteries of Earth’s downfall.",
+      "gen_count": 0,
+      "id": 135,
+      "image_url": "https://cdn2.steamgriddb.com/grid/dd8fe20da1824a7144fcb2fdc772bb83.png",
+      "name": "Stellar Blade™",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2025-06-11",
+      "release_ts": 1749600000,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "stray"
+      ],
+      "appid": 1332010,
+      "batch_id": "2026-08-16T00:13:51.868930+00:00",
+      "created_at": "2026-08-16T00:13:51.870417+00:00",
+      "description": "Lost, alone and separated from family, a stray cat must untangle an ancient mystery to escape a long-forgotten cybercity and find their way home.",
+      "gen_count": 0,
+      "id": 175,
+      "image_url": "https://cdn2.steamgriddb.com/grid/6473cd235f79b2ac2ccaa6b5af3aee61.png",
+      "name": "Stray",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2022-07-19",
+      "release_ts": 1658188800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "supermarket simulator"
+      ],
+      "appid": 2670630,
+      "batch_id": "2026-08-18T12:38:10.612434+00:00",
+      "created_at": "2026-08-18T12:38:10.614236+00:00",
+      "description": "Run your own supermarket! Stock shelves, set your prices, take payments, hire staff, expand your store, handle shoplifters, and design your layout. Purchase goods from online or local markets around town, and personally deliver online orders to your customers.",
+      "gen_count": 0,
+      "id": 191,
+      "image_url": "https://cdn2.steamgriddb.com/grid/a212f6c6c938235603ca0650a18a1317.png",
+      "name": "Supermarket Simulator",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "2025-06-19",
+      "release_ts": 1750291200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "terraria"
+      ],
+      "appid": 105600,
+      "batch_id": "2026-08-03T11:16:50.710659+00:00",
+      "created_at": "2026-08-03T11:16:50.712488+00:00",
+      "description": "Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. Four Pack also available!",
+      "gen_count": 0,
+      "id": 86,
+      "image_url": "https://cdn2.steamgriddb.com/grid/ec5c06e7e636ea0e806460b3be723280.png",
+      "name": "Terraria",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2011-05-16",
+      "release_ts": 1305504000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "esio",
+        "esior",
+        "the elder scrolls iv oblivion",
+        "the elder scrolls iv oblivion remastered"
+      ],
+      "appid": 2623190,
+      "batch_id": "2026-08-03T09:01:31.455594+00:00",
+      "created_at": "2026-08-03T09:01:31.455594+00:00",
+      "description": "Explore Cyrodiil like never before with stunning new visuals and refined gameplay in The Elder Scrolls IV: Oblivion™ Remastered.",
+      "gen_count": 0,
+      "id": 68,
+      "image_url": "https://cdn2.steamgriddb.com/grid/b459224d0d9774e3eb8974c921db8614.png",
+      "name": "The Elder Scrolls IV: Oblivion Remastered",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2025-04-22",
+      "release_ts": 1745280000,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "esvss",
+        "esvsse",
+        "the elder scrolls v skyrim special edition"
+      ],
+      "appid": 489830,
+      "batch_id": "2026-08-03T08:59:47.487062+00:00",
+      "created_at": "2026-08-03T08:59:47.487062+00:00",
+      "description": "Winner of more than 200 Game of the Year Awards, The Elder Scrolls V: Skyrim Special Edition brings the epic fantasy to life in stunning detail. The Special Edition includes the critically acclaimed game and add-ons with all-new features.",
+      "gen_count": 0,
+      "id": 45,
+      "image_url": "https://cdn2.steamgriddb.com/grid/dcba4a0c9d13dbfcc88a466e5040a73c.png",
+      "name": "The Elder Scrolls V: Skyrim Special Edition",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "Oct 27, 2016",
+      "release_ts": 1477526400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "fbk",
+        "the first berserker khazan"
+      ],
+      "appid": 2680010,
+      "batch_id": "2026-08-16T15:23:47.334535+00:00",
+      "created_at": "2026-08-16T15:23:47.334535+00:00",
+      "description": "The First Berserker: Khazan is a hardcore action role-playing game. The player will become Khazan, the great general of the Pell Los Empire, who overcame death, and sets out to reveal the incidents that led to his downfall and seek vengeance on his enemies.",
+      "gen_count": 0,
+      "id": 182,
+      "image_url": "https://cdn2.steamgriddb.com/grid/43b9f6a23810c49025b9a69eccda178f.png",
+      "name": "The First Berserker: Khazan",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2025-03-27",
+      "release_ts": 1743033600,
+      "tags": [
+        "denuvo"
+      ]
+    },
+    {
+      "aliases": [
+        "the forest"
+      ],
+      "appid": 242760,
+      "batch_id": "2026-08-03T08:40:22.348914+00:00",
+      "created_at": "2026-08-03T08:40:22.348914+00:00",
+      "description": "As the lone survivor of a passenger jet crash, you find yourself in a mysterious forest battling to stay alive against a society of cannibalistic mutants. Build, explore, survive in this terrifying first person survival horror simulator.",
+      "gen_count": 0,
+      "id": 24,
+      "image_url": "https://cdn2.steamgriddb.com/grid/9828cb4d004ea22ddad5fb03c84a2379.png",
+      "name": "The Forest",
+      "orders_count": 12,
+      "price": 10,
+      "release_date": "Apr 30, 2018",
+      "release_ts": 1525046400,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "8 the last of us part i",
+        "lupi",
+        "the last of us",
+        "the last of us 1",
+        "the last of us part 1",
+        "the last of us part i",
+        "tlou"
+      ],
+      "appid": 1888930,
+      "batch_id": "2026-08-03T08:59:17.602542+00:00",
+      "created_at": "2026-08-03T08:59:17.602542+00:00",
+      "description": "Discover the award-winning game that inspired the critically acclaimed television show. Guide Joel and Ellie through a post-apocalyptic America, and encounter unforgettable allies and enemies in The Last of Us™.",
+      "gen_count": 0,
+      "id": 32,
+      "image_url": "https://cdn2.steamgriddb.com/grid/a1bab30dfd9bc9bb271d754a70208e34.png",
+      "name": "The Last of Us™ Part I",
+      "orders_count": 35,
+      "price": 10,
+      "release_date": "2023-03-28",
+      "release_ts": 1679961600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "lup",
+        "lupir",
+        "the last of us 2",
+        "the last of us part 2",
+        "the last of us part ii",
+        "the last of us part ii remastered"
+      ],
+      "appid": 2531310,
+      "batch_id": "2026-08-03T08:40:14.172316+00:00",
+      "created_at": "2026-08-03T08:40:14.172316+00:00",
+      "description": "Experience the winner of over 300 Game of the Year awards, now on PC. Discover Ellie and Abby’s story with graphical enhancements, gameplay modes like the roguelike survival experience No Return, and more.",
+      "gen_count": 0,
+      "id": 3,
+      "image_url": "https://cdn2.steamgriddb.com/grid/3ac0e504d9dc252813f5fb45410c291c.png",
+      "name": "The Last of Us™ Part II Remastered",
+      "orders_count": 56,
+      "price": 10,
+      "release_date": "Apr 3, 2025",
+      "release_ts": 1743638400,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "the mosquito gang"
+      ],
+      "appid": 2811100,
+      "batch_id": "2026-08-12T00:13:04.699858+00:00",
+      "created_at": "2026-08-12T00:13:04.701876+00:00",
+      "description": "The ultimate party game! In The Mosquito Gang, team up to battle mutant mosquito swarms in co-op PvE or fight in chaotic asymmetric PvP. Outrageous weapons, wild powers, and nonstop laughter—bring the party to life!",
+      "gen_count": 0,
+      "id": 166,
+      "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2811100/bea2b87650912413d6e9aef3c63ba5a3db38e347/header.jpg?t=1782483945",
+      "name": "The Mosquito Gang",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2025-05-20",
+      "release_ts": 1747699200,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "the witcher 3",
+        "the witcher 3 wild hunt",
+        "tw3",
+        "w3wh",
+        "witcher 3",
+        "witcher3"
+      ],
+      "appid": 292030,
+      "batch_id": "2026-08-03T09:00:19.581125+00:00",
+      "created_at": "2026-08-03T09:00:19.581125+00:00",
+      "description": "You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy, a living weapon that can alter the shape of the world.",
+      "gen_count": 0,
+      "id": 54,
+      "image_url": "https://cdn2.steamgriddb.com/grid/ad8d3a0a0f0a084a97fad357c649438c.png",
+      "name": "The Witcher 3: Wild Hunt",
+      "orders_count": 10,
+      "price": 10,
+      "release_date": "2015-05-18",
+      "release_ts": 1431907200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "timberborn"
+      ],
+      "appid": 1062090,
+      "batch_id": "2026-08-07T12:32:05.926199+00:00",
+      "created_at": "2026-08-07T12:32:05.927950+00:00",
+      "description": "Humans are long gone. In a world struck by droughts and toxic waste, will your lumberpunk beavers do any better? A sandbox city-building game featuring ingenious animals, vertical architecture, water physics, and terraforming. Contains high amounts of wood.",
+      "gen_count": 0,
+      "id": 144,
+      "image_url": "https://cdn2.steamgriddb.com/grid/7399b82f7dae7d8b2108ee7569e1b1ac.jpg",
+      "name": "Timberborn",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2026-03-12",
+      "release_ts": 1773273600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "tomb raider game of the year",
+        "trgy"
+      ],
+      "appid": 203160,
+      "batch_id": "2026-08-07T16:59:22.821436+00:00",
+      "created_at": "2026-08-07T16:59:22.821436+00:00",
+      "description": "Tomb Raider explores the intense origin story of Lara Croft and her ascent from a young woman to a hardened survivor.",
+      "gen_count": 0,
+      "id": 147,
+      "image_url": "https://cdn2.steamgriddb.com/grid/6be910cdb73c47cb973a944c03f5c7b1.png",
+      "name": "Tomb Raider Game of the Year",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "2013-03-04",
+      "release_ts": 1362355200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "tabs",
+        "totally accurate battle simulator"
+      ],
+      "appid": 508440,
+      "batch_id": "2026-08-07T12:22:43.829808+00:00",
+      "created_at": "2026-08-07T12:22:43.831359+00:00",
+      "description": "Be the leader of wobblers from ancient lands, spooky places, and fantasy worlds. Watch them fight in simulations made with the wobbliest physics system ever created, make your own wobblers in the unit creator and send your army off to fight your friends in multiplayer.",
+      "gen_count": 0,
+      "id": 142,
+      "image_url": "https://cdn2.steamgriddb.com/grid/05d59ab6412110edba333f98b5293e83.png",
+      "name": "Totally Accurate Battle Simulator",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "2021-04-01",
+      "release_ts": 1617235200,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "uch",
+        "ultimate chicken horse"
+      ],
+      "appid": 386940,
+      "batch_id": "2026-08-03T09:01:34.533822+00:00",
+      "created_at": "2026-08-03T09:01:34.533822+00:00",
+      "description": "Ultimate Chicken Horse is a party platformer game where you build the level as you play, placing traps and hazards to screw your friends over, but trying not to screw yourself.",
+      "gen_count": 0,
+      "id": 72,
+      "image_url": "https://cdn2.steamgriddb.com/grid/94a7358e05938307a0e91a10c608d675.png",
+      "name": "Ultimate Chicken Horse",
+      "orders_count": 0,
+      "price": 10,
+      "release_date": "Mar 4, 2016",
+      "release_ts": 1457049600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "14 uncharted 4",
+        "ultc",
+        "uncharted 4",
+        "uncharted legacy of thieves collection"
+      ],
+      "appid": 1659420,
+      "batch_id": "2026-08-03T08:40:17.163938+00:00",
+      "created_at": "2026-08-03T08:40:17.163938+00:00",
+      "description": "Play as Nathan Drake and Chloe Frazer in their own standalone adventures as they confront their pasts and forge their own legacies. This game includes the critically acclaimed single-player stories from both UNCHARTED 4: A Thief’s End and UNCHARTED: The Lost Legacy.",
+      "gen_count": 0,
+      "id": 10,
+      "image_url": "https://cdn2.steamgriddb.com/grid/e21fa50dfd4b5016e5cf5a7930f6b5f2.png",
+      "name": "UNCHARTED™: Legacy of Thieves Collection",
+      "orders_count": 24,
+      "price": 10,
+      "release_date": "2022-10-19",
+      "release_ts": 1666137600,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "unravel two"
+      ],
+      "appid": 1225570,
+      "batch_id": "2026-08-16T00:10:57.474780+00:00",
+      "created_at": "2026-08-16T00:10:57.475656+00:00",
+      "description": "When you cut ties to the past, new bonds form. Build relationships with other Yarnys in local co-op or as a single player, fostering friendship and support as you journey together.",
+      "gen_count": 0,
+      "id": 174,
+      "image_url": "https://cdn2.steamgriddb.com/grid/1036079c5db0f08d55c7d6edf05eafe7.png",
+      "name": "Unravel Two",
+      "orders_count": 1,
+      "price": 10,
+      "release_date": "2020-06-04",
+      "release_ts": 1591228800,
+      "tags": []
+    },
+    {
+      "aliases": [
+        "447040",
+        "watch_dogs 2",
+        "wd2"
+      ],
+      "appid": 447040,
+      "batch_id": "2026-08-17T13:27:02.812006+00:00",
+      "created_at": "2026-08-17T13:27:02.813671+00:00",
+      "description": "Welcome to San Francisco. Play as Marcus, a brilliant young hacker, and join the most notorious hacker group, DedSec. Your objective: execute the biggest hack of history.",
+      "gen_count": 0,
+      "id": 190,
+      "image_url": "https://cdn2.steamgriddb.com/grid/7cf91b300ff3ecef82c59dd47b89253a.png",
+      "name": "Watch_Dogs® 2",
+      "orders_count": 4,
+      "price": 10,
+      "release_date": "2016-11-28",
+      "release_ts": 1480291200,
+      "tags": [
+        "ubisoft"
+      ]
+    },
+    {
+      "aliases": [
+        "we were here together",
+        "wwht"
+      ],
+      "appid": 865360,
+      "batch_id": "2026-08-12T00:08:10.369120+00:00",
+      "created_at": "2026-08-12T00:08:10.371573+00:00",
+      "description": "As we explore these frozen wastes, misfortune strikes once again. Through the fierce blizzard, a flare lights the sky, followed by a cry for help over the radio - broken, dying... No one else can come to their rescue. Can we make it back - together?",
+      "gen_count": 0,
+      "id": 161,
+      "image_url": "https://cdn2.steamgriddb.com/grid/9da5bbffd83806c9e96cd8e0913f92ef.jpg",
+      "name": "We Were Here Together",
+      "orders_count": 2,
+      "price": 10,
+      "release_date": "2019-10-10",
+      "release_ts": 1570665600,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "aliases": [
+        "we were here too",
+        "wwht"
+      ],
+      "appid": 677160,
+      "batch_id": "2026-08-12T00:08:20.227647+00:00",
+      "created_at": "2026-08-12T00:08:20.229600+00:00",
+      "description": "As your final hour approaches, a large structure looms up in the distance, towering above the relentless storm. Discover the truth behind this dark castle in a communication-based, cooperative puzzle adventure.",
+      "gen_count": 0,
+      "id": 162,
+      "image_url": "https://cdn2.steamgriddb.com/grid/33807476351b4d1295b34aa9dce30273.png",
+      "name": "We Were Here Too",
+      "orders_count": 3,
+      "price": 10,
+      "release_date": "2018-02-02",
+      "release_ts": 1517529600,
+      "tags": [
+        "online"
+      ]
+    }
+  ]
+}

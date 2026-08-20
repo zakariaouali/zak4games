@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="theme-color"
+    content="#08090b"
+  />
+
+  <title>
+    Checkout — Zack4Games
+  </title>
+
+  <meta
+    name="description"
+    content="Review your Zack4Games order before sending it through WhatsApp."
+  />
+
+  <link
+    rel="stylesheet"
+    href="styles.css?v=11"
+  />
+
+  <script
+    defer
+    src="checkout.js?v=10"
+  ></script>
+
+</head>
+
+
+<body class="checkout-page">
+
+  <div class="site-shell">
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Zack4Games home"
+      >
+
+        <span class="brand-mark">
+          ZG
+        </span>
+
+        <span class="brand-copy">
+
+          <strong>
+            Zack4Games
+          </strong>
+
+          <span>
+            Steam game store
+          </span>
+
+        </span>
+
+      </a>
+
+
+      <nav
+        class="topnav"
+        aria-label="Primary"
+      >
+
+        <a href="index.html">
+          Store
+        </a>
+
+        <a href="index.html#filters">
+          Filters
+        </a>
+
+        <a href="index.html#contact">
+          Contact
+        </a>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!-- CHECKOUT HERO -->
+
+      <section class="checkout-header">
+
+        <div>
+
+          <p class="catalog-kicker">
+            Checkout
+          </p>
+
+          <h1>
+            Review your order
+          </h1>
+
+          <p>
+            Check your selected games before
+            continuing to WhatsApp.
+          </p>
+
+        </div>
+
+
+        <a
+          class="button button-secondary"
+          href="index.html"
+        >
+          ← Continue shopping
+        </a>
+
+      </section>
+
+
+      <!-- CHECKOUT STEPS -->
+
+      <div class="checkout-steps">
+
+        <div class="checkout-step is-active">
+
+          <span>
+            01
+          </span>
+
+          <strong>
+            Cart
+          </strong>
+
+        </div>
+
+
+        <div class="checkout-step-line"></div>
+
+
+        <div class="checkout-step">
+
+          <span>
+            02
+          </span>
+
+          <strong>
+            Review
+          </strong>
+
+        </div>
+
+
+        <div class="checkout-step-line"></div>
+
+
+        <div class="checkout-step">
+
+          <span>
+            03
+          </span>
+
+          <strong>
+            WhatsApp
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <!-- CHECKOUT CONTENT -->
+
+      <section class="checkout-layout">
+
+
+        <!-- ORDER ITEMS -->
+
+        <div class="checkout-main">
+
+          <div class="checkout-section-head">
+
+            <div>
+
+              <p class="catalog-kicker">
+                Your selection
+              </p>
+
+              <h2>
+                Selected games
+              </h2>
+
+            </div>
+
+
+            <span
+              class="checkout-count"
+              id="checkoutCount"
+            >
+              0 games
+            </span>
+
+          </div>
+
+
+          <div
+            id="checkoutItems"
+            class="checkout-items"
+          ></div>
+
+
+          <!-- EMPTY STATE -->
+
+          <div
+            id="checkoutEmpty"
+            class="checkout-empty"
+            hidden
+          >
+
+            <div class="checkout-empty-icon">
+              🛒
+            </div>
+
+            <h2>
+              Your cart is empty
+            </h2>
+
+            <p>
+              Browse the catalog and add
+              some games to your order.
+            </p>
+
+            <a
+              class="button button-primary"
+              href="index.html"
+            >
+              Browse games
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- ORDER SUMMARY -->
+
+        <aside class="checkout-summary">
+
+          <div class="summary-header">
+
+            <span>
+              Order summary
+            </span>
+
+            <span class="summary-secure">
+              ● Secure
+            </span>
+
+          </div>
+
+
+          <div class="summary-row">
+
+            <span>
+              Selected games
+            </span>
+
+            <strong
+              id="summaryCount"
+            >
+              0
+            </strong>
+
+          </div>
+
+
+          <div class="summary-divider"></div>
+
+
+          <div class="summary-total">
+
+            <span>
+              Total items
+            </span>
+
+            <strong
+              id="summaryTotal"
+            >
+              0
+            </strong>
+
+          </div>
+
+
+          <div class="summary-note">
+
+            <span class="summary-note-icon">
+              ✓
+            </span>
+
+            <p>
+              No account required. Your order
+              will be sent directly to our
+              WhatsApp number for confirmation.
+            </p>
+
+          </div>
+
+
+          <button
+            id="confirmOrderBtn"
+            class="checkout-confirm"
+            type="button"
+            disabled
+          >
+
+            <span>
+              Confirm order
+            </span>
+
+            <span>
+              →
+            </span>
+
+          </button>
+
+
+          <p class="checkout-whatsapp">
+
+            WhatsApp:
+            <strong>
+              0605689797
+            </strong>
+
+          </p>
+
+        </aside>
+
+      </section>
+
+
+      <!-- INFORMATION -->
+
+      <section class="checkout-info">
+
+        <div class="checkout-info-card">
+
+          <span class="info-icon">
+            ✓
+          </span>
+
+          <div>
+
+            <strong>
+              Review before sending
+            </strong>
+
+            <p>
+              Make sure every game you want
+              is included before confirming.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="checkout-info-card">
+
+          <span class="info-icon">
+            💬
+          </span>
+
+          <div>
+
+            <strong>
+              Direct WhatsApp ordering
+            </strong>
+
+            <p>
+              Your selected games will be
+              automatically added to the
+              WhatsApp message.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="checkout-info-card">
+
+          <span class="info-icon">
+            ⚡
+          </span>
+
+          <div>
+
+            <strong>
+              Fast confirmation
+            </strong>
+
+            <p>
+              Send the order and receive
+              the details directly.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- CONFIRMATION MODAL -->
+
+  <div
+    id="confirmModal"
+    class="confirm-modal"
+    hidden
+  >
+
+    <div
+      class="confirm-modal-backdrop"
+      data-close-modal
+    ></div>
+
+
+    <div
+      class="confirm-modal-card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="confirmTitle"
+    >
+
+      <button
+        class="modal-close"
+        type="button"
+        data-close-modal
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+
+      <div class="modal-icon">
+        🛒
+      </div>
+
+
+      <p class="catalog-kicker">
+        Final review
+      </p>
+
+
+      <h2 id="confirmTitle">
+        Confirm your order
+      </h2>
+
+
+      <p>
+        You are about to send the following
+        games to Zack4Games on WhatsApp.
+      </p>
+
+
+      <div
+        id="modalGameList"
+        class="modal-game-list"
+      ></div>
+
+
+      <div class="modal-actions">
+
+        <button
+          class="button button-secondary"
+          type="button"
+          data-close-modal
+        >
+          Go back
+        </button>
+
+
+        <button
+          id="modalConfirmBtn"
+          class="button button-primary"
+          type="button"
+        >
+          Confirm & open WhatsApp
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

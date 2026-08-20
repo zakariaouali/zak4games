@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="theme-color"
+    content="#08090b"
+  />
+
+  <title>
+    Zack4Games — Steam Game Store
+  </title>
+
+  <meta
+    name="description"
+    content="Browse and order Steam games directly via WhatsApp."
+  />
+
+  <link
+    rel="stylesheet"
+    href="styles.css?v=20"
+  />
+
+  <script
+    defer
+    src="app.js?v=20"
+  ></script>
+
+</head>
+
+
+<body>
+
+  <div class="site-shell">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="topbar">
+
+      <a
+        class="brand"
+        href="#top"
+        aria-label="Zack4Games home"
+      >
+
+        <img
+          src="banner.png"
+          alt="Zack4Games"
+          width="220"
+          height="50"
+        />
+
+      </a>
+
+
+      <nav
+        class="topnav"
+        aria-label="Primary"
+      >
+
+        <a href="#store">
+          Store
+        </a>
+
+        <a href="#filters">
+          Filters
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+
+        <!-- NAV CART -->
+
+        <a
+          href="checkout.html"
+          class="nav-cart"
+          aria-label="Open cart"
+        >
+
+          <span
+            class="nav-cart-icon"
+            aria-hidden="true"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle
+                cx="9"
+                cy="20"
+                r="1"
+              ></circle>
+
+              <circle
+                cx="19"
+                cy="20"
+                r="1"
+              ></circle>
+
+              <path
+                d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 8H6"
+              ></path>
+            </svg>
+          </span>
+
+
+          <span>
+            Cart
+          </span>
+
+
+          <strong
+            id="navCartCount"
+            class="nav-cart-count"
+          >
+            0
+          </strong>
+
+        </a>
+
+      </nav>
+
+    </header>
+
+
+
+    <main id="top">
+
+
+      <!-- =====================================================
+           HERO
+      ====================================================== -->
+
+      <section class="hero hero-clean">
+
+
+        <!-- HERO LEFT -->
+
+        <div class="hero-copy">
+
+
+          <p class="eyebrow">
+
+            <span class="eyebrow-dot"></span>
+
+            Steam games
+
+            <span class="eyebrow-separator">
+              •
+            </span>
+
+            WhatsApp ordering
+
+            <span class="eyebrow-separator">
+              •
+            </span>
+
+            Live catalog
+
+          </p>
+
+
+          <h1>
+
+            Find your next
+
+            <em>
+              game.
+            </em>
+
+          </h1>
+
+
+          <p class="hero-text">
+
+            Browse the catalog, discover your favorite
+            Steam games, build your selection and send
+            your order directly through WhatsApp.
+
+          </p>
+
+
+          <!-- HERO ACTIONS -->
+
+          <div class="hero-actions">
+
+            <a
+              class="button button-primary"
+              href="#store"
+            >
+
+              Browse games
+
+              <span>
+                →
+              </span>
+
+            </a>
+
+
+            <a
+              class="button button-secondary"
+              href="checkout.html"
+            >
+
+              <span>
+                🛒
+              </span>
+
+              View cart
+
+            </a>
+
+          </div>
+
+
+          <!-- =================================================
+               HERO LIVE STATS
+          ================================================== -->
+
+          <div
+            class="hero-metrics"
+            aria-label="Store statistics"
+          >
+
+
+            <article class="hero-metric">
+
+              <div class="metric-icon">
+                🎮
+              </div>
+
+              <div>
+
+                <strong
+                  data-stat="total-games"
+                >
+                  0
+                </strong>
+
+                <span>
+                  games in catalog
+                </span>
+
+              </div>
+
+            </article>
+
+
+            <div class="metric-divider"></div>
+
+
+            <article class="hero-metric">
+
+              <div class="metric-icon">
+                🛒
+              </div>
+
+              <div>
+
+                <strong
+                  data-stat="selected-games"
+                >
+                  0
+                </strong>
+
+                <span>
+                  games in cart
+                </span>
+
+              </div>
+
+            </article>
+
+
+            <div class="metric-divider"></div>
+
+
+            <article class="hero-metric">
+
+              <div class="metric-icon">
+                ⚡
+              </div>
+
+              <div>
+
+                <strong>
+                  Fast
+                </strong>
+
+                <span>
+                  WhatsApp checkout
+                </span>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- =====================================================
+             HERO RIGHT / LIVE CATALOG PANEL
+        ====================================================== -->
+
+        <aside
+          class="hero-panel"
+          aria-label="Catalog information"
+        >
+
+
+          <!-- LIVE STATUS -->
+
+          <div class="hero-live-card">
+
+
+            <div class="hero-live-top">
+
+              <div>
+
+                <span class="panel-label">
+                  Zack4Games
+                </span>
+
+                <strong>
+                  Live catalog
+                </strong>
+
+              </div>
+
+
+              <span class="live-status">
+
+                <span class="live-dot"></span>
+
+                ONLINE
+
+              </span>
+
+            </div>
+
+
+            <div class="hero-live-divider"></div>
+
+
+            <div class="hero-data-grid">
+
+
+              <div class="hero-data-item">
+
+                <span>
+                  Catalog
+                </span>
+
+                <strong
+                  data-stat="total-games-panel"
+                >
+                  0
+                </strong>
+
+                <small>
+                  available games
+                </small>
+
+              </div>
+
+
+              <div class="hero-data-item">
+
+                <span>
+                  Showing
+                </span>
+
+                <strong
+                  data-stat="visible-games"
+                >
+                  0
+                </strong>
+
+                <small>
+                  on this page
+                </small>
+
+              </div>
+
+
+              <div class="hero-data-item">
+
+                <span>
+                  Cart
+                </span>
+
+                <strong
+                  data-stat="selected-games-panel"
+                >
+                  0
+                </strong>
+
+                <small>
+                  selected games
+                </small>
+
+              </div>
+
+
+              <div class="hero-data-item">
+
+                <span>
+                  Page
+                </span>
+
+                <strong>
+
+                  <span
+                    data-stat="page-current"
+                  >
+                    1
+                  </span>
+
+                  /
+
+                  <span
+                    data-stat="page-total"
+                  >
+                    1
+                  </span>
+
+                </strong>
+
+                <small>
+                  catalog navigation
+                </small>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- FEATURED -->
+
+          <div class="hero-featured-card">
+
+
+            <div class="hero-featured-header">
+
+              <div>
+
+                <span class="panel-label">
+                  Discover
+                </span>
+
+                <strong>
+                  Featured games
+                </strong>
+
+              </div>
+
+
+              <span class="featured-arrow">
+                →
+              </span>
+
+            </div>
+
+
+            <div
+              class="featured-strip"
+              id="featuredStrip"
+              aria-label="Featured games"
+            ></div>
+
+
+          </div>
+
+
+        </aside>
+
+      </section>
+
+
+
+      <!-- =====================================================
+           FILTER TOOLBAR
+      ====================================================== -->
+
+      <section
+        class="toolbar"
+        id="filters"
+        aria-label="Game filters"
+      >
+
+
+        <div class="toolbar-left">
+
+          <div
+            class="filter-group"
+            role="group"
+            aria-label="Filter by type"
+          >
+
+            <button
+              class="filter-chip is-active"
+              type="button"
+              data-filter="all"
+            >
+              All games
+            </button>
+
+            <button
+              class="filter-chip"
+              type="button"
+              data-filter="Online"
+            >
+              Online
+            </button>
+
+            <button
+              class="filter-chip"
+              type="button"
+              data-filter="Denuvo"
+            >
+              Denuvo
+            </button>
+
+            <button
+              class="filter-chip"
+              type="button"
+              data-filter="Ubisoft"
+            >
+              Ubisoft
+            </button>
+
+            <button
+              class="filter-chip"
+              type="button"
+              data-filter="Rockstar"
+            >
+              Rockstar
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="toolbar-right">
+
+
+          <label
+            class="search-field"
+            aria-label="Search games"
+          >
+
+            <span
+              class="search-icon"
+              aria-hidden="true"
+            >
+              ⌕
+            </span>
+
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search games..."
+            />
+
+          </label>
+
+
+          <label class="sort-field">
+
+            <span>
+              Sort
+            </span>
+
+            <select
+              id="sortSelect"
+              aria-label="Sort games"
+            >
+
+              <option value="featured">
+                Most purchased
+              </option>
+
+              <option value="newest">
+                Date added
+              </option>
+
+              <option value="release-newest">
+                Release: newest
+              </option>
+
+              <option value="release-oldest">
+                Release: oldest
+              </option>
+
+              <option value="title-asc">
+                Name A–Z
+              </option>
+
+            </select>
+
+          </label>
+
+
+          <a
+            class="request-btn"
+            href="checkout.html"
+          >
+
+            <span>
+              🛒
+            </span>
+
+            View cart
+
+          </a>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =====================================================
+           CATALOG HEADER
+      ====================================================== -->
+
+      <section
+        class="catalog-head"
+        id="store"
+      >
+
+        <div>
+
+          <p class="catalog-kicker">
+            Store
+          </p>
+
+          <h2>
+            Game catalog
+          </h2>
+
+        </div>
+
+
+        <p class="catalog-count">
+
+          <span data-stat="page-range">
+            0–0
+          </span>
+
+          of
+
+          <span data-stat="visible-games-inline">
+            0
+          </span>
+
+          results
+
+        </p>
+
+      </section>
+
+
+
+      <!-- =====================================================
+           PAGINATION TOP
+      ====================================================== -->
+
+      <section
+        class="pagination-bar pagination-bar-top"
+        aria-label="Page navigation"
+      >
+
+        <button
+          class="page-btn"
+          type="button"
+          data-page-action="prev"
+        >
+          ← Previous
+        </button>
+
+
+        <div class="page-meta">
+
+          Page
+
+          <span data-stat="page-current-top">
+            1
+          </span>
+
+          of
+
+          <span data-stat="page-total-top">
+            1
+          </span>
+
+        </div>
+
+
+        <button
+          class="page-btn"
+          type="button"
+          data-page-action="next"
+        >
+          Next →
+        </button>
+
+      </section>
+
+
+
+      <!-- =====================================================
+           GAME GRID
+      ====================================================== -->
+
+      <section
+        class="catalog-grid"
+        id="catalogGrid"
+        aria-live="polite"
+        aria-busy="true"
+      ></section>
+
+
+
+      <!-- =====================================================
+           PAGINATION BOTTOM
+      ====================================================== -->
+
+      <section
+        class="pagination-bar"
+        aria-label="Page navigation bottom"
+      >
+
+        <button
+          class="page-btn"
+          type="button"
+          data-page-action="prev"
+        >
+          ← Previous
+        </button>
+
+
+        <div class="page-meta">
+
+          Page
+
+          <span data-stat="page-current-bottom">
+            1
+          </span>
+
+          of
+
+          <span data-stat="page-total-bottom">
+            1
+          </span>
+
+        </div>
+
+
+        <button
+          class="page-btn"
+          type="button"
+          data-page-action="next"
+        >
+          Next →
+        </button>
+
+      </section>
+
+
+
+      <!-- =====================================================
+           EMPTY
+      ====================================================== -->
+
+      <section
+        class="empty-state"
+        id="emptyState"
+        hidden
+      >
+
+        <div class="empty-state-icon">
+          🔎
+        </div>
+
+        <h3>
+          No results found.
+        </h3>
+
+        <p>
+          Try adjusting your search or clearing the active filter.
+        </p>
+
+      </section>
+
+
+
+      <!-- =====================================================
+           FOOTER
+      ====================================================== -->
+
+      <footer
+        class="footer"
+        id="contact"
+      >
+
+        <div>
+
+          <p class="footer-label">
+            Contact
+          </p>
+
+          <h2>
+            Order direct, no accounts needed.
+          </h2>
+
+          <p>
+            Pick your games, review your cart,
+            then send the order directly through WhatsApp.
+          </p>
+
+        </div>
+
+
+        <div class="footer-card">
+
+          <span>
+            WhatsApp
+          </span>
+
+          <strong>
+            0605689797
+          </strong>
+
+        </div>
+
+      </footer>
+
+
+    </main>
+
+  </div>
+
+
+
+  <!-- =======================================================
+       FLOATING CART
+  ======================================================== -->
+
+  <a
+    href="checkout.html"
+    class="floating-cart"
+    id="floatingCart"
+    aria-label="Open shopping cart"
+  >
+
+    <span
+      class="floating-cart-icon"
+      aria-hidden="true"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+
+        <circle
+          cx="9"
+          cy="20"
+          r="1"
+        ></circle>
+
+        <circle
+          cx="19"
+          cy="20"
+          r="1"
+        ></circle>
+
+        <path
+          d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 8H6"
+        ></path>
+
+      </svg>
+
+    </span>
+
+
+    <!-- NOTIFICATION BADGE -->
+
+    <strong
+      id="floatingCartCount"
+      class="floating-cart-count"
+      aria-label="Items in cart"
+    >
+      0
+    </strong>
+
+  </a>
+
+
+
+  <!-- =======================================================
+       TOAST
+  ======================================================== -->
+
+  <div
+    id="storeToast"
+    class="store-toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+
+</body>
+</html>
