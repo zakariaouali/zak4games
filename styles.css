@@ -2105,3 +2105,589 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .toolbar-left, .toolbar-right { flex-wrap: wrap; }
   .search-field { min-width: 0; flex: 1; }
 }
+/* ============================================================
+   MOBILE — ZACK4GAMES
+   Optimized for phones
+============================================================ */
+
+@media (max-width: 600px) {
+
+  /* ----------------------------------------------------------
+     GLOBAL MOBILE
+  ---------------------------------------------------------- */
+
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .site-shell {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+
+  /* ----------------------------------------------------------
+     HEADER
+  ---------------------------------------------------------- */
+
+  .topbar {
+    width: 100%;
+    min-height: 64px;
+    padding: 10px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+  }
+
+  .brand img {
+    width: 145px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .topnav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  /* Hide Store / Filters / Contact on phone */
+  .topnav a:not(.nav-cart) {
+    display: none;
+  }
+
+  .nav-cart {
+    min-height: 38px;
+    padding: 0 11px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+
+  .nav-cart-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav-cart-count {
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    font-size: 0.65rem;
+  }
+
+
+  /* ----------------------------------------------------------
+     HERO
+  ---------------------------------------------------------- */
+
+  .hero {
+    width: 100%;
+    padding: 34px 10px 24px;
+    display: block;
+    text-align: center;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 0.65rem;
+    line-height: 1.6;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.15rem, 10vw, 3.2rem);
+    line-height: 1.05;
+    margin: 12px 0 14px;
+    letter-spacing: -0.045em;
+  }
+
+  .hero-text {
+    max-width: 430px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+
+  /* ----------------------------------------------------------
+     HERO BUTTONS
+  ---------------------------------------------------------- */
+
+  .hero-actions {
+    width: 100%;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    min-height: 46px;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+
+  /* ----------------------------------------------------------
+     HERO METRICS
+  ---------------------------------------------------------- */
+
+  .hero-metrics {
+    width: 100%;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .hero-metric {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .metric-divider {
+    display: none;
+  }
+
+
+  /* ----------------------------------------------------------
+     HIDE LARGE DESKTOP HERO PANEL
+  ---------------------------------------------------------- */
+
+  .hero-panel {
+    display: none;
+  }
+
+
+  /* ----------------------------------------------------------
+     FILTER TOOLBAR
+  ---------------------------------------------------------- */
+
+  .toolbar {
+    width: 100%;
+    margin: 8px 0 22px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    box-sizing: border-box;
+    border-radius: 18px;
+  }
+
+  .toolbar-left,
+  .toolbar-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+
+  /* ----------------------------------------------------------
+     FILTER CHIPS
+  ---------------------------------------------------------- */
+
+  .filter-group {
+    width: 100%;
+    display: flex;
+    gap: 7px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 3px;
+
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .filter-group::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-chip {
+    flex: 0 0 auto;
+    min-height: 38px;
+    padding: 0 14px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+
+  /* ----------------------------------------------------------
+     SEARCH BAR — MOBILE
+  ---------------------------------------------------------- */
+
+  .search-field {
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 14px;
+  }
+
+  .search-icon {
+    flex-shrink: 0;
+    font-size: 1.05rem;
+  }
+
+  .search-field input {
+    width: 100%;
+    min-width: 0;
+    height: 44px;
+    font-size: 0.9rem;
+  }
+
+  .search-field input::placeholder {
+    font-size: 0.85rem;
+  }
+
+
+  /* ----------------------------------------------------------
+     SORT
+  ---------------------------------------------------------- */
+
+  .sort-field {
+    width: 100%;
+    min-height: 46px;
+    padding: 0 14px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    justify-content: space-between;
+  }
+
+  .sort-field select {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 0.8rem;
+  }
+
+
+  /* ----------------------------------------------------------
+     VIEW CART BUTTON
+  ---------------------------------------------------------- */
+
+  .request-btn {
+    width: 100%;
+    min-height: 46px;
+    justify-content: center;
+    border-radius: 14px;
+    box-sizing: border-box;
+    font-size: 0.82rem;
+  }
+
+
+  /* ----------------------------------------------------------
+     CATALOG HEADER
+  ---------------------------------------------------------- */
+
+  .catalog-head {
+    width: 100%;
+    margin: 20px 0 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .catalog-head h2 {
+    font-size: 1.55rem;
+  }
+
+  .catalog-count {
+    font-size: 0.72rem;
+  }
+
+
+  /* ----------------------------------------------------------
+     PAGINATION
+  ---------------------------------------------------------- */
+
+  .pagination-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    box-sizing: border-box;
+  }
+
+  .page-btn {
+    min-height: 40px;
+    padding: 0 12px;
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+
+  .page-meta {
+    font-size: 0.72rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+
+  /* ----------------------------------------------------------
+     GAME GRID
+  ---------------------------------------------------------- */
+
+  .catalog-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 14px;
+  }
+
+
+  /* ----------------------------------------------------------
+     GAME CARD
+  ---------------------------------------------------------- */
+
+  .shop-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .shop-card-img-wrap {
+    aspect-ratio: 16 / 9;
+  }
+
+  .shop-card-body {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .shop-card-name {
+    font-size: 0.95rem;
+  }
+
+  .shop-card-desc {
+    font-size: 0.78rem;
+    line-height: 1.55;
+  }
+
+  .shop-card-button,
+  .shop-card-toggle {
+    min-height: 38px;
+  }
+
+  /*
+     Hover effects don't make sense on touch screens.
+     Keep cards stable on mobile.
+  */
+
+  .shop-card:hover {
+    transform: none;
+  }
+
+  .shop-card:hover .shop-card-img {
+    transform: none;
+  }
+
+  .shop-card-overlay {
+    display: none;
+  }
+
+
+  /* ----------------------------------------------------------
+     EMPTY STATE
+  ---------------------------------------------------------- */
+
+  .empty-state {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 45px 18px;
+  }
+
+
+  /* ----------------------------------------------------------
+     FOOTER
+  ---------------------------------------------------------- */
+
+  .footer {
+    width: 100%;
+    margin-top: 24px;
+    padding: 24px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+    box-sizing: border-box;
+  }
+
+  .footer h2 {
+    font-size: 1.25rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+    line-height: 1.55;
+  }
+
+  .footer-card {
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+  /* ----------------------------------------------------------
+     FEATURED STRIP
+  ---------------------------------------------------------- */
+
+  .featured-strip {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .featured-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  /* ----------------------------------------------------------
+     FLOATING CART
+  ---------------------------------------------------------- */
+
+  .floating-cart {
+    right: 14px;
+    bottom: 14px;
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    padding: 0;
+    border-radius: 17px;
+  }
+
+  .floating-cart-icon {
+    width: 23px;
+    height: 23px;
+  }
+
+
+  /* ----------------------------------------------------------
+     TOAST
+  ---------------------------------------------------------- */
+
+  .store-toast {
+    bottom: 82px;
+    max-width: calc(100vw - 40px);
+    padding: 10px 15px;
+    font-size: 0.75rem;
+    text-align: center;
+    white-space: normal;
+  }
+}
+
+
+/* ============================================================
+   EXTRA SMALL PHONES
+   360px and below
+============================================================ */
+
+@media (max-width: 380px) {
+
+  .site-shell {
+    padding: 0 9px;
+  }
+
+  .topbar {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .brand img {
+    width: 125px;
+  }
+
+  .nav-cart {
+    padding: 0 9px;
+    font-size: 0.72rem;
+  }
+
+  .hero {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 0.84rem;
+  }
+
+  .toolbar {
+    padding: 11px;
+  }
+
+  .filter-chip {
+    padding: 0 11px;
+  }
+
+  .catalog-head h2 {
+    font-size: 1.4rem;
+  }
+
+  .page-btn {
+    padding: 0 9px;
+    font-size: 0.68rem;
+  }
+}@media (max-width: 700px) {
+
+  .hero-metrics {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero-metric {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+}
