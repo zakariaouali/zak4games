@@ -13,7 +13,7 @@ const state = {
 
 const pageSize = 30;
 
-const whatsappNumber = "212605689797";
+const whatsappNumber = "212605689787";
 
 const CART_KEY = "zack4games_cart";
 
