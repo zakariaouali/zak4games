@@ -1,8 +1,17 @@
 /* =========================================================
    ZACK4GAMES — STORE APP
+
    Pricing:
    25 DH / game
    Buy 5 games → 6th game FREE
+========================================================= */
+
+
+"use strict";
+
+
+/* =========================================================
+   STATE
 ========================================================= */
 
 const state = {
@@ -13,6 +22,7 @@ const state = {
   selected: [],
   currentPage: 1,
 };
+
 
 const pageSize = 30;
 
@@ -193,6 +203,7 @@ function getOffer(count) {
   let remaining = 0;
   let message = "";
 
+
   if (safeCount === 0) {
 
     progress = 0;
@@ -202,6 +213,7 @@ function getOffer(count) {
 
     message =
       `Add ${PAID_FOR_FREE_GAME} games to unlock your FREE game`;
+
 
   } else if (remainder === 5) {
 
@@ -217,6 +229,7 @@ function getOffer(count) {
     message =
       "FREE GAME UNLOCKED — add 1 more game";
 
+
   } else {
 
     /*
@@ -230,9 +243,14 @@ function getOffer(count) {
       PAID_FOR_FREE_GAME - remainder;
 
     message =
-      `${remaining} more ${remaining === 1 ? "game" : "games"} to unlock your FREE game`;
+      `${remaining} more ${
+        remaining === 1
+          ? "game"
+          : "games"
+      } to unlock your FREE game`;
 
   }
+
 
   return {
     count: safeCount,
@@ -258,34 +276,60 @@ function renderOfferBox() {
       "zackOfferBox"
     );
 
+
   if (old) {
     old.remove();
   }
 
+
   const count =
     state.selected.length;
+
 
   const offer =
     getOffer(count);
 
+
   const box =
     document.createElement("section");
+
 
   box.id =
     "zackOfferBox";
 
+
   box.className =
     "zack-offer-box";
 
-  let statusClass = "";
 
-  if (count > 0 && offer.freeGames > 0) {
-    statusClass = "has-free";
-  } else if (offer.remaining === 1) {
-    statusClass = "almost-free";
+  /*
+    IMPORTANT FIX:
+
+    Do NOT call:
+      box.classList.add("")
+
+    because DOMTokenList rejects an empty class name.
+  */
+
+  if (
+    count > 0 &&
+    offer.freeGames > 0
+  ) {
+
+    box.classList.add(
+      "has-free"
+    );
+
+  } else if (
+    offer.remaining === 1
+  ) {
+
+    box.classList.add(
+      "almost-free"
+    );
+
   }
 
-  box.classList.add(statusClass);
 
   const freeText =
     offer.freeGames > 0
@@ -295,6 +339,7 @@ function renderOfferBox() {
         </span>
       `
       : "";
+
 
   box.innerHTML = `
 
@@ -330,21 +375,28 @@ function renderOfferBox() {
       <div class="zack-offer-progress-top">
 
         <span>
-          ${count === 0
-            ? "0 / 5 paid games"
-            : `${Math.min(count % 6, 5)} / 5 paid games`
+          ${
+            count === 0
+              ? "0 / 5 paid games"
+              : `${Math.min(
+                  count % 6,
+                  5
+                )} / 5 paid games`
           }
         </span>
 
         ${
           offer.freeGames > 0
-            ? `<span class="zack-offer-saved">
+            ? `
+              <span class="zack-offer-saved">
                 Saved ${offer.savings} DH
-              </span>`
+              </span>
+            `
             : ""
         }
 
       </div>
+
 
       <div class="zack-offer-progress">
 
@@ -389,7 +441,10 @@ function renderOfferBox() {
   */
 
   const store =
-    document.getElementById("store");
+    document.getElementById(
+      "store"
+    );
+
 
   if (
     store &&
@@ -401,7 +456,10 @@ function renderOfferBox() {
       store
     );
 
-  } else if (dom.grid) {
+  } else if (
+    dom.grid &&
+    dom.grid.parentNode
+  ) {
 
     dom.grid.parentNode.insertBefore(
       box,
@@ -425,6 +483,7 @@ function loadCart() {
         CART_KEY
       );
 
+
     if (!saved) {
 
       state.selected = [];
@@ -432,8 +491,10 @@ function loadCart() {
       return;
     }
 
+
     const parsed =
       JSON.parse(saved);
+
 
     if (
       Array.isArray(parsed)
@@ -442,7 +503,12 @@ function loadCart() {
       state.selected =
         parsed.map(String);
 
+    } else {
+
+      state.selected = [];
+
     }
+
 
   } catch {
 
@@ -465,7 +531,9 @@ function saveCart() {
 
   } catch {
 
-    // Ignore localStorage errors.
+    /*
+      Ignore localStorage errors.
+    */
 
   }
 }
@@ -482,8 +550,10 @@ function decodeHtml(value) {
       "textarea"
     );
 
+
   element.innerHTML =
     value ?? "";
+
 
   return element.value;
 }
@@ -494,11 +564,26 @@ function escapeHtml(value) {
   return String(
     value ?? ""
   )
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
+    .replace(
+      /&/g,
+      "&amp;"
+    )
+    .replace(
+      /</g,
+      "&lt;"
+    )
+    .replace(
+      />/g,
+      "&gt;"
+    )
+    .replace(
+      /"/g,
+      "&quot;"
+    )
+    .replace(
+      /'/g,
+      "&#039;"
+    );
 }
 
 
@@ -508,8 +593,10 @@ function normalizeTag(tag) {
     return "";
   }
 
+
   const cleaned =
     String(tag).trim();
+
 
   if (
     /^u+ubisoft$/i.test(cleaned) ||
@@ -520,6 +607,7 @@ function normalizeTag(tag) {
 
   }
 
+
   if (
     /^online$/i.test(cleaned)
   ) {
@@ -527,6 +615,7 @@ function normalizeTag(tag) {
     return "Online";
 
   }
+
 
   if (
     /^denuvo$/i.test(cleaned)
@@ -536,6 +625,7 @@ function normalizeTag(tag) {
 
   }
 
+
   if (
     /^rockstar$/i.test(cleaned)
   ) {
@@ -544,8 +634,12 @@ function normalizeTag(tag) {
 
   }
 
+
   return cleaned
-    .replace(/^u\s*/i, "")
+    .replace(
+      /^u\s*/i,
+      ""
+    )
     .trim();
 }
 
@@ -567,6 +661,7 @@ function normalizeGame(
     ),
   ];
 
+
   const title =
     decodeHtml(
       game.name ||
@@ -574,12 +669,14 @@ function normalizeGame(
       ""
     );
 
+
   const description =
     decodeHtml(
       game.description ||
       game.desc ||
       ""
     );
+
 
   return {
 
@@ -631,6 +728,7 @@ function sortGames(list) {
   const sorted =
     [...list];
 
+
   switch (
     state.sort
   ) {
@@ -644,6 +742,7 @@ function sortGames(list) {
           )
       );
 
+
     case "release-oldest":
 
       return sorted.sort(
@@ -652,6 +751,7 @@ function sortGames(list) {
           (b.releaseTs || 0)
       );
 
+
     case "release-newest":
 
       return sorted.sort(
@@ -659,6 +759,7 @@ function sortGames(list) {
           (b.releaseTs || 0) -
           (a.releaseTs || 0)
       );
+
 
     case "newest":
 
@@ -672,6 +773,7 @@ function sortGames(list) {
           ).getTime()
       );
 
+
     case "featured":
 
     default:
@@ -683,6 +785,7 @@ function sortGames(list) {
           a.index -
             b.index
       );
+
   }
 }
 
@@ -699,8 +802,10 @@ function imageUrlFor(game) {
 
 function resolveImage(url) {
 
-  return url ||
-    PLACEHOLDER_IMAGE;
+  return (
+    url ||
+    PLACEHOLDER_IMAGE
+  );
 }
 
 
@@ -714,6 +819,7 @@ function hydrateImages(
     ),
   ];
 
+
   images.forEach(
     (img) => {
 
@@ -724,19 +830,23 @@ function hydrateImages(
         return;
       }
 
+
       img.dataset.hydrated =
         "true";
+
 
       const url =
         img.dataset.imageUrl ||
         "";
 
+
       img.src =
         resolveImage(url);
 
+
       /*
-        If SteamGridDB blocks the image,
-        don't let the card break.
+        If the image fails,
+        use the placeholder.
       */
 
       img.onerror = () => {
@@ -769,6 +879,7 @@ function filterGames() {
       .trim()
       .toLowerCase();
 
+
   return sortGames(
     state.games.filter(
       (game) => {
@@ -781,16 +892,19 @@ function filterGames() {
               state.filter.toLowerCase()
           );
 
+
         const matchesQuery =
           !query ||
           game.searchText.includes(
             query
           );
 
+
         return (
           matchesFilter &&
           matchesQuery
         );
+
       }
     )
   );
@@ -819,25 +933,32 @@ function getPageSlice(list) {
       list.length
     );
 
+
   const currentPage =
     Math.min(
       state.currentPage,
       totalPages
     );
 
+
   const start =
     (currentPage - 1) *
     pageSize;
+
 
   const end =
     start +
     pageSize;
 
+
   return {
 
     currentPage,
+
     totalPages,
+
     start,
+
     end,
 
     items:
@@ -845,6 +966,7 @@ function getPageSlice(list) {
         start,
         end
       ),
+
   };
 }
 
@@ -859,6 +981,7 @@ function selectedGames() {
     new Set(
       state.selected
     );
+
 
   return state.games.filter(
     (game) =>
@@ -876,6 +999,7 @@ function updateCartUI() {
   const count =
     state.selected.length;
 
+
   if (
     dom.navCartCount
   ) {
@@ -885,6 +1009,7 @@ function updateCartUI() {
 
   }
 
+
   if (
     dom.floatingCart &&
     dom.floatingCartCount
@@ -893,10 +1018,12 @@ function updateCartUI() {
     dom.floatingCartCount.textContent =
       String(count);
 
+
     dom.floatingCart.classList.toggle(
       "has-items",
       count > 0
     );
+
 
     dom.floatingCartCount.classList.toggle(
       "is-empty",
@@ -904,6 +1031,7 @@ function updateCartUI() {
     );
 
   }
+
 
   if (
     dom.stats.selected
@@ -913,6 +1041,7 @@ function updateCartUI() {
       String(count);
 
   }
+
 
   if (
     dom.stats.selectedPanel
@@ -937,16 +1066,20 @@ function showToast(
     return;
   }
 
+
   dom.toast.textContent =
     message;
+
 
   dom.toast.classList.add(
     "is-visible"
   );
 
+
   clearTimeout(
     dom.toast._timer
   );
+
 
   dom.toast._timer =
     setTimeout(
@@ -977,11 +1110,13 @@ function renderFeatured(
     return;
   }
 
+
   const picks =
     games.slice(
       0,
       5
     );
+
 
   dom.featuredStrip.innerHTML =
     picks
@@ -1028,6 +1163,7 @@ function renderFeatured(
       )
       .join("");
 
+
   hydrateImages(
     dom.featuredStrip
   );
@@ -1048,13 +1184,16 @@ function createCard(
       "article"
     );
 
+
   card.className =
     "shop-card";
+
 
   card.style.setProperty(
     "--delay",
     `${Math.min(index, 20) * 35}ms`
   );
+
 
   const isSelected =
     state.selected.includes(
@@ -1062,6 +1201,7 @@ function createCard(
         game.appid
       )
     );
+
 
   if (isSelected) {
 
@@ -1071,10 +1211,12 @@ function createCard(
 
   }
 
+
   const tags =
     game.tags.length
       ? game.tags
       : ["Steam"];
+
 
   const tagsMarkup =
     tags
@@ -1084,6 +1226,7 @@ function createCard(
           `<span class="shop-tag">${escapeHtml(tag)}</span>`
       )
       .join("");
+
 
   card.innerHTML = `
 
@@ -1101,6 +1244,7 @@ function createCard(
         loading="lazy"
       />
 
+
       <div class="shop-card-overlay">
 
         <span class="shop-card-overlay-add">
@@ -1114,6 +1258,7 @@ function createCard(
         </span>
 
       </div>
+
 
       ${
         isSelected
@@ -1141,6 +1286,7 @@ function createCard(
           </h3>
 
         </div>
+
 
         <button
           class="shop-card-toggle ${
@@ -1190,6 +1336,7 @@ function createCard(
           25 DH
         </span>
 
+
         <button
           class="shop-card-button ${
             isSelected
@@ -1216,6 +1363,7 @@ function createCard(
 
   `;
 
+
   return card;
 }
 
@@ -1226,8 +1374,14 @@ function createCard(
 
 function render() {
 
+  if (!dom.grid) {
+    return;
+  }
+
+
   const visibleGames =
     filterGames();
+
 
   const {
     currentPage,
@@ -1240,14 +1394,18 @@ function render() {
       visibleGames
     );
 
+
   state.currentPage =
     currentPage;
+
 
   dom.grid.innerHTML =
     "";
 
+
   const fragment =
     document.createDocumentFragment();
+
 
   items.forEach(
     (game, index) => {
@@ -1262,9 +1420,11 @@ function render() {
     }
   );
 
+
   dom.grid.appendChild(
     fragment
   );
+
 
   renderFeatured(
     visibleGames.length
@@ -1272,20 +1432,29 @@ function render() {
       : state.games
   );
 
+
   dom.grid.setAttribute(
     "aria-busy",
     "false"
   );
 
-  dom.empty.hidden =
-    visibleGames.length > 0;
+
+  if (dom.empty) {
+
+    dom.empty.hidden =
+      visibleGames.length > 0;
+
+  }
+
 
   hydrateImages(
     dom.grid
   );
 
 
-  /* STATS */
+  /* =====================================================
+     STATS
+  ====================================================== */
 
   if (
     dom.stats.visible
@@ -1298,6 +1467,7 @@ function render() {
 
   }
 
+
   if (
     dom.stats.visibleInline
   ) {
@@ -1308,6 +1478,7 @@ function render() {
       );
 
   }
+
 
   if (
     dom.stats.total
@@ -1320,6 +1491,7 @@ function render() {
 
   }
 
+
   if (
     dom.stats.totalPanel
   ) {
@@ -1330,6 +1502,7 @@ function render() {
       );
 
   }
+
 
   if (
     dom.stats.pageRange
@@ -1345,6 +1518,7 @@ function render() {
 
   }
 
+
   if (
     dom.stats.pageCurrent
   ) {
@@ -1355,6 +1529,7 @@ function render() {
       );
 
   }
+
 
   if (
     dom.stats.pageCurrentTop
@@ -1367,6 +1542,7 @@ function render() {
 
   }
 
+
   if (
     dom.stats.pageCurrentBottom
   ) {
@@ -1377,6 +1553,7 @@ function render() {
       );
 
   }
+
 
   if (
     dom.stats.pageTotal
@@ -1389,6 +1566,7 @@ function render() {
 
   }
 
+
   if (
     dom.stats.pageTotalTop
   ) {
@@ -1399,6 +1577,7 @@ function render() {
       );
 
   }
+
 
   if (
     dom.stats.pageTotalBottom
@@ -1411,14 +1590,16 @@ function render() {
 
   }
 
+
   updateCartUI();
 
+
   /*
-    IMPORTANT:
-    Update the offer after every render.
+    Update offer after every render.
   */
 
   renderOfferBox();
+
 }
 
 
@@ -1433,10 +1614,12 @@ function toggleSelection(
   const key =
     String(appid);
 
+
   const index =
     state.selected.indexOf(
       key
     );
+
 
   if (
     index >= 0
@@ -1447,9 +1630,11 @@ function toggleSelection(
       1
     );
 
+
     showToast(
       "Game removed from cart"
     );
+
 
   } else {
 
@@ -1457,11 +1642,13 @@ function toggleSelection(
       key
     );
 
+
     showToast(
       "Game added to cart"
     );
 
   }
+
 
   saveCart();
 
@@ -1476,7 +1663,13 @@ function toggleSelection(
 async function loadData() {
 
   const response =
-    await fetch("./games.json");
+    await fetch(
+      "./games.json",
+      {
+        cache: "no-store",
+      }
+    );
+
 
   if (!response.ok) {
 
@@ -1486,13 +1679,16 @@ async function loadData() {
 
   }
 
+
   const payload =
     await response.json();
+
 
   const games =
     Array.isArray(payload)
       ? payload
       : payload.games;
+
 
   if (
     !Array.isArray(games)
@@ -1504,6 +1700,7 @@ async function loadData() {
 
   }
 
+
   state.games =
     games.map(
       (game, index) =>
@@ -1512,6 +1709,7 @@ async function loadData() {
           index
         )
     );
+
 
   render();
 }
@@ -1528,8 +1726,10 @@ function setActiveFilter(
   state.filter =
     value;
 
+
   state.currentPage =
     1;
+
 
   dom.filterButtons.forEach(
     (button) => {
@@ -1543,6 +1743,7 @@ function setActiveFilter(
     }
   );
 
+
   render();
 }
 
@@ -1550,6 +1751,9 @@ function setActiveFilter(
 /* =========================================================
    EVENTS
 ========================================================= */
+
+
+/* FILTER */
 
 dom.filterButtons.forEach(
   (button) => {
@@ -1566,9 +1770,13 @@ dom.filterButtons.forEach(
 );
 
 
-/* SEARCH */
+/* =========================================================
+   SEARCH
+========================================================= */
 
-if (dom.search) {
+if (
+  dom.search
+) {
 
   dom.search.addEventListener(
     "input",
@@ -1577,8 +1785,10 @@ if (dom.search) {
       state.query =
         event.target.value;
 
+
       state.currentPage =
         1;
+
 
       render();
 
@@ -1588,9 +1798,13 @@ if (dom.search) {
 }
 
 
-/* SORT */
+/* =========================================================
+   SORT
+========================================================= */
 
-if (dom.sort) {
+if (
+  dom.sort
+) {
 
   dom.sort.addEventListener(
     "change",
@@ -1599,8 +1813,10 @@ if (dom.sort) {
       state.sort =
         event.target.value;
 
+
       state.currentPage =
         1;
+
 
       render();
 
@@ -1610,9 +1826,13 @@ if (dom.sort) {
 }
 
 
-/* GAME GRID */
+/* =========================================================
+   GAME GRID
+========================================================= */
 
-if (dom.grid) {
+if (
+  dom.grid
+) {
 
   dom.grid.addEventListener(
     "click",
@@ -1623,9 +1843,11 @@ if (dom.grid) {
           "[data-appid]"
         );
 
+
       if (!button) {
         return;
       }
+
 
       toggleSelection(
         button.dataset.appid
@@ -1637,7 +1859,9 @@ if (dom.grid) {
 }
 
 
-/* PAGINATION */
+/* =========================================================
+   PAGINATION
+========================================================= */
 
 dom.pageButtons.forEach(
   (button) => {
@@ -1651,6 +1875,7 @@ dom.pageButtons.forEach(
             filterGames().length
           );
 
+
         if (
           button.dataset.pageAction ===
           "prev"
@@ -1662,6 +1887,7 @@ dom.pageButtons.forEach(
               state.currentPage - 1
             );
 
+
         } else {
 
           state.currentPage =
@@ -1672,10 +1898,14 @@ dom.pageButtons.forEach(
 
         }
 
+
         render();
 
+
         document
-          .getElementById("store")
+          .getElementById(
+            "store"
+          )
           ?.scrollIntoView({
             behavior: "smooth",
             block: "start",
@@ -1696,41 +1926,60 @@ loadCart();
 
 updateCartUI();
 
+
 loadData()
   .catch(
     (error) => {
 
-      console.error(error);
-
-      dom.grid.innerHTML = `
-
-        <div class="catalog-load-error">
-
-          <div>
-            ⚠️
-          </div>
-
-          <h3>
-            Catalog failed to load.
-          </h3>
-
-          <p>
-            ${escapeHtml(
-              error.message
-            )}
-          </p>
-
-        </div>
-
-      `;
-
-      dom.grid.setAttribute(
-        "aria-busy",
-        "false"
+      console.error(
+        "Zack4Games catalog error:",
+        error
       );
 
-      dom.empty.hidden =
-        true;
+
+      if (
+        dom.grid
+      ) {
+
+        dom.grid.innerHTML = `
+
+          <div class="catalog-load-error">
+
+            <div>
+              ⚠️
+            </div>
+
+            <h3>
+              Catalog failed to load.
+            </h3>
+
+            <p>
+              ${escapeHtml(
+                error.message
+              )}
+            </p>
+
+          </div>
+
+        `;
+
+
+        dom.grid.setAttribute(
+          "aria-busy",
+          "false"
+        );
+
+      }
+
+
+      if (
+        dom.empty
+      ) {
+
+        dom.empty.hidden =
+          true;
+
+      }
 
     }
   );
