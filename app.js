@@ -11,34 +11,31 @@ const state = {
   currentPage: 1,
 };
 
-
 const pageSize = 30;
 
-const whatsappNumber =
-  "212605689797";
+const whatsappNumber = "212605689797";
 
-const CART_KEY =
-  "zack4games_cart";
+const CART_KEY = "zack4games_cart";
 
 
-const imageCache =
-  new Map();
-
+/* =========================================================
+   PLACEHOLDER IMAGE
+========================================================= */
 
 const PLACEHOLDER_IMAGE =
   "data:image/svg+xml;charset=utf-8," +
   encodeURIComponent(
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100">' +
-      '<defs>' +
+      "<defs>" +
         '<linearGradient id="g" x1="0" x2="1" y1="0" y2="1">' +
           '<stop stop-color="#191b20"/>' +
           '<stop offset="1" stop-color="#0b0c0f"/>' +
-        '</linearGradient>' +
-      '</defs>' +
+        "</linearGradient>" +
+      "</defs>" +
       '<rect width="1600" height="1100" fill="url(#g)"/>' +
       '<path d="M0 850L420 610L760 720L1160 430L1600 610V1100H0Z" fill="#050608" fill-opacity="0.58"/>' +
       '<text x="88" y="140" fill="#6d28d9" font-family="Arial, sans-serif" font-size="52" font-weight="700">Zack4Games</text>' +
-    '</svg>'
+    "</svg>"
   );
 
 
@@ -49,40 +46,26 @@ const PLACEHOLDER_IMAGE =
 const dom = {
 
   grid:
-    document.getElementById(
-      "catalogGrid"
-    ),
+    document.getElementById("catalogGrid"),
 
   empty:
-    document.getElementById(
-      "emptyState"
-    ),
+    document.getElementById("emptyState"),
 
   search:
-    document.getElementById(
-      "searchInput"
-    ),
+    document.getElementById("searchInput"),
 
   sort:
-    document.getElementById(
-      "sortSelect"
-    ),
+    document.getElementById("sortSelect"),
 
   featuredStrip:
-    document.getElementById(
-      "featuredStrip"
-    ),
+    document.getElementById("featuredStrip"),
 
   filterButtons: [
-    ...document.querySelectorAll(
-      "[data-filter]"
-    ),
+    ...document.querySelectorAll("[data-filter]"),
   ],
 
   pageButtons: [
-    ...document.querySelectorAll(
-      "[data-page-action]"
-    ),
+    ...document.querySelectorAll("[data-page-action]"),
   ],
 
   stats: {
@@ -153,26 +136,17 @@ const dom = {
       ),
   },
 
-
   floatingCart:
-    document.getElementById(
-      "floatingCart"
-    ),
+    document.getElementById("floatingCart"),
 
   floatingCartCount:
-    document.getElementById(
-      "floatingCartCount"
-    ),
+    document.getElementById("floatingCartCount"),
 
   navCartCount:
-    document.getElementById(
-      "navCartCount"
-    ),
+    document.getElementById("navCartCount"),
 
   toast:
-    document.getElementById(
-      "storeToast"
-    ),
+    document.getElementById("storeToast"),
 };
 
 
@@ -185,10 +159,7 @@ function loadCart() {
   try {
 
     const saved =
-      localStorage.getItem(
-        CART_KEY
-      );
-
+      localStorage.getItem(CART_KEY);
 
     if (!saved) {
 
@@ -197,14 +168,10 @@ function loadCart() {
       return;
     }
 
-
     const parsed =
       JSON.parse(saved);
 
-
-    if (
-      Array.isArray(parsed)
-    ) {
+    if (Array.isArray(parsed)) {
 
       state.selected =
         parsed.map(String);
@@ -219,16 +186,13 @@ function loadCart() {
 }
 
 
-
 function saveCart() {
 
   try {
 
     localStorage.setItem(
       CART_KEY,
-      JSON.stringify(
-        state.selected
-      )
+      JSON.stringify(state.selected)
     );
 
   } catch {
@@ -246,47 +210,24 @@ function saveCart() {
 function decodeHtml(value) {
 
   const element =
-    document.createElement(
-      "textarea"
-    );
-
+    document.createElement("textarea");
 
   element.innerHTML =
     value ?? "";
-
 
   return element.value;
 }
 
 
-
 function escapeHtml(value) {
 
-  return String(
-    value ?? ""
-  )
-    .replace(
-      /&/g,
-      "&amp;"
-    )
-    .replace(
-      /</g,
-      "&lt;"
-    )
-    .replace(
-      />/g,
-      "&gt;"
-    )
-    .replace(
-      /"/g,
-      "&quot;"
-    )
-    .replace(
-      /'/g,
-      "&#039;"
-    );
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
-
 
 
 function normalizeTag(tag) {
@@ -295,76 +236,47 @@ function normalizeTag(tag) {
     return "";
   }
 
-
   const cleaned =
     String(tag).trim();
 
-
   if (
-    /^u+ubisoft$/i.test(
-      cleaned
-    ) ||
-    /^ubisoft$/i.test(
-      cleaned
-    )
+    /^u+ubisoft$/i.test(cleaned) ||
+    /^ubisoft$/i.test(cleaned)
   ) {
 
     return "Ubisoft";
 
   }
 
-
-  if (
-    /^online$/i.test(
-      cleaned
-    )
-  ) {
+  if (/^online$/i.test(cleaned)) {
 
     return "Online";
 
   }
 
-
-  if (
-    /^denuvo$/i.test(
-      cleaned
-    )
-  ) {
+  if (/^denuvo$/i.test(cleaned)) {
 
     return "Denuvo";
 
   }
 
-
-  if (
-    /^rockstar$/i.test(
-      cleaned
-    )
-  ) {
+  if (/^rockstar$/i.test(cleaned)) {
 
     return "Rockstar";
 
   }
 
-
   return cleaned
-    .replace(
-      /^u\s*/i,
-      ""
-    )
+    .replace(/^u\s*/i, "")
     .trim();
 }
-
 
 
 /* =========================================================
    NORMALIZE GAME
 ========================================================= */
 
-function normalizeGame(
-  game,
-  index
-) {
+function normalizeGame(game, index) {
 
   const tags = [
     ...new Set(
@@ -374,7 +286,6 @@ function normalizeGame(
     ),
   ];
 
-
   const title =
     decodeHtml(
       game.name ||
@@ -382,14 +293,12 @@ function normalizeGame(
       ""
     );
 
-
   const description =
     decodeHtml(
       game.description ||
       game.desc ||
       ""
     );
-
 
   return {
 
@@ -399,8 +308,7 @@ function normalizeGame(
 
     title,
 
-    desc:
-      description,
+    desc: description,
 
     image:
       game.image_url ||
@@ -431,21 +339,15 @@ function normalizeGame(
 
 function sortGames(list) {
 
-  const sorted =
-    [...list];
+  const sorted = [...list];
 
-
-  switch (
-    state.sort
-  ) {
+  switch (state.sort) {
 
     case "title-asc":
 
       return sorted.sort(
         (a, b) =>
-          a.title.localeCompare(
-            b.title
-          )
+          a.title.localeCompare(b.title)
       );
 
 
@@ -471,12 +373,8 @@ function sortGames(list) {
 
       return sorted.sort(
         (a, b) =>
-          new Date(
-            b.createdAt || 0
-          ).getTime() -
-          new Date(
-            a.createdAt || 0
-          ).getTime()
+          new Date(b.createdAt || 0).getTime() -
+          new Date(a.createdAt || 0).getTime()
       );
 
 
@@ -497,80 +395,60 @@ function sortGames(list) {
 
 /* =========================================================
    IMAGES
+   IMPORTANT:
+   We DO NOT use fetch() here.
+   We directly assign the external URL to <img>.
 ========================================================= */
 
 function imageUrlFor(game) {
-  return game.image;
+
+  return (
+    game.image ||
+    PLACEHOLDER_IMAGE
+  );
 }
 
 
+function setImageSource(img) {
 
-async function resolveImage(
-  url
-) {
+  const url =
+    img.dataset.imageUrl || "";
 
   if (!url) {
 
-    return PLACEHOLDER_IMAGE;
+    img.src =
+      PLACEHOLDER_IMAGE;
+
+    return;
   }
 
+  img.onerror = function () {
 
-  const cached =
-    imageCache.get(
-      url
-    );
+    /*
+      Prevent an infinite loop if the
+      placeholder itself ever fails.
+    */
 
+    img.onerror = null;
 
-  if (cached) {
+    img.src =
+      PLACEHOLDER_IMAGE;
+  };
 
-    return cached;
-  }
+  /*
+    Direct image loading.
 
+    NO fetch()
+    NO blob()
+    NO object URL
+    NO CORS issue from JavaScript
+  */
 
-  try {
-
-    const response =
-      await fetch(url);
-
-
-    if (!response.ok) {
-
-      throw new Error(
-        `Image request failed (${response.status})`
-      );
-    }
-
-
-    const blob =
-      await response.blob();
-
-
-    const objectUrl =
-      URL.createObjectURL(
-        blob
-      );
-
-
-    imageCache.set(
-      url,
-      objectUrl
-    );
-
-
-    return objectUrl;
-
-  } catch {
-
-    return PLACEHOLDER_IMAGE;
-
-  }
+  img.src = url;
 }
 
 
-
-function hydrateImages(
-  scope = document
-) {
+function hydrateImages(scope = document) {
 
   const images = [
     ...scope.querySelectorAll(
@@ -578,59 +456,20 @@ function hydrateImages(
     ),
   ];
 
+  images.forEach((img) => {
 
-  images.forEach(
-    (img) => {
+    if (
+      img.dataset.hydrated === "true"
+    ) {
 
-      if (
-        img.dataset.hydrated ===
-        "true"
-      ) {
-
-        return;
-      }
-
-
-      img.dataset.hydrated =
-        "true";
-
-
-      const url =
-        img.dataset.imageUrl ||
-        "";
-
-
-      resolveImage(url)
-        .then(
-          (src) => {
-
-            if (
-              img.isConnected
-            ) {
-
-              img.src = src;
-
-            }
-
-          }
-        )
-        .catch(
-          () => {
-
-            if (
-              img.isConnected
-            ) {
-
-              img.src =
-                PLACEHOLDER_IMAGE;
-
-            }
-
-          }
-        );
-
+      return;
     }
-  );
+
+    img.dataset.hydrated = "true";
+
+    setImageSource(img);
+
+  });
 }
 
 
@@ -645,27 +484,21 @@ function filterGames() {
       .trim()
       .toLowerCase();
 
-
   return sortGames(
     state.games.filter(
       (game) => {
 
         const matchesFilter =
-          state.filter ===
-            "all" ||
+          state.filter === "all" ||
           game.tags.some(
             (tag) =>
               tag.toLowerCase() ===
               state.filter.toLowerCase()
           );
 
-
         const matchesQuery =
           !query ||
-          game.searchText.includes(
-            query
-          );
-
+          game.searchText.includes(query);
 
         return (
           matchesFilter &&
@@ -681,30 +514,21 @@ function filterGames() {
    PAGINATION
 ========================================================= */
 
-function getPageCount(
-  total
-) {
+function getPageCount(total) {
 
   return Math.max(
     1,
     Math.ceil(
-      total /
-      pageSize
+      total / pageSize
     )
   );
 }
 
 
-
-function getPageSlice(
-  list
-) {
+function getPageSlice(list) {
 
   const totalPages =
-    getPageCount(
-      list.length
-    );
-
+    getPageCount(list.length);
 
   const currentPage =
     Math.min(
@@ -712,16 +536,13 @@ function getPageSlice(
       totalPages
     );
 
-
   const start =
     (currentPage - 1) *
     pageSize;
 
-
   const end =
     start +
     pageSize;
-
 
   return {
 
@@ -749,17 +570,12 @@ function getPageSlice(
 function selectedGames() {
 
   const selectedIds =
-    new Set(
-      state.selected
-    );
-
+    new Set(state.selected);
 
   return state.games.filter(
     (game) =>
       selectedIds.has(
-        String(
-          game.appid
-        )
+        String(game.appid)
       )
   );
 }
@@ -774,20 +590,12 @@ function updateCartUI() {
   const count =
     state.selected.length;
 
-
-  /* NAV CART */
-
-  if (
-    dom.navCartCount
-  ) {
+  if (dom.navCartCount) {
 
     dom.navCartCount.textContent =
       String(count);
 
   }
-
-
-  /* FLOATING CART */
 
   if (
     dom.floatingCart &&
@@ -797,17 +605,10 @@ function updateCartUI() {
     dom.floatingCartCount.textContent =
       String(count);
 
-
     dom.floatingCart.classList.toggle(
       "has-items",
       count > 0
     );
-
-
-    /*
-      Hide the notification badge
-      when the cart is empty.
-    */
 
     dom.floatingCartCount.classList.toggle(
       "is-empty",
@@ -816,22 +617,14 @@ function updateCartUI() {
 
   }
 
-
-  /* HERO CART */
-
-  if (
-    dom.stats.selected
-  ) {
+  if (dom.stats.selected) {
 
     dom.stats.selected.textContent =
       String(count);
 
   }
 
-
-  if (
-    dom.stats.selectedPanel
-  ) {
+  if (dom.stats.selectedPanel) {
 
     dom.stats.selectedPanel.textContent =
       String(count);
@@ -844,29 +637,23 @@ function updateCartUI() {
    TOAST
 ========================================================= */
 
-function showToast(
-  message
-) {
+function showToast(message) {
 
   if (!dom.toast) {
 
     return;
   }
 
-
   dom.toast.textContent =
     message;
-
 
   dom.toast.classList.add(
     "is-visible"
   );
 
-
   clearTimeout(
     dom.toast._timer
   );
-
 
   dom.toast._timer =
     setTimeout(
@@ -886,24 +673,15 @@ function showToast(
    FEATURED GAMES
 ========================================================= */
 
-function renderFeatured(
-  games
-) {
+function renderFeatured(games) {
 
-  if (
-    !dom.featuredStrip
-  ) {
+  if (!dom.featuredStrip) {
 
     return;
   }
 
-
   const picks =
-    games.slice(
-      0,
-      5
-    );
-
+    games.slice(0, 5);
 
   dom.featuredStrip.innerHTML =
     picks
@@ -916,11 +694,12 @@ function renderFeatured(
 
             <img
               src="${PLACEHOLDER_IMAGE}"
-              data-image-url="${imageUrlFor(game)}"
+              data-image-url="${escapeHtml(
+                imageUrlFor(game)
+              )}"
               alt="${escapeHtml(game.title)}"
               loading="lazy"
             />
-
 
             <div
               class="featured-card-overlay"
@@ -947,7 +726,6 @@ function renderFeatured(
       )
       .join("");
 
-
   hydrateImages(
     dom.featuredStrip
   );
@@ -958,34 +736,23 @@ function renderFeatured(
    GAME CARD
 ========================================================= */
 
-function createCard(
-  game,
-  index
-) {
+function createCard(game, index) {
 
   const card =
-    document.createElement(
-      "article"
-    );
-
+    document.createElement("article");
 
   card.className =
     "shop-card";
-
 
   card.style.setProperty(
     "--delay",
     `${Math.min(index, 20) * 35}ms`
   );
 
-
   const isSelected =
     state.selected.includes(
-      String(
-        game.appid
-      )
+      String(game.appid)
     );
-
 
   if (isSelected) {
 
@@ -994,25 +761,19 @@ function createCard(
     );
   }
 
-
   const tags =
     game.tags.length
       ? game.tags
       : ["Steam"];
 
-
   const tagsMarkup =
     tags
-      .slice(
-        0,
-        3
-      )
+      .slice(0, 3)
       .map(
         (tag) =>
           `<span class="shop-tag">${escapeHtml(tag)}</span>`
       )
       .join("");
-
 
   card.innerHTML = `
 
@@ -1023,11 +784,12 @@ function createCard(
       <img
         class="shop-card-img"
         src="${PLACEHOLDER_IMAGE}"
-        data-image-url="${imageUrlFor(game)}"
+        data-image-url="${escapeHtml(
+          imageUrlFor(game)
+        )}"
         alt="${escapeHtml(game.title)}"
         loading="lazy"
       />
-
 
       <div
         class="shop-card-overlay"
@@ -1046,7 +808,6 @@ function createCard(
         </span>
 
       </div>
-
 
       ${
         isSelected
@@ -1076,9 +837,7 @@ function createCard(
           <h3
             class="shop-card-name"
           >
-            ${escapeHtml(
-              game.title
-            )}
+            ${escapeHtml(game.title)}
           </h3>
 
         </div>
@@ -1163,7 +922,6 @@ function createCard(
 
   `;
 
-
   return card;
 }
 
@@ -1177,7 +935,6 @@ function render() {
   const visibleGames =
     filterGames();
 
-
   const {
     currentPage,
     totalPages,
@@ -1189,18 +946,14 @@ function render() {
       visibleGames
     );
 
-
   state.currentPage =
     currentPage;
-
 
   dom.grid.innerHTML =
     "";
 
-
   const fragment =
     document.createDocumentFragment();
-
 
   items.forEach(
     (game, index) => {
@@ -1215,11 +968,9 @@ function render() {
     }
   );
 
-
   dom.grid.appendChild(
     fragment
   );
-
 
   renderFeatured(
     visibleGames.length
@@ -1227,17 +978,13 @@ function render() {
       : state.games
   );
 
-
   dom.grid.setAttribute(
     "aria-busy",
     "false"
   );
 
-
   dom.empty.hidden =
-    visibleGames.length >
-    0;
-
+    visibleGames.length > 0;
 
   hydrateImages(
     dom.grid
@@ -1248,54 +995,35 @@ function render() {
      STATS
   ====================================================== */
 
-
-  if (
-    dom.stats.visible
-  ) {
+  if (dom.stats.visible) {
 
     dom.stats.visible.textContent =
-      String(
-        items.length
-      );
+      String(items.length);
+
   }
 
-
-  if (
-    dom.stats.visibleInline
-  ) {
+  if (dom.stats.visibleInline) {
 
     dom.stats.visibleInline.textContent =
-      String(
-        visibleGames.length
-      );
+      String(visibleGames.length);
+
   }
 
-
-  if (
-    dom.stats.total
-  ) {
+  if (dom.stats.total) {
 
     dom.stats.total.textContent =
-      String(
-        state.games.length
-      );
+      String(state.games.length);
+
   }
 
-
-  if (
-    dom.stats.totalPanel
-  ) {
+  if (dom.stats.totalPanel) {
 
     dom.stats.totalPanel.textContent =
-      String(
-        state.games.length
-      );
+      String(state.games.length);
+
   }
 
-
-  if (
-    dom.stats.pageRange
-  ) {
+  if (dom.stats.pageRange) {
 
     dom.stats.pageRange.textContent =
       visibleGames.length
@@ -1306,72 +1034,47 @@ function render() {
         : "0-0";
   }
 
-
-  if (
-    dom.stats.pageCurrent
-  ) {
+  if (dom.stats.pageCurrent) {
 
     dom.stats.pageCurrent.textContent =
-      String(
-        currentPage
-      );
+      String(currentPage);
+
   }
 
-
-  if (
-    dom.stats.pageCurrentTop
-  ) {
+  if (dom.stats.pageCurrentTop) {
 
     dom.stats.pageCurrentTop.textContent =
-      String(
-        currentPage
-      );
+      String(currentPage);
+
   }
 
-
-  if (
-    dom.stats.pageCurrentBottom
-  ) {
+  if (dom.stats.pageCurrentBottom) {
 
     dom.stats.pageCurrentBottom.textContent =
-      String(
-        currentPage
-      );
+      String(currentPage);
+
   }
 
-
-  if (
-    dom.stats.pageTotal
-  ) {
+  if (dom.stats.pageTotal) {
 
     dom.stats.pageTotal.textContent =
-      String(
-        totalPages
-      );
+      String(totalPages);
+
   }
 
-
-  if (
-    dom.stats.pageTotalTop
-  ) {
+  if (dom.stats.pageTotalTop) {
 
     dom.stats.pageTotalTop.textContent =
-      String(
-        totalPages
-      );
+      String(totalPages);
+
   }
 
-
-  if (
-    dom.stats.pageTotalBottom
-  ) {
+  if (dom.stats.pageTotalBottom) {
 
     dom.stats.pageTotalBottom.textContent =
-      String(
-        totalPages
-      );
-  }
+      String(totalPages);
 
+  }
 
   updateCartUI();
 }
@@ -1381,31 +1084,20 @@ function render() {
    TOGGLE CART
 ========================================================= */
 
-function toggleSelection(
-  appid
-) {
+function toggleSelection(appid) {
 
   const key =
-    String(
-      appid
-    );
-
+    String(appid);
 
   const index =
-    state.selected.indexOf(
-      key
-    );
+    state.selected.indexOf(key);
 
-
-  if (
-    index >= 0
-  ) {
+  if (index >= 0) {
 
     state.selected.splice(
       index,
       1
     );
-
 
     showToast(
       "Game removed from cart"
@@ -1413,16 +1105,12 @@ function toggleSelection(
 
   } else {
 
-    state.selected.push(
-      key
-    );
-
+    state.selected.push(key);
 
     showToast(
       "Game added to cart"
     );
   }
-
 
   saveCart();
 
@@ -1437,9 +1125,12 @@ function toggleSelection(
 async function loadData() {
 
   const response =
-    await fetch("./games.json");
+    await fetch(
+      "./games.json"
+    );
 
   if (!response.ok) {
+
     throw new Error(
       `Failed to load catalog (${response.status})`
     );
@@ -1448,13 +1139,13 @@ async function loadData() {
   const payload =
     await response.json();
 
-  // games.json contains { games: [...] }
   const games =
     Array.isArray(payload)
       ? payload
       : payload.games;
 
   if (!Array.isArray(games)) {
+
     throw new Error(
       "Invalid games.json format"
     );
@@ -1472,21 +1163,18 @@ async function loadData() {
   render();
 }
 
+
 /* =========================================================
    FILTER
 ========================================================= */
 
-function setActiveFilter(
-  value
-) {
+function setActiveFilter(value) {
 
   state.filter =
     value;
 
-
   state.currentPage =
     1;
-
 
   dom.filterButtons.forEach(
     (button) => {
@@ -1499,7 +1187,6 @@ function setActiveFilter(
 
     }
   );
-
 
   render();
 }
@@ -1529,68 +1216,74 @@ dom.filterButtons.forEach(
 
 /* SEARCH */
 
-dom.search.addEventListener(
-  "input",
-  (event) => {
+if (dom.search) {
 
-    state.query =
-      event.target.value;
+  dom.search.addEventListener(
+    "input",
+    (event) => {
 
+      state.query =
+        event.target.value;
 
-    state.currentPage =
-      1;
+      state.currentPage =
+        1;
 
+      render();
 
-    render();
+    }
+  );
 
-  }
-);
+}
 
 
 /* SORT */
 
-dom.sort.addEventListener(
-  "change",
-  (event) => {
+if (dom.sort) {
 
-    state.sort =
-      event.target.value;
+  dom.sort.addEventListener(
+    "change",
+    (event) => {
 
+      state.sort =
+        event.target.value;
 
-    state.currentPage =
-      1;
+      state.currentPage =
+        1;
 
+      render();
 
-    render();
+    }
+  );
 
-  }
-);
+}
 
 
 /* GAME GRID */
 
-dom.grid.addEventListener(
-  "click",
-  (event) => {
+if (dom.grid) {
 
-    const button =
-      event.target.closest(
-        "[data-appid]"
+  dom.grid.addEventListener(
+    "click",
+    (event) => {
+
+      const button =
+        event.target.closest(
+          "[data-appid]"
+        );
+
+      if (!button) {
+
+        return;
+      }
+
+      toggleSelection(
+        button.dataset.appid
       );
 
-
-    if (!button) {
-
-      return;
     }
+  );
 
-
-    toggleSelection(
-      button.dataset.appid
-    );
-
-  }
-);
+}
 
 
 /* PAGINATION */
@@ -1606,7 +1299,6 @@ dom.pageButtons.forEach(
           getPageCount(
             filterGames().length
           );
-
 
         if (
           button.dataset.pageAction ===
@@ -1628,20 +1320,13 @@ dom.pageButtons.forEach(
             );
         }
 
-
         render();
 
-
         document
-          .getElementById(
-            "store"
-          )
+          .getElementById("store")
           ?.scrollIntoView({
-            behavior:
-              "smooth",
-
-            block:
-              "start",
+            behavior: "smooth",
+            block: "start",
           });
 
       }
@@ -1663,6 +1348,11 @@ updateCartUI();
 loadData()
   .catch(
     (error) => {
+
+      console.error(
+        "Zack4Games catalog error:",
+        error
+      );
 
       dom.grid.innerHTML = `
 
@@ -1688,12 +1378,10 @@ loadData()
 
       `;
 
-
       dom.grid.setAttribute(
         "aria-busy",
         "false"
       );
-
 
       dom.empty.hidden =
         true;
